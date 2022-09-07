@@ -1,0 +1,14 @@
+.infoOfNovel {
+  box-sizing: border-box;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 612px;
+  top: 356px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.fav {
+}
