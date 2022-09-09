@@ -2,10 +2,12 @@ import React from 'react';
 import './home.css';
 import Row from '../../Row/Row';
 import requests from '../../requests/requests';
+import Banner from './Banner/banner'
 
 function Home(){
   return(
     <div className="home">
+      <Banner />
       <Row
         title="New X-Letter"
         fetchUrl={requests.fetchNetflixOriginals}
