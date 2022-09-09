@@ -21,6 +21,9 @@ const Navbar = () => {
                 <NavLink to="/series" activeStyle>
                     XL Series
                 </NavLink>
+                <NavLink to="/marketplace" activeStyle>
+                    Marketplace
+                </NavLink>
                 <NavLink to="/mypage" activeStyle>
                     My Page
                 </NavLink>
