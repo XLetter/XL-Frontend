@@ -9,7 +9,6 @@ const handleChange =(e)=>{
   console.log(e.target.value);
 }
 
-
 function Marketplace(){
   return(
     <div className="marketplace">
@@ -22,7 +21,6 @@ function Marketplace(){
           </td>
         </tr>
       </table>
-      
       
       <button>My NFT</button>
       <Row

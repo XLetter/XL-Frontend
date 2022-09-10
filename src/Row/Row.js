@@ -1,24 +1,11 @@
-import React, { useState, useEffect,useCallback,useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "../Axios/axios";
 import "./Row.css"
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function SearchBar(){
-  return(
-    <table className={"table"}>
-            <tr>
-                <td>
-                    <input type={"text"} size={"25"} className={"input-sm"} placeholder={"Search"}/>
-                </td>
-            </tr>
-        </table>
-  )
-}
-
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
-  const[ss,setSs]=useState("");
 
   // A snippet of code which runs based on a specific condition/varaible
   useEffect(() => {
@@ -40,12 +27,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   console.table(movies);
 
-  const handelUserInput=(ss)=>{
-    setSs(ss);
-  }
-
-
-
   return (
     <div className="row">
       <h2>{title}</h2>
@@ -60,12 +41,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
           />
         ))}
       </div>
-      <div className={"row"}>
-            
-            <SearchBar ss={ss} onUserInput={handelUserInput}/>
-            <div style={{"height":"30px"}}></div>
-             ss={ss}/>
-        </div>
     </div>
   )
 }
