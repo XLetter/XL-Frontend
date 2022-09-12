@@ -20,8 +20,8 @@ const Original = () => {
           설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
           설명...더보기
         </p>
-        <div id="readFirst">첫회보기</div>
-        <div id="xltCharge">XLT 충전하기</div>
+        <button id="readFirst">첫회보기</button>
+        <button id="xltCharge">XLT 충전하기</button>
         <div />
         <div className="favAndRanking">
           <div className="fav">
@@ -33,7 +33,12 @@ const Original = () => {
             <p id="rankingName">나의 랭킹</p>
           </div>
         </div>
-        <h5 id="myNFT">내가 보유한 NFT</h5>
+      </div>
+      <h5 id="myNFT">내가 보유한 NFT</h5>
+      <div className="readChapter">
+        <div id="chapter">작품 제목 1화</div>
+        <div id="date">업로드 날짜</div>
+        <button id="read">읽기</button>
       </div>
     </div>
   );
