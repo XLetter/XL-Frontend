@@ -28,9 +28,17 @@ const Navbar = () => {
                     My Page
                 </NavLink>
             </NavMenu>
-            <NavBtn>
-                <NavBtnLink to="search">Search</NavBtnLink>
-            </NavBtn>
+            <table className={"table"}>
+                <tr>
+                    <td>
+                        <input type="text" className={'input-sm'} placdholder={"검색어를 입력하세요"}  
+                        search/>
+                        <button>검색</button>
+       
+          
+                    </td>
+                </tr>
+            </table>
             <NavBtn>
                 <NavBtnLink to="profile">Profile</NavBtnLink>
             </NavBtn>
