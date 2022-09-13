@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './original.css';
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
+<meta charset="UTF-8"></meta>;
 
 const Original = () => {
   return (
@@ -34,7 +35,17 @@ const Original = () => {
           </div>
         </div>
       </div>
-      <h5 id="myNFT">내가 보유한 NFT</h5>
+      <div className="NFT">
+        <h5 id="myNFT">내가 보유한 NFT</h5>
+        <div id="sampleNFT"></div>
+      </div>
+      <button id="buyAll">전체 구매하기</button>
+      <button className="order" id="fromFirst">
+        1화부터
+      </button>
+      <button className="order" id="fromRecent">
+        최근화부터
+      </button>
       <div className="readChapter">
         <div id="chapter">작품 제목 1화</div>
         <div id="date">업로드 날짜</div>

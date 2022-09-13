@@ -1,5 +1,6 @@
 .IndividualNovelPageOriginal {
   position: relative;
+  flex-direction: row;
 }
 
 #thumbnail {
@@ -182,6 +183,66 @@
   top: 446px;
 }
 
+#sampleNFT {
+  position: relative;
+  height: 180px;
+  width: 600px;
+  background-color: gray;
+  top: 470px;
+  left: 397px;
+
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  display: flex;
+}
+
+#buyAll {
+  position: absolute;
+  width: 93px;
+  height: 19px;
+  left: 397px;
+  top: 804px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+#fromFirst {
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 1100px;
+  top: 804px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+#fromRecent {
+  position: absolute;
+  width: 140px;
+  height: 19px;
+  left: 1300px;
+  top: 804px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
 .readChapter {
   position: relative;
 }
@@ -191,12 +252,12 @@
   width: 113px;
   height: 24px;
   left: 432px;
-  top: 872px;
+  top: 680px;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
 
   color: #000000;
@@ -209,12 +270,12 @@
   width: 79px;
   height: 19px;
   left: 432px;
-  top: 904px;
+  top: 700px;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
 
   color: #000000;
@@ -227,7 +288,7 @@
   width: 80px;
   height: 40px;
   left: 1008px;
-  top: 30px;
+  top: 680px;
 
   background: #ffffff;
   border: 1px solid #000000;
