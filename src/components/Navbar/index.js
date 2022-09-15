@@ -31,7 +31,7 @@ const Navbar = () => {
             <table className={"table"}>
                 <tr>
                     <td>
-                        <input type="text" className={'input-sm'} placdholder={"검색어를 입력하세요"}  
+                        <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"}  
                         search/>
                         <button>검색</button>
        

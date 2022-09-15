@@ -1,15 +1,15 @@
 import React from 'react';
-import './xloriginalnft.css';
+import './nowtrend.css';
 import Row from '../../../Row/Row';
 import requests from '../../../requests/requests';
 
 
-function Xloriginalnft(){
+function NowTrend(){
     return(
-      <div className="xloriginalnft">
+      <div className="nowtrend">
 
         <Row
-        title="XL Original NFT"
+        title="최신 트렌드"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} 
         
@@ -18,4 +18,4 @@ function Xloriginalnft(){
   );
 }
 
-export default Xloriginalnft;
+export default NowTrend;

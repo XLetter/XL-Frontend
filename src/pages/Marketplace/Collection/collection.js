@@ -1,15 +1,15 @@
 import React from 'react';
-import './xloriginalnft.css';
+import './collection.css';
 import Row from '../../../Row/Row';
 import requests from '../../../requests/requests';
 
 
-function Xloriginalnft(){
+function Collection(){
     return(
-      <div className="xloriginalnft">
+      <div className="collection">
 
         <Row
-        title="XL Original NFT"
+        title="XL 시리즈 NFT"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} 
         
@@ -18,4 +18,4 @@ function Xloriginalnft(){
   );
 }
 
-export default Xloriginalnft;
+export default Collection;

@@ -5,10 +5,6 @@ import Row from '../../Row/Row';
 import requests from '../../requests/requests';
 import Banner from './BannerMarketplace/bannermarketplace'
 
-const handleChange =(e)=>{
-  console.log(e.target.value);
-}
-
 
 
 function Marketplace(){
@@ -19,7 +15,7 @@ function Marketplace(){
       <table className={"table"}>
         <tr>
           <td>
-            <input type="text" className={'input-sm'} placdholder={"검색어를 입력하세요"}  
+            <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} 
              search/>
             <button>검색</button>
        
