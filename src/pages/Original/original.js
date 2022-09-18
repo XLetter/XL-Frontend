@@ -1,10 +1,19 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './original.css';
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
-const Original = () => {
+const IndividualNovelPageOriginal = () => {
+  const [data, setData] = React.useState({});
+
+  React.useEffect(function () {
+    fetch('apis/webnovel/{webnovel_id}')
+      .then((response) => response.json())
+      .then((data) => setData());
+  }, []);
+
   return (
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
@@ -19,7 +28,7 @@ const Original = () => {
           작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명작품에
           대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
           설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
-          설명...더보기
+          설명...더보기 {data.summary}
         </p>
         <button id="readFirst">첫회보기</button>
         <button id="xltCharge">XLT 충전하기</button>
@@ -47,12 +56,14 @@ const Original = () => {
         최근화부터
       </button>
       <div className="readChapter">
-        <div id="chapter">작품 제목 1화</div>
-        <div id="date">업로드 날짜</div>
+        <div id="chapter">
+          작품 제목{data.episodeList.episodeTitle} 1화 {data.episodeList.episodeId}
+        </div>
+        <div id="date">업로드 날짜{episodeList.uploadDate}</div>
         <button id="read">읽기</button>
       </div>
     </div>
   );
 };
 
-export default Original;
+export default IndividualNovelPageOriginal;
