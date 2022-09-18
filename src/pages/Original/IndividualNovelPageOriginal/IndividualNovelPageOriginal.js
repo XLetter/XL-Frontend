@@ -12,6 +12,7 @@ const IndividualNovelPageOriginal = () => {
           <div className="fav">
             <div id="favFigure"></div>
             <p id="favName">즐겨찾기</p>
+            <toggleFavorite />
           </div>
           <div className="ranking">
             <div id="rankingFigure"></div>

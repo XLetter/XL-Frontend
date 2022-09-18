@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import
+
 import './original.css';
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
@@ -28,7 +30,7 @@ const IndividualNovelPageOriginal = () => {
           작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명작품에
           대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
           설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
-          설명...더보기 {data.summary}
+          {/* 설명...더보기 {data.summary} */}
         </p>
         <button id="readFirst">첫회보기</button>
         <button id="xltCharge">XLT 충전하기</button>
@@ -57,9 +59,9 @@ const IndividualNovelPageOriginal = () => {
       </button>
       <div className="readChapter">
         <div id="chapter">
-          작품 제목{data.episodeList.episodeTitle} 1화 {data.episodeList.episodeId}
+          {/* 작품 제목{data.episodeList.episodeTitle} 1화 {data.episodeList.episodeId} */}
         </div>
-        <div id="date">업로드 날짜{episodeList.uploadDate}</div>
+        {/* <div id="date">업로드 날짜{episodeList.uploadDate}</div> */}
         <button id="read">읽기</button>
       </div>
     </div>
