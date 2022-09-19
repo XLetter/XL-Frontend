@@ -1,8 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import
-
 import './original.css';
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;

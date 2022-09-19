@@ -1,11 +1,15 @@
 import React from 'react';
 
 function FavoriteButton() {
+  // const variable = {
+  //   webnovelId: props.novelId,
+  // };
+
   return (
     <div>
-      <button>Add to Favorites</button>
+      <button>즐겨찾기</button>
     </div>
   );
 }
 
-export default Favorite;
+export default FavoriteButton;
