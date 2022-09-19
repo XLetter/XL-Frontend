@@ -20,15 +20,12 @@ function Series(props) {
   // const [Movie, setMovie] = useState([]);
 
   console.log(props.match);
-  fetch(`${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`);
 
-  // useEffect(() => {
-  //   fetch(`${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`)
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       setMovie(response);
-  //     });
-  // }, []);
+  fetch(`${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`)
+    .then((response) => response.json())
+    .then((response) => {
+      console.log(response);
+    }, []);
 
   return (
     <div></div>
