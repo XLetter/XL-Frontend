@@ -1,9 +1,6 @@
 import React, { useEffect } from 'react';
 
 import { API_URL, API_KEY } from '../../components/Navbar/Config';
-import './series.css';
-<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
-<meta charset="UTF-8"></meta>;
 
 function Series(props) {
   // const [data, setData] = React.useState({});
@@ -15,7 +12,7 @@ function Series(props) {
   // }, []);
 
   //movieID 가져오는 방법
-  let movieId = props.match.params.movieId;
+  let movieId = props.match.movieId;
 
   // const [Movie, setMovie] = useState([]);
 
