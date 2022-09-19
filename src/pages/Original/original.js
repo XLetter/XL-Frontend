@@ -2,10 +2,36 @@ import React from 'react';
 import './original.css';
 import Row from '../../Row/Row';
 import requests from '../../requests/requests';
+import { Nav, NavLink, NavMenu} from "../../components/Navbar/NavbarElements";
 
 function Original(){
   return(
     <div className="original">
+    <Nav>
+            
+            
+            <NavMenu>
+                <NavLink to="/original" >
+                  ALL
+                </NavLink>
+                <NavLink to="/xloriginalbl" >
+                  BL
+                </NavLink>
+                <NavLink to="/xloriginalgl" >
+                  GL
+                </NavLink>
+                <NavLink to="/xloriginalhl" >
+                  HL
+                </NavLink>
+                
+            </NavMenu>
+            
+            
+            
+        </Nav>
+      
+
+    
       <Row
         title="New XL Originals"
         fetchUrl={requests.fetchNetflixOriginals}

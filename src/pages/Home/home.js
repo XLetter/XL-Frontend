@@ -3,6 +3,7 @@ import './home.css';
 import Row from '../../Row/Row';
 import requests from '../../requests/requests';
 import Banner from './Banner/banner'
+import axios from 'axios';
 
 function Home(){
   return(
@@ -12,6 +13,7 @@ function Home(){
         title="New X-Letter"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
+        
      />
      <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />

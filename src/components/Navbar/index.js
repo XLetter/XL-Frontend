@@ -17,6 +17,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/original" activeStyle>
                     XL Original
+                    
                 </NavLink>
                 <NavLink to="/series" activeStyle>
                     XL Series

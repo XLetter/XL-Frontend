@@ -4,11 +4,9 @@
 
 .row__posters {
     display: flex;
-    width: 100%;
-    height: 100%;
-    overflow-x: scroll;
+    overflow-y: hidden; /* 화면을 넘어갈 경우 세로 스크롤 할지 말지 */
+    overflow-x: scroll; /* 화면을 넘어갈 경우 가로 스크롤 할지 말지 */
     padding: 20px;
-    
 }
 
 .row__posters::-webkit-scrollbar {
