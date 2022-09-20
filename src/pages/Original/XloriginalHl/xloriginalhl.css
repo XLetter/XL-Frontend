@@ -1,8 +1,8 @@
 * {
     margin: 0;
+    
   }
-
-  .home{
+  .xloriginalhl{
     display: flex;
     flex-direction:column;
     width:100vw;

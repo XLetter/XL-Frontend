@@ -17,6 +17,7 @@ const Navbar = () => {
                 </NavLink>
                 <NavLink to="/original" activeStyle>
                     XL Original
+                    
                 </NavLink>
                 <NavLink to="/series" activeStyle>
                     XL Series
@@ -28,9 +29,17 @@ const Navbar = () => {
                     My Page
                 </NavLink>
             </NavMenu>
-            <NavBtn>
-                <NavBtnLink to="search">Search</NavBtnLink>
-            </NavBtn>
+            <table className={"table"}>
+                <tr>
+                    <td>
+                        <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"}  
+                        search/>
+                        <button>검색</button>
+       
+          
+                    </td>
+                </tr>
+            </table>
             <NavBtn>
                 <NavBtnLink to="profile">Profile</NavBtnLink>
             </NavBtn>

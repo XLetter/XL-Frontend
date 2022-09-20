@@ -1,3 +1,9 @@
 * {
     margin: 0;
   }
+  .original{
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+
+  }

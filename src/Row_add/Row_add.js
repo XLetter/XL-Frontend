@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../Axios/axios';
-import './Row.css';
+import './Row_add.css';
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
 
-function Row({ title, fetchUrl, isLargeRow }) {
+function Row_add({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
 
   // A snippet of code which runs based on a specific condition/varaible
@@ -26,7 +26,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
 
-      <div className="row__posters">
+    <div className="row__posters">
         {movies.map((movie) => (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <img
@@ -38,11 +38,9 @@ function Row({ title, fetchUrl, isLargeRow }) {
             <p>{movie.name}</p>
           </div>
         ))}
-
-        
       </div>
     </div>
   );
 }
 
-export default Row;
+export default Row_add;

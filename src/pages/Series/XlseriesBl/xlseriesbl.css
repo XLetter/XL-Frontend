@@ -1,8 +1,9 @@
 * {
     margin: 0;
+    
   }
 
-  .home{
+  .xlseriesbl{
     display: flex;
     flex-direction:column;
     width:100vw;

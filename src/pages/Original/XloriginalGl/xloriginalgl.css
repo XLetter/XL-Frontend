@@ -1,8 +1,9 @@
 * {
     margin: 0;
+    
   }
 
-  .home{
+  .xloriginalgl{
     display: flex;
     flex-direction:column;
     width:100vw;

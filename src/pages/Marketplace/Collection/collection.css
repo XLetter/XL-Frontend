@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-  }
-
-  .home{
+.collection{
     display: flex;
     flex-direction:column;
     width:100vw;

@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-  }
-
-  .home{
+.nowtrend{
     display: flex;
     flex-direction:column;
     width:100vw;
