@@ -2,18 +2,40 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './original.css';
+import Favorite from './Sections/Favorite';
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
 const IndividualNovelPageOriginal = () => {
-  const [data, setData] = React.useState({});
+  const [Movie, setMovie] = useState([]);
 
-  React.useEffect(function () {
-    fetch('apis/webnovel/{webnovel_id}')
-      .then((response) => response.json())
-      .then((data) => setData());
-  }, []);
+  const api_url = `https://api.themoviedb.org/3/movie/755566?api_key=f7b82b7f68941967b5871703e2789841&language=en-US`;
 
+  async function getMovie() {
+    const response = await fetch(api_url);
+    const data = await response.json();
+    const { original_title, overview } = data;
+
+    document.getElementById('workName').textContent = original_title;
+    document.getElementById('summary').textContent = overview;
+  }
+
+  //우리의 API
+  // async function getMovie() {
+  //   const response = await fetch(api_url);
+  //   const data = await response.json();
+  //   const { original_title, overview } = data;
+
+  //   document.getElementById('workName').textContent = original_title;
+  //   document.getElementById('summary').textContent = summary;
+  //   document.getElementById('authorInfo').textContent = illustration_writer;
+
+  //   document.getElementById('summary').textContent = episodeList;
+  //   document.getElementById('episodeTitle').textContent = episodeTitle;
+  //   document.getElementById('date').textContent = uploadDate;
+  // }
+
+  getMovie();
   return (
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
@@ -23,19 +45,14 @@ const IndividualNovelPageOriginal = () => {
           <div id="buttonBox"></div>
         </div>
         <div id="workName">작품 제목</div>
-        <div id="authorInfo">작가 작가이름 일러스트 일러스트 작가 이름</div>
-        <p id="summary">
-          작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명작품에
-          대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
-          설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한 설명 작품에 대한
-          {/* 설명...더보기 {data.summary} */}
-        </p>
+        <div id="authorInfo">일러스트 {''}</div>
+        <p id="summary">{''}</p>
         <button id="readFirst">첫회보기</button>
         <button id="xltCharge">XLT 충전하기</button>
         <div />
         <div className="favAndRanking">
           <div className="fav">
-            <div id="favFigure"></div>
+            <div id="favFigure">{/* <Favorite /> */}</div>
             <p id="favName">즐겨찾기</p>
           </div>
           <div className="ranking">
@@ -56,10 +73,8 @@ const IndividualNovelPageOriginal = () => {
         최근화부터
       </button>
       <div className="readChapter">
-        <div id="chapter">
-          {/* 작품 제목{data.episodeList.episodeTitle} 1화 {data.episodeList.episodeId} */}
-        </div>
-        {/* <div id="date">업로드 날짜{episodeList.uploadDate}</div> */}
+        <div id="episodeTitle">episodetitle and number = {''}</div>
+        <div id="date">업로드 날짜{''}</div>
         <button id="read">읽기</button>
       </div>
     </div>
