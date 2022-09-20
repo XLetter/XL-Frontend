@@ -2,3 +2,10 @@
     margin: 0;
     
   }
+
+  .xloriginalgl{
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+
+  }

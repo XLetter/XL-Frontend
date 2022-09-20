@@ -38,6 +38,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
             <p>{movie.name}</p>
           </div>
         ))}
+
+        
       </div>
     </div>
   );

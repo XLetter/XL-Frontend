@@ -33,9 +33,9 @@ function XloriginalHl(){
       
 
         <Row_add
-        title="XL Original BL"
+        title="XL Original HL"
         fetchUrl={requests.fetchHorrorMovies}
-        isLargeRow={false} 
+        isLargeRow={true} 
         
         
         />

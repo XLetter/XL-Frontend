@@ -26,7 +26,7 @@ function Row_add({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h2>{title}</h2>
 
-      <div className="row__posters">
+    <div className="row__posters">
         {movies.map((movie) => (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <img
