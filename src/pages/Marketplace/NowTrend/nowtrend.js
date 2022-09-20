@@ -12,7 +12,7 @@ function NowTrend(){
         <Row_add
         title="최신 트렌드"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={false} 
+        isLargeRow={true} 
         
         />
     </div>

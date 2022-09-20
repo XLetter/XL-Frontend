@@ -35,7 +35,7 @@ function XloriginalGl(){
         <Row_add
         title="XL Original GL"
         fetchUrl={requests.fetchHorrorMovies}
-        isLargeRow={false} 
+        isLargeRow={true} 
         
         
         />

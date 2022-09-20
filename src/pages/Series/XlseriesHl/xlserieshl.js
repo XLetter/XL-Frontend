@@ -35,7 +35,7 @@ function XlseriesHl(){
         <Row_add
         title="XLSeries HL"
         fetchUrl={requests.fetchHorrorMovies}
-        isLargeRow={false} 
+        isLargeRow={true} 
         
         
         />

@@ -54,8 +54,8 @@ function Marketplace(){
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
      />
-     <Row title="작품별 Collection" fetchUrl={requests.fetchTrending} />
-      <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} />
+     <Row title="작품별 Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/>
+      <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
       
 
     </div>

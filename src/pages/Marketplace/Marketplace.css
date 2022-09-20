@@ -14,5 +14,10 @@ table{
   margin-right: auto;
 }
 
+.marketplace{
+  display: flex;
+  flex-direction:column;
+  width:100vw;
 
+}
 

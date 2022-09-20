@@ -12,7 +12,7 @@ function Xloriginalnft(){
         <Row_add
         title="XL Original NFT"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={false} 
+        isLargeRow={true} 
         
         
         />

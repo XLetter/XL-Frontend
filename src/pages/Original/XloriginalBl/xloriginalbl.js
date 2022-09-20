@@ -37,7 +37,8 @@ function XloriginalBl(){
         <Row_add
         title="XL Original BL"
         fetchUrl={requests.fetchNetflixOriginals}
-        isLargeRow={false} 
+        isLargeRow={true}
+         
         
         
         />
