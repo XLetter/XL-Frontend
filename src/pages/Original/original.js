@@ -3,11 +3,14 @@ import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './original.css';
 import Favorite from './Sections/Favorite';
+import Popup from './Sections/Popup';
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
 const IndividualNovelPageOriginal = () => {
   const [Movie, setMovie] = useState([]);
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   const api_url = `https://api.themoviedb.org/3/movie/755566?api_key=f7b82b7f68941967b5871703e2789841&language=en-US`;
 
@@ -74,8 +77,13 @@ const IndividualNovelPageOriginal = () => {
       </button>
       <div className="readChapter">
         <div id="episodeTitle">episodetitle and number = {''}</div>
-        <div id="date">업로드 날짜{''}</div>
-        <button id="read">읽기</button>
+        <div id="date ">업로드 날짜{''}</div>
+        <button id="read" onClick={() => setButtonPopup(true)}>
+          읽기
+        </button>
+        <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+          구매하겠습니까?
+        </Popup>
       </div>
     </div>
   );
