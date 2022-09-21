@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import './NFTDetailPage.css';
 
 function NFTDetailPage() {
   return (
-    <div>
-      <div className="nftInfo">
-        <img id="nftImage"></img>
-        <p id="nameWork"></p>
-        <h2 id="nftName"></h2>
-        <button id="readWork"></button>
-        <p id="nftPrice"></p>
-        <button id="buyNft"></button>
-        <button id="makeOffer"></button>
-      </div>
-      <Nav>
-        <NavMenu>
-          <NavLink to="/Details">Details</NavLink>
-          <NavLink to="/ItemHistory">Item History</NavLink>
-          <NavLink to="/Offers">Offers</NavLink>
-        </NavMenu>
-      </Nav>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '90vh',
+      }}
+    >
+      <img id="nftImage"></img>
+      <p id="nameWork">nameofwork</p>
+      <h2 id="nftName">nftName</h2>
+      <button id="readWork">readbutton</button>
+      <p id="nftPrice">nftprice</p>
+      <button id="buyNft">buynft</button>
+      <button id="makeOffer">makeoffer</button>
     </div>
   );
 }

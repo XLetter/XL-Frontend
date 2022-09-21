@@ -1,10 +1,12 @@
 import { getDefaultNormalizer } from '@testing-library/react';
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { API_URL, API_KEY } from '../../components/Navbar/Config';
-import NFTDetailPage from './NFTDetailPage';
 
 function Marketplace() {
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/NFTDetailPage');
+
   return (
     <div
       style={{
@@ -15,7 +17,7 @@ function Marketplace() {
       }}
     >
       <h1>Marketplace</h1>
-      <NavLink to="/NFTDetailPage">NFT detail page</NavLink>
+      <button onClick={handleClick}>NFT detail page</button>
     </div>
   );
 }

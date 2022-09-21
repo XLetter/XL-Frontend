@@ -1,11 +1,11 @@
 import React from 'react';
-import { Routes, Route, useNavigate, Redirect } from 'react-router-dom';
-// import { Redirect } from 'react-router';
+import { useNavigate } from 'react-router-dom';
+
 import './Popup.css';
 
 function Popup(props) {
   const navigate = useNavigate();
-  const handleClick = () => navigate('/SampleChapterOriginal');
+  const handleClick = () => navigate('/SampleChapterOriginalThree');
 
   return props.trigger ? (
     <div className="popup">
