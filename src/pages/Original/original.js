@@ -71,10 +71,10 @@ const IndividualNovelPageOriginal = () => {
           </div>
         </div>
       </div>
-      <div className="NFT">
+      {/* <div className="NFT">
         <h5 id="myNFT">내가 보유한 NFT</h5>
         <div id="sampleNFT"></div>
-      </div>
+      </div> */}
       <div className="readChapterOne">
         <div id="episodeTitleOne">episode title and number = 1{''}</div>
         <div id="dateOne">업로드 날짜{''}</div>
