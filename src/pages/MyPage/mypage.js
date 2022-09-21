@@ -7,6 +7,7 @@ import Home from '../Home/home';
 import Original from '../Original/original';
 import Series from '../Series/series';
 import Marketplace from '../Marketplace/Marketplace';
+import WalletConnect from './WalletConnect';
 
 // KakaoOauth 코드 없앰
 
@@ -24,7 +25,7 @@ function MyPage() {
         <Route path="/mypage/*" element={<MyPage />} />
 
         <Route path="main" element={<Main />} />
-      <Route path="wallet" element={<Wallet />} />
+      <Route path="wallet" element={<WalletConnect />} />
       </Routes>
     </div>
   );
