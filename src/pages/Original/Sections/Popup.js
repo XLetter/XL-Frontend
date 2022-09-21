@@ -5,7 +5,7 @@ import './Popup.css';
 
 function Popup(props) {
   const navigate = useNavigate();
-  const handleClick = () => navigate('./pages/Original/Sections/SampleChapterOriginal');
+  const handleClick = () => navigate('/SampleChapterOriginal');
 
   return props.trigger ? (
     <div className="popup">
