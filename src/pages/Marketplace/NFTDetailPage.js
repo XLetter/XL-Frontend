@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 function NFTDetailPage() {
   return (
@@ -12,6 +13,13 @@ function NFTDetailPage() {
         <button id="buyNft"></button>
         <button id="makeOffer"></button>
       </div>
+      <Nav>
+        <NavMenu>
+          <NavLink to="/Details">Details</NavLink>
+          <NavLink to="/ItemHistory">Item History</NavLink>
+          <NavLink to="/Offers">Offers</NavLink>
+        </NavMenu>
+      </Nav>
     </div>
   );
 }
