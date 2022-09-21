@@ -8,6 +8,7 @@ import Banner from './BannerMarketplace/bannermarketplace'
 //handleChange 코드 부분 다름
 
 function Marketplace(){
+
   return(
     <div className="marketplace">
       <Banner />
@@ -51,7 +52,6 @@ function Marketplace(){
       <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
 
     </div>
-    
   );
 }
 
