@@ -9,12 +9,17 @@
     "antd": "^4.23.2",
     "axios": "^0.27.2",
     "caver-js": "^1.9.0",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os": "^0.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "stream": "^0.0.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
     "styled-component": "^2.8.0",
     "styled-components": "^5.3.5",
     "timers": "^0.1.1",
@@ -46,7 +51,8 @@
   },
   "devDependencies": {
     "@svgr/cli": "^6.3.1",
-    "react-error-overlay": "^6.0.9"
+    "react-error-overlay": "^6.0.9",
+    "webpack-cli": "^4.10.0"
   },
   "browser": {
     "http": false,
