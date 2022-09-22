@@ -9,7 +9,7 @@ import Series from './pages/series/Series';
 import MyPage from './pages/myPage/MyPage';
 import Marketplace from './pages/marketplace/Marketplace';
 
-import Xloriginalnft from './pages/marketplace/XLOriginalNFT/XLOriginalNFT';
+import Xloriginalnft from './pages/marketplace/marketplaceElements/XLOriginalNFT/XLOriginalNFT';
 import NowTrend from './pages/marketplace/nowTrend/NowTrend';
 import Collection from './pages/marketplace/collection/Collection';
 import XloriginalBl from './pages/original/XLOriginalBL/XLOriginalBL';
@@ -23,7 +23,7 @@ import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOri
 import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOriginalOne';
 import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
 import SampleChapterOriginalThree from './pages/original/sections/SampleChapterOriginalThree';
-import NFTDetailPage from './pages/marketplace/NFTDetailPage';
+import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailPage';
 
 function App() {
   return (

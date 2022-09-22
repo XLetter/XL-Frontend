@@ -3,11 +3,11 @@ import './Marketplace.css';
 import { Bars, Nav, Nav_Btn_1, NavBtn_1Link, NavMenu, NavLink } from "../../components/navBar/NavbarElements";
 import Row from '../../row/Row';
 import requests from '../../requests/Requests';
-import Banner from './marketplaceBanner/MarketplaceBanner';
+import Banner from '../../components/banner/marketplaceBanner/MarketplaceBanner';
 
 import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
-import { API_URL, API_KEY } from '../../components/navBar/Config';
+import { API_URL, API_KEY } from '../../components/Config';
 
 function Marketplace(){
 

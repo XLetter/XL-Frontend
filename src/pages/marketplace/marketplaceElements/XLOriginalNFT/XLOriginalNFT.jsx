@@ -1,8 +1,8 @@
 import React from 'react';
 import './XLOriginalNFT.css';
-import Grid from '../../../grid/Grid';
-import requests from '../../../requests/Requests';
-import { Bars,Nav,Nav_Btn_1,NavBtn_1Link, NavMenu,NavLink} from "../../../components/navBar/NavbarElements";
+import Grid from '../../../../grid/Grid';
+import requests from '../../../../requests/Requests';
+import { Bars,Nav,Nav_Btn_1,NavBtn_1Link, NavMenu,NavLink} from "../../../../components/navBar/NavbarElements";
 
 function Xloriginalnft(){
     return(
