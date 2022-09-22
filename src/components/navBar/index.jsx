@@ -32,7 +32,8 @@ const Navbar = () => {
                 <tr>
                     <td>
                         <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
-                        <button>검색</button>
+                        <button>
+                            <NavLink to="/searchpage">검색</NavLink></button>
                     </td>
                 </tr>
             </table>

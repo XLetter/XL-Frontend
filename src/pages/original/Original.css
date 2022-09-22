@@ -1,3 +1,11 @@
+.original{
+  display: flex;
+  flex-direction:column;
+  width:100vw;
+
+}
+
+
 .IndividualNovelPageOriginal {
   position: relative;
   flex-direction: row;
