@@ -36,6 +36,7 @@ function Original(){
       <Row title="XL Originals-BL" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true}/>
       <Row title="XL Originals-GL" fetchUrl={requests.fetchRomanceMovies} isLargeRow={true} />
       <Row title="XL Originals-HL" fetchUrl={requests.fetchDocumentaries} isLargeRow={true}/>
+
     </div>
   );
 }

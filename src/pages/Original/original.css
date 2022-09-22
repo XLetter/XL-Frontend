@@ -247,7 +247,7 @@
   position: relative;
 }
 
-#episodeTitle {
+#episodeTitleOne {
   position: relative;
   width: 113px;
   height: 24px;
@@ -263,7 +263,7 @@
   color: #000000;
 }
 
-#date {
+#dateOne {
   /* 업로드 날짜 */
 
   position: absolute;
@@ -281,7 +281,101 @@
   color: #000000;
 }
 
-#read {
+#readOne {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  left: 1008px;
+  top: 680px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+#episodeTitleTwo {
+  position: relative;
+  width: 113px;
+  height: 24px;
+  left: 432px;
+  top: 680px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+#dateTwo {
+  /* 업로드 날짜 */
+
+  position: absolute;
+  width: 79px;
+  height: 19px;
+  left: 432px;
+  top: 700px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+#readTwo {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  left: 1008px;
+  top: 680px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+#episodeTitleThree {
+  position: relative;
+  width: 113px;
+  height: 24px;
+  left: 432px;
+  top: 680px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+#dateThree {
+  /* 업로드 날짜 */
+
+  position: absolute;
+  width: 79px;
+  height: 19px;
+  left: 432px;
+  top: 700px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: #000000;
+}
+
+#readThree {
   box-sizing: border-box;
 
   position: absolute;

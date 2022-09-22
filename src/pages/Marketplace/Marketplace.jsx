@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Marketplace.css';
-import { Bars,Nav,Nav_Btn_1,NavBtn_1Link, NavMenu,NavLink} from "../../components/Navbar/NavbarElements";
+import { Bars, Nav, Nav_Btn_1, NavBtn_1Link, NavMenu, NavLink } from "../../components/Navbar/NavbarElements";
 import Row from '../../Row/Row';
 import requests from '../../requests/requests';
-import Banner from './BannerMarketplace/bannermarketplace'
+import Banner from './BannerMarketplace/bannermarketplace';
+
+import { getDefaultNormalizer } from '@testing-library/react';
+import { useNavigate } from 'react-router-dom';
+import { API_URL, API_KEY } from '../../components/Navbar/Config';
 
 function Marketplace(){
+
+  const navigate = useNavigate();
+  const handleClick = () => navigate('/NFTDetailPage');
 
   return(
     <div className="marketplace">
@@ -40,6 +47,8 @@ function Marketplace(){
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1>
       </Nav>
+
+      <button onClick={handleClick}>NFT detail page</button>
       
       <Row
         title="실시간 거래 작품"

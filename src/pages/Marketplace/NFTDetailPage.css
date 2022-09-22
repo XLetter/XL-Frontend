@@ -1,0 +1,290 @@
+#containerOne {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1120px;
+    height: 504px;
+    background: #d5d5d5;
+    top: 36px;
+    left: 11%;
+    right: 10%;
+  
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+      inset 2px 2px 0px #dbdbdb;
+  }
+  
+  #frame {
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 1100px;
+    height: 480px;
+    left: 10px;
+    top: 12px;
+  
+    border: 2px solid #ed497b;
+  }
+  
+  #nftImage {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 27px;
+    top: 27px;
+  }
+  
+  #nameWork {
+    position: absolute;
+    width: 78px;
+    height: 19px;
+    left: 550px;
+    top: 31px;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+  
+    color: #000000;
+  }
+  
+  #nftName {
+    position: absolute;
+    width: 321px;
+    height: 34px;
+    left: 550px;
+    top: 61px;
+  
+    font-family: 'ChicagoFLF';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    /* identical to box height */
+  
+    color: #ed497b;
+  }
+  
+  #novelThumbnail {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 560px;
+    top: 144px;
+  }
+  
+  #novelTitle {
+    position: absolute;
+    width: 96px;
+    height: 30px;
+    left: 537px;
+    top: 213px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+  
+    color: #000000;
+  }
+  
+  #readWork {
+    position: absolute;
+    width: 75px;
+    height: 15px;
+    left: 642px;
+    top: 167px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    /* identical to box height */
+    text-align: center;
+    background-color: transparent;
+  
+    color: #ed497b;
+  }
+  
+  #nftPriceContainer {
+    position: absolute;
+    width: 96px;
+    height: 36px;
+    left: 922px;
+    top: 301px;
+  
+    background: #ed497b;
+  }
+  
+  #nftPrice {
+    position: absolute;
+    width: 96px;
+    height: 34px;
+    left: 938px;
+    top: 308px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 26px;
+  
+    color: #ffffff;
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    /* identical to box height */
+  }
+  
+  #buyNft {
+    position: absolute;
+    width: 193px;
+    height: 34px;
+    left: calc(50% - 193px / 2 + 202.5px);
+    top: calc(50% - 34px / 2 + 135px);
+  
+    background: #ed497b;
+    /* Button Framing */
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+      inset 2px 2px 0px #dbdbdb;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    /* identical to box height, or 75% */
+    text-align: center;
+  
+    color: #ffffff;
+  }
+  
+  #makeOffer {
+    position: absolute;
+    width: 193px;
+    height: 34px;
+    left: calc(50% - 193px / 2 + 202.5px);
+    top: calc(50% - 34px / 2 + 182px);
+  
+    background: #bfbfbf;
+    /* block3 */
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+      inset 2px 2px 0px #dbdbdb;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    /* identical to box height, or 75% */
+    text-align: center;
+  
+    /* Black */
+    color: #000000;
+  }
+  
+  #containerTwo {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+  
+    /* Gray Main */
+    background: #bfbfbf;
+    /* Window Framing */
+    box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #dbdbdb, inset -2px -2px 0px #808080,
+      inset 2px 2px 0px #ffffff;
+    position: absolute;
+    width: 1120px;
+    height: 244px;
+    left: 11%;
+    top: 713px;
+  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  #details {
+    position: absolute;
+    width: 1110px;
+    height: 35px;
+    left: 5px;
+    top: 4px;
+  
+    background: #ed497b;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    color: #ffffff;
+  }
+  
+  #categoryItemHistory {
+    position: absolute;
+    width: 89px;
+    height: 19px;
+    left: 15px;
+    top: 44px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    color: #ed497b;
+  }
+  
+  #categoryOffers {
+    position: absolute;
+    width: 46px;
+    height: 19px;
+    left: 126px;
+    top: 44px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  #categoryDetails {
+    position: absolute;
+    width: 53px;
+    height: 19px;
+    left: 194px;
+    top: 44px;
+  
+    font-family: 'W95FA';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  #itemsHistory {
+    position: absolute;
+    left: 41px;
+    top: 85px;
+  }
