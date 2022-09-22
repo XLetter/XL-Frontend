@@ -1,8 +1,8 @@
 import React from 'react';
-import './xlseriesbl.css';
-import requests from '../../../requests/requests';
-import Grid from '../../../Grid/Grid';
-import {Nav,NavMenu,NavLink} from '../../../components/Navbar/NavbarElements'
+import './XLSeriesBL.css';
+import requests from '../../../requests/Requests';
+import Grid from '../../../grid/Grid';
+import {Nav,NavMenu,NavLink} from '../../../components/navBar/NavbarElements'
 
 function XlseriesBl(){
   return(

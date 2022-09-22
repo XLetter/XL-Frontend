@@ -1,8 +1,8 @@
 import React from 'react';
-import './collection.css';
-import Grid from '../../../Grid/Grid';
-import requests from '../../../requests/requests';
-import { Bars,Nav,Nav_Btn_1,NavBtn_1Link, NavMenu,NavLink} from "../../../components/Navbar/NavbarElements";
+import './Collection.css';
+import Grid from '../../../grid/Grid';
+import requests from '../../../requests/Requests';
+import { Bars,Nav,Nav_Btn_1,NavBtn_1Link, NavMenu,NavLink} from "../../../components/navBar/NavbarElements";
 
 
 function Collection(){

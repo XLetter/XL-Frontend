@@ -1,8 +1,8 @@
 import React from 'react';
-import './xloriginalhl.css';
-import requests from '../../../requests/requests';
-import Grid from '../../../Grid/Grid';
-import {Nav,NavMenu,NavLink} from '../../../components/Navbar/NavbarElements'
+import './XLOriginalHL.css';
+import requests from '../../../requests/Requests';
+import Grid from '../../../grid/Grid';
+import {Nav,NavMenu,NavLink} from '../../../components/navBar/NavbarElements'
 
 
 function XloriginalHl(){

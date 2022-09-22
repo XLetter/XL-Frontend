@@ -1,7 +1,7 @@
 import React from 'react';
-import './series.css';
-import Row from '../../Row/Row';
-import requests from '../../requests/requests';
+import './Series.css';
+import Row from '../../row/Row';
+import requests from '../../requests/Requests';
 
 function Series(){
   return(

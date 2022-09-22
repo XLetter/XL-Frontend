@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import caver from './kaikas/caver';
+import caver from './kaikas/Caver';
 
 import WalletInfo from './kaikas/WalletInfo';
 

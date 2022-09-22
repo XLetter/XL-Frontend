@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './original.css';
+import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import './home.css';
-import Row from '../../Row/Row';
-import requests from '../../requests/requests';
-import Banner from './Banner/banner'
+import './Home.css';
+import Row from '../../row/Row';
+import requests from '../../requests/Requests';
+import Banner from './banner/Banner'
 
 function Home(){
   return(

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from '../../../Axios/axios';
-import requests from '../../../requests/requests';
-import "./banner.css"
+import axios from '../../../axios/Axios';
+import requests from '../../../requests/Requests';
+import "./Banner.css"
 
 function Banner() {
     const [movie, setMovie] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천

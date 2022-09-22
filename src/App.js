@@ -1,29 +1,29 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home/home';
-import Original from './pages/Original/original';
-import Series from './pages/Series/series';
-import MyPage from './pages/MyPage/mypage';
-import Marketplace from './pages/Marketplace/Marketplace';
+import Home from './pages/home/Home';
+import Original from './pages/original/Original';
+import Series from './pages/series/Series';
+import MyPage from './pages/myPage/MyPage';
+import Marketplace from './pages/marketplace/Marketplace';
 
-import Xloriginalnft from './pages/Marketplace/Xloriginalnft/xloriginalnft';
-import NowTrend from './pages/Marketplace/NowTrend/nowtrend';
-import Collection from './pages/Marketplace/Collection/collection';
-import XloriginalBl from './pages/Original/XloriginalBl/xloriginalbl';
-import XloriginalGl from './pages/Original/XloriginalGl/xloriginalgl';
-import XloriginalHl from './pages/Original/XloriginalHl/xloriginalhl';
-import XlseriesBl from './pages/Series/XlseriesBl/xlseriesbl';
-import XlseriesGl from './pages/Series/XlserieslGl/xlseriesgl';
-import XlseriesHl from './pages/Series/XlseriesHl/xlserieshl';
+import Xloriginalnft from './pages/marketplace/XLOriginalNFT/XLOriginalNFT';
+import NowTrend from './pages/marketplace/nowTrend/NowTrend';
+import Collection from './pages/marketplace/collection/Collection';
+import XloriginalBl from './pages/original/XLOriginalBL/XLOriginalBL';
+import XloriginalGl from './pages/original/XLOriginalGL/XLOriginalGL';
+import XloriginalHl from './pages/original/XLOriginalHL/XLOriginalHL';
+import XlseriesBl from './pages/series/XLSeriesBL/XLSeriesBL';
+import XlseriesGl from './pages/series/XLSerieslGL/XLSeriesGL';
+import XlseriesHl from './pages/series/XLSeriesHL/XLSeriesHL';
 
-import IndividualNovelPageOriginal from './pages/Original/IndividualNovelPageOriginal';
-import SampleChapterOriginalOne from './pages/Original/sections/SampleChapterOriginalOne';
-import SampleChapterOriginalTwo from './pages/Original/sections/SampleChapterOriginalTwo';
-import SampleChapterOriginalThree from './pages/Original/sections/SampleChapterOriginalThree';
-import NFTDetailPage from './pages/Marketplace/NFTDetailPage';
+import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOriginal';
+import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOriginalOne';
+import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
+import SampleChapterOriginalThree from './pages/original/sections/SampleChapterOriginalThree';
+import NFTDetailPage from './pages/marketplace/NFTDetailPage';
 
 function App() {
   return (

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom'; 
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/navBar';
 import Main from "./Main";
-import Wallet from './Wallet';
-import Home from '../Home/home';
-import Original from '../Original/original';
-import Series from '../Series/series';
-import Marketplace from '../Marketplace/Marketplace';
+import Home from '../home/Home';
+import Original from '../original/Original';
+import Series from '../series/Series';
+import Marketplace from '../marketplace/Marketplace';
 import WalletConnect from './WalletConnect';
 
 // KakaoOauth 코드 없앰

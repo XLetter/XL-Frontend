@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from '../Axios/axios';
+import axios from '../axios/Axios';
 import './Grid.css';
 
 

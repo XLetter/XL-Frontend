@@ -1,8 +1,8 @@
 import React from 'react';
-import './original.css';
-import Row from '../../Row/Row';
-import requests from '../../requests/requests';
-import { Nav, NavLink, NavMenu} from "../../components/Navbar/NavbarElements";
+import './Original.css';
+import Row from '../../row/Row';
+import requests from '../../requests/Requests';
+import { Nav, NavLink, NavMenu} from "../../components/navBar/NavbarElements";
 
 function Original(){
   return(
