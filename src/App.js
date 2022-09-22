@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/home';
 import Original from './pages/Original/original';
@@ -19,6 +19,7 @@ import XlseriesBl from './pages/Series/XlseriesBl/xlseriesbl';
 import XlseriesGl from './pages/Series/XlserieslGl/xlseriesgl';
 import XlseriesHl from './pages/Series/XlseriesHl/xlserieshl';
 
+import IndividualNovelPageOriginal from './pages/Original/IndividualNovelPageOriginal';
 import SampleChapterOriginalOne from './pages/Original/sections/SampleChapterOriginalOne';
 import SampleChapterOriginalTwo from './pages/Original/sections/SampleChapterOriginalTwo';
 import SampleChapterOriginalThree from './pages/Original/sections/SampleChapterOriginalThree';
@@ -34,17 +35,18 @@ function App() {
         <Route path="/series" element={<Series />} />
         <Route path="/marketplace" element={<Marketplace />} />
         <Route path="/mypage/*" element={<MyPage />} />
-        
-        <Route path="/xloriginalnft" element={<Xloriginalnft />}/>
-        <Route path="/nowtrend" element={<NowTrend />}/>
-        <Route path="/collection" element={<Collection />}/>
-        <Route path="/xloriginalbl" element={<XloriginalBl />}/>
-        <Route path="/xloriginalgl" element={<XloriginalGl />}/>
-        <Route path="/xloriginalhl" element={<XloriginalHl />}/>
-        <Route path="/xlseriesbl" element={<XlseriesBl/>}/>
-        <Route path="/xlseriesgl" element={<XlseriesGl />}/>
-        <Route path="/xlserieshl" element={<XlseriesHl />}/>
 
+        <Route path="/xloriginalnft" element={<Xloriginalnft />} />
+        <Route path="/nowtrend" element={<NowTrend />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/xloriginalbl" element={<XloriginalBl />} />
+        <Route path="/xloriginalgl" element={<XloriginalGl />} />
+        <Route path="/xloriginalhl" element={<XloriginalHl />} />
+        <Route path="/xlseriesbl" element={<XlseriesBl />} />
+        <Route path="/xlseriesgl" element={<XlseriesGl />} />
+        <Route path="/xlserieshl" element={<XlseriesHl />} />
+
+        <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
         <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
         <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
