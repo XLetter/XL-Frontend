@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
+import { FavoriteButton } from './sections/Favorite';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
@@ -50,7 +51,9 @@ const IndividualNovelPageOriginal = () => {
 
         <div className="favAndRanking">
           <div className="fav">
-            <div id="favFigure">{/* <Favorite /> */}</div>
+            <div id="favFigure">
+              <FavoriteButton />
+            </div>
             <p id="favName">즐겨찾기</p>
           </div>
 
