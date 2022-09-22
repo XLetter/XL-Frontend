@@ -25,8 +25,9 @@ function App() {
         <Route path="/original" element={<Original />} />
         <Route path="/series" element={<Series />} />
         <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/mypage" element={<MyPage />} />
+        <Route path="/mypage/*" element={<MyPage />} />
         <Route path="/xloriginalnft" element={<Xloriginalnft />}/>
+
         <Route path="/nowtrend" element={<NowTrend />}/>
         <Route path="/collection" element={<Collection />}/>
         <Route path="/xloriginalbl" element={<XloriginalBl />}/>
@@ -35,8 +36,6 @@ function App() {
         <Route path="/xlseriesbl" element={<XlseriesBl/>}/>
         <Route path="/xlseriesgl" element={<XlseriesGl />}/>
         <Route path="/xlserieshl" element={<XlseriesHl />}/>
-
-
       </Routes>
     </Router>
   );
