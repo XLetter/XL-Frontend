@@ -1,4 +1,4 @@
-#container {
+#containerOne {
   position: relative;
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
   height: 504px;
   background: #d5d5d5;
   top: 36px;
-  left: 10%;
+  left: 11%;
   right: 10%;
 
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
@@ -15,12 +15,15 @@
 }
 
 #frame {
+  box-sizing: border-box;
+
   position: absolute;
   width: 1100px;
   height: 480px;
   left: 10px;
   top: 12px;
-  color: black;
+
+  border: 2px solid #ed497b;
 }
 
 #nftImage {
@@ -70,6 +73,23 @@
   height: 70px;
   left: 560px;
   top: 144px;
+}
+
+#novelTitle {
+  position: absolute;
+  width: 96px;
+  height: 30px;
+  left: 537px;
+  top: 213px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #000000;
 }
 
 #readWork {
@@ -170,4 +190,101 @@
 
   /* Black */
   color: #000000;
+}
+
+#containerTwo {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  /* Gray Main */
+  background: #bfbfbf;
+  /* Window Framing */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #dbdbdb, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #ffffff;
+  position: absolute;
+  width: 1120px;
+  height: 244px;
+  left: 11%;
+  top: 713px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#details {
+  position: absolute;
+  width: 1110px;
+  height: 35px;
+  left: 5px;
+  top: 4px;
+
+  background: #ed497b;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+#categoryItemHistory {
+  position: absolute;
+  width: 89px;
+  height: 19px;
+  left: 15px;
+  top: 44px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ed497b;
+}
+
+#categoryOffers {
+  position: absolute;
+  width: 46px;
+  height: 19px;
+  left: 126px;
+  top: 44px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+#categoryDetails {
+  position: absolute;
+  width: 53px;
+  height: 19px;
+  left: 194px;
+  top: 44px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+#itemsHistory {
+  position: absolute;
+  left: 41px;
+  top: 85px;
 }
