@@ -2,13 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  width: 1120px;
+  height: 504px;
+  background: gray;
+  top: 116px;
 }
 
 #nftImage {
   position: absolute;
-  width: 450px;
-  height: 450px;
+  align-items: center;
+  justify-content: center;
   left: 400px;
   top: 156px;
 
