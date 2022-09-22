@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import './NFTDetailPage.css';
+import { useNavigate } from 'react-router-dom';
+import './NFTDetailOffers.css';
 
-function NFTDetailPage() {
+function NFTDetailOffers() {
+  const navigate = useNavigate();
+  const handleClickItemHistory = () => navigate('/NFTDetailItemsHistory');
+  const handleClickDetails = () => navigate('/NFTDetailDetails');
+
   return (
     <div>
       <div id="containerOne" className="box">
@@ -20,42 +24,49 @@ function NFTDetailPage() {
       </div>
       <div id="containerTwo">
         <div id="details">Details</div>
-        <div id="categoryItemHistory">Item History</div>
-        <div id="categoryOffers">Offers</div>
-        <div id="categoryDetails">Details</div>
-        <table id="itemsHistory">
+        <div>
+          <div id="categoryItemHistory2" onClick={handleClickItemHistory}>
+            Item History
+          </div>
+          <div id="categoryOffers2">Offers</div>
+          <div id="categoryDetails2" onClick={handleClickDetails}>
+            Details
+          </div>
+        </div>
+        <hr id="line" />
+        <table id="itemsHistory2">
           <tr>
-            <th>Event</th>
             <th>Price</th>
+            <th>USD</th>
+            <th>Floor Difference</th>
             <th>From</th>
-            <th>To</th>
-            <th>Date</th>
+            <th>Expiration Date</th>
           </tr>
           <tr>
-            <th>Sale</th>
             <td>00XLT</td>
-            <td>0x394dkdkldks</td>
+            <td>$00</td>
+            <td>00%</td>
             <td>0x394dkdkldks</td>
             <td>2022.09.20</td>
           </tr>
           <tr>
-            <th>List</th>
             <td>00XLT</td>
-            <td>0x394dkdkldks</td>
+            <td>$00</td>
+            <td>00%</td>
             <td>0x394dkdkldks</td>
             <td>2022.09.20</td>
           </tr>
           <tr>
-            <th>Minted</th>
             <td>00XLT</td>
-            <td>0x394dkdkldks</td>
+            <td>$00</td>
+            <td>00%</td>
             <td>0x394dkdkldks</td>
             <td>2022.09.20</td>
           </tr>
           <tr>
-            <th>Date</th>
             <td>00XLT</td>
-            <td>0x394dkdkldks</td>
+            <td>$00</td>
+            <td>00%</td>
             <td>0x394dkdkldks</td>
             <td>2022.09.20</td>
           </tr>
@@ -65,4 +76,4 @@ function NFTDetailPage() {
   );
 }
 
-export default NFTDetailPage;
+export default NFTDetailOffers;

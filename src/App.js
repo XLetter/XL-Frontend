@@ -16,14 +16,17 @@ import XloriginalBl from './pages/original/XLOriginalBL/XLOriginalBL';
 import XloriginalGl from './pages/original/XLOriginalGL/XLOriginalGL';
 import XloriginalHl from './pages/original/XLOriginalHL/XLOriginalHL';
 import XlseriesBl from './pages/series/XLSeriesBL/XLSeriesBL';
-import XlseriesGl from './pages/series/XLSerieslGL/XLSeriesGL';
+import XlseriesGl from './pages/series/XLSeriesGL/XLSeriesGL';
 import XlseriesHl from './pages/series/XLSeriesHL/XLSeriesHL';
 
 import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOriginal';
 import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOriginalOne';
 import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
 import SampleChapterOriginalThree from './pages/original/sections/SampleChapterOriginalThree';
-import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailPage';
+
+import NFTDetailItemsHistory from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailItemsHistory/NFTDetailItemsHistory';
+import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailOffers/NFTDetailOffers';
+import NFTDetailDetails from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailDetails/NFTDetailDetails';
 
 function App() {
   return (
@@ -51,7 +54,9 @@ function App() {
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
         <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
 
-        <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
+        <Route path="/NFTDetailItemsHistory" element={<NFTDetailItemsHistory />} />
+        <Route path="/NFTDetailOffers" element={<NFTDetailOffers />} />
+        <Route path="/NFTDetailDetails" element={<NFTDetailDetails />} />
       </Routes>
     </Router>
   );
