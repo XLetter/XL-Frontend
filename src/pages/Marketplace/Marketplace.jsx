@@ -5,8 +5,6 @@ import Row from '../../Row/Row';
 import requests from '../../requests/requests';
 import Banner from './BannerMarketplace/bannermarketplace'
 
-//handleChange 코드 부분 다름
-
 function Marketplace(){
 
   return(
@@ -28,7 +26,7 @@ function Marketplace(){
         <Bars />
         <NavMenu>
           <NavLink to="/nowtrend" >
-            실시간 거래NFT
+            실시간 거래 NFT
           </NavLink>
           <NavLink to="/collection" >
             XL Series NFT
@@ -44,11 +42,11 @@ function Marketplace(){
       </Nav>
       
       <Row
-        title="실시간 거래작품"
+        title="실시간 거래 작품"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
       />
-      <Row title="작품별 Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/>
+      <Row title="작품 별 Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/>
       <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
 
     </div>
