@@ -39,7 +39,7 @@ class WalletConnect extends Component {
         if(klaytn === undefined) return
 
         const account = klaytn.selectedAddress
-        const balance = await caver.klay.selectedAddress
+        const balance = await caver.klay.getBalance(account)
         this.setState({
             account,
             balance: caver.utils.fromPeb(balance, 'KLAY'),
@@ -48,9 +48,18 @@ class WalletConnect extends Component {
 
     setNetworkInfo = () => {
         const { klaytn } = window
+        var networkInfo = ''
         if(klaytn === undefined) return
 
-        this.setState({ network: klaytn.networkVersion })
+        if(klaytn.networkVersion == '8217') {
+            networkInfo = 'Cypress'
+        } else if(klaytn.networkVersion == '1001') {
+            networkInfo = 'Baobab'
+        } else {
+            networkInfo = 'others'
+        }
+
+        this.setState({ network: networkInfo })
         klaytn.on('networkChanged', () => this.setNetworkInfo(klaytn.networkVersion))
     }
 
@@ -60,6 +69,8 @@ class WalletConnect extends Component {
         
         return (
             <div className="KaikasPage">
+                <h2>network: {network}</h2>
+                <br />
                 <div className="KaikasPage_main">
                     <WalletInfo address={account} balance={balance} />
                 </div>
