@@ -1,13 +1,10 @@
 import React, { useState, Component } from 'react';
 import { Routes, Route, useNavigate, NavLink } from 'react-router-dom'; 
-import Navbar from '../../components/navBar';
-import Main from "./Main";
 import Home from '../home/Home';
 import Original from '../original/Original';
 import Series from '../series/Series';
 import Marketplace from '../marketplace/Marketplace';
 import WalletConnect from './WalletConnect';
-import { Nav, NavMenu } from '../../components/navBar/NavbarElements';
 
 import MyNFTs from './components/MyNFTs';
 import BuyXLT from './components/BuyXLT';
