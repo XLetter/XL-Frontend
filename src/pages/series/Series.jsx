@@ -2,10 +2,27 @@ import React from 'react';
 import './Series.css';
 import Row from '../../row/Row';
 import requests from '../../requests/Requests';
+import { Nav, NavLink, NavMenu} from "../../components/navBar/NavbarElements";
 
 function Series(){
   return(
     <div className="series">
+            <Nav>  
+        <NavMenu>
+          <NavLink to="/series" >
+            ALL
+          </NavLink>
+          <NavLink to="/xlseriesbl" >
+            BL
+          </NavLink>
+          <NavLink to="/xlsereisgl" >
+            GL
+          </NavLink>
+          <NavLink to="/xlserieshl" >
+            HL
+          </NavLink>    
+        </NavMenu>  
+      </Nav>
       <Row
         title="New XL Series"
         fetchUrl={requests.fetchNetflixOriginals}

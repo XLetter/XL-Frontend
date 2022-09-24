@@ -1,53 +1,30 @@
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
 import logo from '../../assets/logo.svg';
 import '../../components/navBar/NavbarElements.css';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../../grid/Grid.css';
-import axios from '../../axios/Axios';
-import { Routes, Route, useParams } from "react-router-dom";
-import { Axios } from "axios";
-
-
+import axios from "../../axios/Axios";
+import { Routes, Route } from "react-router-dom";
+import useSearchApi from "./search";
 
 <Routes>
-    <Route path="home">
-        <Route path="instance/:movieId" element={<Axios/>}/>
-    </Route>
-</Routes>
+  <Route path="searchpage">
+    <Route path="searchpage/:movieId" element={<axios />} />
+  </Route>
+</Routes>;
 
 
 
-const Search = (initialSearchKeyword) => {
-    const [searchKeyword, setSearchKeyword] = useState(initialSearchKeyword);
-    const [data, setData] = useState(null);
-    const [isLoading, setIsLoading] = useState(false);
-    const [isError, setIsError] = useState(false);
   
-    useEffect(() => {
-      const fetchData = async () => {
-        setIsError(false);
-        setIsLoading(true);
   
-        try {
-          const result = await axios(
-            `${process.env.API_HOST}/search?keyword=${searchKeyword}`
-          );
-          setData(result.data);
-          setIsLoading(false);
-        } catch (error) {
-          setIsError(true);
-        }
-      };
-      fetchData();
-    }, [searchKeyword]);
-  
-    return [{ data, isLoading, isError }, setSearchKeyword];
-  };
+
+
+
+
 
 const SearchPage= () => {
   return (
-    <>
-        <Nav>
+  <>        <Nav>
             <NavLink to="/">
                 <img src={logo} classname="img" alt="logo" />
             </NavLink>
@@ -72,8 +49,10 @@ const SearchPage= () => {
             <table className={"table"}>
                 <tr>
                     <td>
+                        
                         <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
-                        <button>검색</button>
+                        <button>
+                            <NavLink to="/searchpage">검색</NavLink></button>
                     </td>
                 </tr>
             </table>
@@ -81,13 +60,17 @@ const SearchPage= () => {
                 <NavBtnLink to="profile">Profile</NavBtnLink>
             </NavBtn>
         </Nav>
-     
-        <Search />
+  
+          <div>
+             <useSearchApi/>
+            
+
+          </div>
+
+      
         
-        </>
-
     
-
+     </>
 
   );
 };

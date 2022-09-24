@@ -3,6 +3,10 @@ import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./NavbarElement
 import logo from '../../assets/logo.png';
 import './NavbarElements.css';
 
+
+
+
+
 const Navbar = () => {
   return (
     <>
@@ -34,9 +38,11 @@ const Navbar = () => {
                         <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
                         <button>
                             <NavLink to="/searchpage">검색</NavLink></button>
+                            
                     </td>
                 </tr>
             </table>
+        
             <NavBtn>
                 <NavBtnLink to="profile">Profile</NavBtnLink>
             </NavBtn>
