@@ -13,10 +13,10 @@ class WalletConnect extends Component {
         }
     }
 
-    componentDidMount() {
+    handleConnectBtnClick = () => {
         this.loadAccountInfo()
         this.setNetworkInfo()
-    }
+      }
 
     loadAccountInfo = async () => {
         const { klaytn } = window
@@ -63,7 +63,6 @@ class WalletConnect extends Component {
         klaytn.on('networkChanged', () => this.setNetworkInfo(klaytn.networkVersion))
     }
 
-    // div 이름 수정하기
     render() {
         const { account, balance, network } = this.state
         
@@ -74,6 +73,10 @@ class WalletConnect extends Component {
                 <div className="KaikasPage_main">
                     <WalletInfo address={account} balance={balance} />
                 </div>
+                <br />
+                <button onClick={this.handleConnectBtnClick}>
+                    Connect your Kaikas Wallet!
+                </button>
             </div>
         )
     }

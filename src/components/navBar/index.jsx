@@ -37,7 +37,7 @@ const Navbar = () => {
                 </tr>
             </table>
             <NavBtn>
-                <NavBtnLink to="profile">Profile</NavBtnLink>
+                <NavBtnLink to="mypage/wallet">Profile</NavBtnLink>
             </NavBtn>
         </Nav>
     </>
