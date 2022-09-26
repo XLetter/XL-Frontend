@@ -1,4 +1,5 @@
 import React from 'react';
+import { FavoriteButton } from '../Favorite';
 
 const popUpFavorite = (props) => {
   return (
@@ -6,6 +7,7 @@ const popUpFavorite = (props) => {
       <div className="box">
         <p className="popupText">
           <a href="/mypage/*">Log in to favorite this recipe!</a>
+          <FavoriteButton />
         </p>
         <span className="close-icon" onClick={props.handleClose}>
           x

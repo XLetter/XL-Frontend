@@ -26,7 +26,7 @@ function FavoriteButton(props) {
     return (
       <p className="logInMessage">
         <span>
-          <a href="/mypage/*">Log in to favorite this recipe!</a>
+          <a href="/mypage/*">Log in to favorite this novel!</a>
         </span>
       </p>
     );

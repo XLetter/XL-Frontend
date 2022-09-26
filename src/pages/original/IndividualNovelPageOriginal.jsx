@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Original.css';
-import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
 import { FavoriteButton } from './sections/Favorite';
 
@@ -12,6 +11,7 @@ import { FavoriteButton } from './sections/Favorite';
 const IndividualNovelPageOriginal = () => {
   const [Movie, setMovie] = useState([]);
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [favoriteButton, setFavoriteButton] = useState(false);
 
   const navigate = useNavigate();
   const handleClickOne = () => navigate('/SampleChapterOriginalOne');
