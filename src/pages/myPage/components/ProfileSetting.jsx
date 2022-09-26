@@ -2,15 +2,16 @@ import React from 'react'
 
 const ProfileSetting = () => {
   return (
-    <div 
-        style={{
-            display: 'flex', 
-            justifyContent: 'center', 
-            alignItems: 'center',
-            height: '90vh'
-        }}
-    >
-        <h1>profile setting</h1>
+    <div >
+        <h1>Settings</h1>
+        <br />
+        <h2>
+          Profile picture
+        </h2>
+        <br />
+        <h2>
+          Username
+        </h2>
     </div>
   );
 };
