@@ -51,9 +51,9 @@ class WalletConnect extends Component {
         var networkInfo = ''
         if(klaytn === undefined) return
 
-        if(klaytn.networkVersion == '8217') {
+        if(klaytn.networkVersion === '8217') {
             networkInfo = 'Cypress'
-        } else if(klaytn.networkVersion == '1001') {
+        } else if(klaytn.networkVersion === '1001') {
             networkInfo = 'Baobab'
         } else {
             networkInfo = 'others'
