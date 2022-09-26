@@ -1,16 +1,30 @@
-import React from 'react'
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./NavbarElements";
-import logo from '../../assets/logo.png';
-import './NavbarElements.css';
+import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
+import logo from '../../assets/logo.svg';
+import '../../components/navBar/NavbarElements.css';
+import React from 'react';
+import '../../grid/Grid.css';
+import axios from "../../axios/Axios";
+import { Routes, Route } from "react-router-dom";
+import useSearchApi from "./search";
+
+<Routes>
+  <Route path="searchpage">
+    <Route path="searchpage/:movieId" element={<axios />} />
+  </Route>
+</Routes>;
+
+
+
+  
+  
 
 
 
 
 
-const Navbar = () => {
+const SearchPage= () => {
   return (
-    <>
-        <Nav>
+  <>        <Nav>
             <NavLink to="/">
                 <img src={logo} classname="img" alt="logo" />
             </NavLink>
@@ -35,20 +49,30 @@ const Navbar = () => {
             <table className={"table"}>
                 <tr>
                     <td>
+                        
                         <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
                         <button>
                             <NavLink to="/searchpage">검색</NavLink></button>
-                            
                     </td>
                 </tr>
             </table>
-        
             <NavBtn>
-                <NavBtnLink to="mypage/wallet">Profile</NavBtnLink>
+                <NavBtnLink to="profile">Profile</NavBtnLink>
             </NavBtn>
         </Nav>
-    </>
+  
+          <div>
+             <useSearchApi/>
+            
+
+          </div>
+
+      
+        
+    
+     </>
+
   );
 };
 
-export default Navbar;
+export default SearchPage

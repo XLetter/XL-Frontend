@@ -18,7 +18,7 @@ import XloriginalHl from './pages/original/XLOriginalHL/XLOriginalHL';
 import XlseriesBl from './pages/series/XLSeriesBL/XLSeriesBL';
 import XlseriesGl from './pages/series/XLSeriesGL/XLSeriesGL';
 import XlseriesHl from './pages/series/XLSeriesHL/XLSeriesHL';
-
+import SearchPage from './pages/searchPage/SearchPage'
 import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOriginal';
 import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOriginalOne';
 import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
@@ -45,7 +45,7 @@ function App() {
         <Route path="/xlseriesbl" element={<XlseriesBl />} />
         <Route path="/xlseriesgl" element={<XlseriesGl />} />
         <Route path="/xlserieshl" element={<XlseriesHl />} />
-
+        <Route path="/SeaarchPage" element={<SearchPage/>}/>
         <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
         <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
