@@ -16,7 +16,7 @@ import XloriginalBl from './pages/original/XLOriginalBL/XLOriginalBL';
 import XloriginalGl from './pages/original/XLOriginalGL/XLOriginalGL';
 import XloriginalHl from './pages/original/XLOriginalHL/XLOriginalHL';
 import XlseriesBl from './pages/series/XLSeriesBL/XLSeriesBL';
-import XlseriesGl from './pages/series/XLSerieslGL/XLSeriesGL';
+import XlseriesGl from './pages/series/XLSeriesGL/XLSeriesGL';
 import XlseriesHl from './pages/series/XLSeriesHL/XLSeriesHL';
 
 import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOriginal';

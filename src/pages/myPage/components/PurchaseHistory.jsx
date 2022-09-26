@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Main = () => {
+const PurchaseHistory = () => {
   return (
     <div 
         style={{
@@ -10,9 +10,9 @@ const Main = () => {
             height: '90vh'
         }}
     >
-        <h1>Main in My page</h1>
+        <h1>purchase history</h1>
     </div>
   );
 };
 
-export default Main;
+export default PurchaseHistory;
