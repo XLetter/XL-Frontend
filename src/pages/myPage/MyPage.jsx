@@ -9,7 +9,7 @@ import WalletConnect from './WalletConnect';
 import MyNFTs from './components/MyNFTs';
 import BuyXLT from './components/BuyXLT';
 import PurchaseHistory from './components/history/PurchaseHistory';
-import ProfileSetting from './components/ProfileSetting';
+import ProfileSetting from './components/profileSetting/ProfileSetting';
 
 class MyPage extends Component {
   constructor(props) {
