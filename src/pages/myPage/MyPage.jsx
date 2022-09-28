@@ -6,6 +6,8 @@ import Series from '../series/Series';
 import Marketplace from '../marketplace/Marketplace';
 import WalletConnect from './WalletConnect';
 
+import './MyPage.css'
+
 import MyNFTs from './components/MyNFTs';
 import BuyXLT from './components/BuyXLT';
 import PurchaseHistory from './components/history/PurchaseHistory';
@@ -98,18 +100,20 @@ class MyPage extends Component {
   
         <br />
         <br />
-  
-        <div className='myNFTsView' style={{display: viewMyNFTs ? 'block' : 'none'}}>
-          <MyNFTs />
-        </div>
-        <div className='buyXLTView' style={{display: viewBuyXLT ? 'block' : 'none'}}>
-          <BuyXLT />
-        </div>
-        <div className='purchaseHistoryView' style={{display: viewPurchaseHistory ? 'block' : 'none'}}>
-          <PurchaseHistory />
-        </div>
-        <div className='profileSettingView' style={{display: viewProfileSetting ? 'block' : 'none'}}>
-          <ProfileSetting />
+
+        <div className='views'>
+          <div className='myNFTsView' style={{display: viewMyNFTs ? 'block' : 'none'}}>
+            <MyNFTs />
+          </div>
+          <div className='buyXLTView' style={{display: viewBuyXLT ? 'block' : 'none'}}>
+            <BuyXLT />
+          </div>
+          <div className='purchaseHistoryView' style={{display: viewPurchaseHistory ? 'block' : 'none'}}>
+            <PurchaseHistory />
+          </div>
+          <div className='profileSettingView' style={{display: viewProfileSetting ? 'block' : 'none'}}>
+            <ProfileSetting />
+          </div>
         </div>
   
       </div>

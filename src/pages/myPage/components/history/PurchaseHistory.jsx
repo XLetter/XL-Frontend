@@ -1,9 +1,10 @@
 import React from 'react'
+import './PurchaseHistory.css';
 import HistoryList from './HistoryList';
 
 const PurchaseHistory = () => {
   return (
-    <div>
+    <div className='PurchaseHistory'>
       <h2>purchase history</h2>
       <HistoryList />
     </div>

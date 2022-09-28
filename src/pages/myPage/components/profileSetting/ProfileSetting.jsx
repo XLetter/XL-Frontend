@@ -7,7 +7,7 @@ import SettingUsername from './SettingUsername';
 const ProfileSetting = () => {
 
   return (
-    <div >
+    <div className='ProfileSetting'>
         <h1>Settings</h1>
         <br />
         <h2>Profile</h2>

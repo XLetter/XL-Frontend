@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import caver from './kaikas/Caver';
+import './WalletConnect.css';
 
 import WalletInfo from './kaikas/WalletInfo';
 
@@ -74,7 +75,7 @@ class WalletConnect extends Component {
                     <WalletInfo address={account} balance={balance} />
                 </div>
                 <br />
-                <button onClick={this.handleConnectBtnClick}>
+                <button id="walletConnectBtn" onClick={this.handleConnectBtnClick}>
                     Connect your Kaikas Wallet!
                 </button>
             </div>
