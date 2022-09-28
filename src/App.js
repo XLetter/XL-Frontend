@@ -24,7 +24,6 @@ import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOri
 import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
 import SampleChapterOriginalThree from './pages/original/sections/SampleChapterOriginalThree';
 import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailPage';
-
 function App() {
   return (
     <Router>
@@ -34,7 +33,7 @@ function App() {
         <Route path="/original" element={<Original />} />
         <Route path="/series" element={<Series />} />
         <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/mypage/*" element={<MyPage />} />
+        <Route path="/mypage/" element={<MyPage />} />
 
         <Route path="/xloriginalnft" element={<Xloriginalnft />} />
         <Route path="/nowtrend" element={<NowTrend />} />
@@ -50,7 +49,6 @@ function App() {
         <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
         <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
-
         <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
       </Routes>
     </Router>

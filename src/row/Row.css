@@ -1,27 +1,35 @@
 .row {
-    margin-left: 20px;
+    
     width:100%;
+    justify-content: center;
 
 }
 
+
 .row__posters {
     display: flex;
-    width: 100%;
+    width: 980px;
     height: 100%;
     overflow-x: scroll;
-    padding: 20px;
+    
+    margin-left: auto;
+    margin-right:auto;
     
 }
 
 .row__posters::-webkit-scrollbar {
-    display: none; /* 스크롤 노출 유무 (작동엔 영향 없음) */
+    width: 1000px;
+    display: auto;
+    overflow: visible;
+   /* 스크롤 노출 유무 (작동엔 영향 없음) */
 }
 
 .row__poster {
     object-fit: contain;
-    width: 100%;
+    width: 980px;
     max-height: 100px;
-    margin-right: 10px;
+    margin-left: auto;
+    margin-right:auto;
     transition: transform 450ms;
 }
 
