@@ -1,15 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './BuyXLT.css';
 
 const BuyXLT = () => {
   return (
-    <div 
-        style={{
-            display: 'flex', 
-            justifyContent: 'center', 
-            alignItems: 'center',
-            height: '90vh'
-        }}
-    >
+    <div className='BuyXLT'>
         <h1>buy xlt</h1>
     </div>
   );
