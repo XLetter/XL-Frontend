@@ -69,13 +69,6 @@ class MyPage extends Component {
 
     return (
       <div className='MyPage'>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/original" element={<Original />} />
-          <Route path="/series" element={<Series />} />
-          <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/mypage/wallet" element={<MyPage />} />
-        </Routes>
   
         <WalletConnect />
   
