@@ -98,10 +98,15 @@ text-decoration: none;
 `;
 
 export const NavBtnLink = styled(Link)`
-    border-radius: 4px;
-    background: #256ce1;
-    padding: 10px 22px;
-    color: #fff;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden;
+
+    border-radius: 70%;
+    margin-right: 10px;
+
     border: none;
     outline: none;
     cursor: pointer;
