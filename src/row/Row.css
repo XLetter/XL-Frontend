@@ -5,6 +5,13 @@
 
 }
 
+#row_title {
+    font-family: msSansSerif;
+}
+
+#row_content {
+    font-family: w95fa;
+}
 
 .row__posters {
     display: flex;

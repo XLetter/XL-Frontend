@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './ProfileSetting.css';
-import profile from '../../../../assets/user_profile.jpeg';
+import profile from '../../../../assets/image/user_profile.jpeg';
 import SettingUserProfile from './SettingUserProfile';
 import SettingUsername from './SettingUsername';
 

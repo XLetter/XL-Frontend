@@ -69,7 +69,7 @@ class WalletConnect extends Component {
         
         return (
             <div className="KaikasPage">
-                <h2>network: {network}</h2>
+                <h2 id="network_info">network: {network}</h2>
                 <br />
                 <div className="KaikasPage_main">
                     <WalletInfo address={account} balance={balance} />

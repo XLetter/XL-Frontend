@@ -24,7 +24,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 id='row_title'>{title}</h2>
 
       <div className="row__posters">
         {movies.map((movie) => (
@@ -35,7 +35,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
               src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
               alt={movie.name}
             />
-            <p>{movie.name}</p>
+            <p id='row_content'>{movie.name}</p>
           </div>
         ))}
 
