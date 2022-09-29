@@ -1,5 +1,5 @@
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/image/logo.svg';
 import '../../components/navBar/NavbarElements.css';
 import React from 'react';
 import '../../grid/Grid.css';
