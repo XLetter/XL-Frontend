@@ -9,5 +9,79 @@
 }
 
 .componentChangeBtnWrapper {
-    margin-left: 50px;
+    display: flex;
+    background:  #D9D9D9;;
+    height: 100px;
+    width: 100vw;
+
+    padding: 0.5rem;
+    margin-left: 10px;
+
+    z-index: 10;
+    
+    outline: black 2px solid;
+}
+
+#myNFTs {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-family: w95fa;
+}
+
+#buyXLT {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-family: w95fa;
+}
+
+#history {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-family: w95fa;
+}
+
+#profile {
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    font-family: w95fa;
+}
+
+.componentChangeBtnWrapper > .active > button {
+    color: palevioletred;
 }

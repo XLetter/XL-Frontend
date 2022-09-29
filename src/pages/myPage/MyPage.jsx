@@ -69,13 +69,7 @@ class MyPage extends Component {
 
     return (
       <div className='MyPage'>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/original" element={<Original />} />
-          <Route path="/series" element={<Series />} />
-          <Route path="/marketplace" element={<Marketplace />} />
-          <Route path="/mypage/wallet" element={<MyPage />} />
-        </Routes>
+        
   
         <WalletConnect />
   
@@ -83,17 +77,17 @@ class MyPage extends Component {
         <br />
 
         <div className='componentChangeBtnWrapper'>
-          <button 
-            name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
-              My NFTs
+          <button id='myNFTs'name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+            My NFTs
           </button>
-          <button name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
+          
+          <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
             buy XLT
           </button>
-          <button name='historyBtn' onClick={this.handleHistoryBtnClick}>
+          <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
             Purchase History
           </button>
-          <button name='profileBtn' onClick={this.handleProfileBtnClick}>
+          <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
             Setting
           </button>
         </div>
