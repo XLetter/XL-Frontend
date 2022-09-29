@@ -1,5 +1,5 @@
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
-import logo from '../../assets/image/xletter_logo.svg';
+import xletter_logo from '../../assets/image/xletter_logo.svg';
 import '../../components/navBar/NavbarElements.css';
 import React from 'react';
 import '../../grid/Grid.css';

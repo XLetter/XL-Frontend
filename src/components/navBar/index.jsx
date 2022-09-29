@@ -1,8 +1,8 @@
 import React from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./NavbarElements";
-import logo from '../../assets/image/xletter_logo.svg';
+import xletter_logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
-import user_profile_ from '../../assets/user_profile_.png';
+import user_profile_ from '../../assets/image/user_profile_.png';
 
 
 
