@@ -1,5 +1,5 @@
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
-import logo from '../../assets/image/logo.svg';
+import logo from '../../assets/image/xletter_logo.svg';
 import '../../components/navBar/NavbarElements.css';
 import React from 'react';
 import '../../grid/Grid.css';
@@ -26,7 +26,7 @@ const SearchPage= () => {
   return (
   <>        <Nav>
             <NavLink to="/">
-                <img src={logo} classname="img" alt="logo" />
+                <img src={xletter_logo} classname="img" alt="logo" />
             </NavLink>
             <Bars />
             <NavMenu>

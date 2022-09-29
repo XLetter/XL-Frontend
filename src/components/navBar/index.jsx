@@ -2,6 +2,7 @@ import React from 'react'
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "./NavbarElements";
 import logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
+import user_profile_ from '../../assets/user_profile_.png';
 
 
 
@@ -12,7 +13,7 @@ const Navbar = () => {
     <>
         <Nav>
             <NavLink to="/">
-                <img src={logo} classname="img" alt="logo" />
+                <img src={xletter_logo} classname="img" alt="xletter_logo" />
             </NavLink>
             <Bars />
             <NavMenu>
@@ -44,7 +45,7 @@ const Navbar = () => {
             </table>
         
             <NavBtn>
-                <NavBtnLink to="mypage/wallet">Profile</NavBtnLink>
+                <NavBtnLink to="mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
             </NavBtn>
         </Nav>
     </>
