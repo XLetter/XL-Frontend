@@ -35,12 +35,13 @@ function Xloriginalnft(){
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1>
       </Nav>
+      <div className='gr_mk_xn'>
 
       <Grid
         title="XL Original NFT"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} 
-      />
+      /></div>
     </div>
   );
 }

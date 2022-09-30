@@ -36,12 +36,12 @@ function NowTrend(){
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1> 
       </Nav>
-
+      <div className='gr_mk_nt'>
       <Grid
         title="최신 트렌드"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} 
-      />
+      /></div>
     </div>
   );
 }
