@@ -29,7 +29,7 @@ const Navbar = () => {
                 <NavLink to="/marketplace" activeStyle>
                     Marketplace
                 </NavLink>
-                <NavLink to="/mypage/wallet" activeStyle>
+                <NavLink to="/mypage" activeStyle>
                     My Page
                 </NavLink>
             </NavMenu>
