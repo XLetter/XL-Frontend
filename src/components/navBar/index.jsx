@@ -30,7 +30,7 @@ const Navbar = () => {
                 <NavLink to="/marketplace" activeStyle>
                     Marketplace
                 </NavLink>
-                <NavLink to="/mypage" activeStyle>
+                <NavLink to="/mypage/wallet" activeStyle>
                     My Page
                 </NavLink>
             </NavMenu>
@@ -46,7 +46,7 @@ const Navbar = () => {
             </table>
         
             <NavBtn>
-                <NavBtnLink to="mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
+                <NavBtnLink to="/mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
             </NavBtn>
         </Nav>
       
