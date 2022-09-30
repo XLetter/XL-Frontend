@@ -35,6 +35,7 @@ function Banner() {
     다른 효과를 주기 위함. (서로 영향을 끼치지 않게 하기 위해) 
     */
     return (
+       <div className='banner_bg'>
         <header className="banner"
             style={{
                 backgroundSize: "cover",
@@ -59,6 +60,8 @@ function Banner() {
 
             <div className="banner--fadeBottom" />
         </header>
+        </div>
+        
     );
 
 }

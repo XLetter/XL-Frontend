@@ -16,6 +16,7 @@ function Marketplace(){
   const handleClick = () => navigate('/NFTDetailPage');
 
   return(
+    <div className="row_mp_out">
     <div className="marketplace">
       <Banner />
 
@@ -53,17 +54,17 @@ function Marketplace(){
       </Nav>
 
       <button onClick={handleClick}>NFT detail page</button>
-      <div className="Row_mp_1">
+     <div className="row_mp"><div className="row_mp_in">
       <Row 
         title="Recent Selling"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
-      /></div>
-      <div className="Row_mp_2">
-      <Row  title="Novel Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div>
-      <div className="Row_mp_3">
+      /></div></div>
+      <div className="row_mp"><div className="row_mp_in">
+      <Row  title="Novel Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div></div>
+      <div className="row_mp"><div className="row_mp_in">
       <Row title="New Nft" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
-      </div>
+      </div></div></div>
       </div>
 
     

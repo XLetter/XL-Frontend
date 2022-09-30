@@ -4,7 +4,8 @@
     width:100vw;
 
   }
-  .row_hm_3{
+  .row_hm{
+    padding-left: 15px;
     margin-left:auto;
      margin-right:auto;
      margin-top:44px;
@@ -13,6 +14,7 @@
    height: 335px;
    left: 402px;
    top: 586px;
+   justify-content: space-between;
    
    /* background gray */
    
@@ -23,160 +25,8 @@
    
    
    }
-   .row_hm_1{
-     margin-left:auto;
-     margin-right:auto;
-     margin-top:44px;
-     margin-bottom:44px;    
-     width: 1000px;
-   height: 335px;
-   left: 402px;
-   top: 586px;
-   
-   /* background gray */
-   
-   background: #D5D5D5;
-   /* block_outside */
-   
-   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-   
-   
-   }
-   .row_hm_2{
-     margin-left:auto;
-     margin-right:auto;
-     margin-top:44px;
-     margin-bottom:44px;
-       
-     width: 1000px;
-   height: 335px;
-   left: 402px;
-   top: 586px;
-   
-   /* background gray */
-   
-   background: #D5D5D5;
-   /* block_outside */
-   
-   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-   
-   
-   }
-
-   .row_hm_4{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:44px;
-    margin-bottom:44px;    
-    width: 1000px;
-  height: 335px;
-  left: 402px;
-  top: 586px;
-  
-  /* background gray */
-  
-  background: #D5D5D5;
-  /* block_outside */
-  
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-  
-  
-  }
-  .row_hm_5{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:44px;
-    margin-bottom:44px;
-      
-    width: 1000px;
-  height: 335px;
-  left: 402px;
-  top: 586px;
-  
-  /* background gray */
-  
-  background: #D5D5D5;
-  /* block_outside */
-  
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-  
-  
-  }
-  .row_hm_6{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:44px;
-    margin-bottom:44px;    
-    width: 1000px;
-  height: 335px;
-  left: 402px;
-  top: 586px;
-  
-  /* background gray */
-  
-  background: #D5D5D5;
-  /* block_outside */
-  
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-  
-  
-  }
-  .row_hm_7{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:44px;
-    margin-bottom:44px;
-      
-    width: 1000px;
-  height: 335px;
-  left: 402px;
-  top: 586px;
-  
-  /* background gray */
-  
-  background: #D5D5D5;
-  /* block_outside */
-  
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-  
-  
-  }
  
-  .row_hm_8{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:44px;
-    margin-bottom:44px;
-      
-    width: 1000px;
-  height: 335px;
-  left: 402px;
-  top: 586px;
-  
-  /* background gray */
-  
-  background: #D5D5D5;
-  /* block_outside */
-  
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-  
-  
-  }
-  .row_hm_3_in{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:32px;
-    margin-bottom:17px;     
-    width: 968px;
-    height: 286px;
-    left: 16px;
-    top: 32px;
-    
-    border: 2px solid #666666;
-  
-   
-   }
-   .row_hm_1_in{
+   .row_hm_in{
      margin-left:auto;
      margin-right:auto;
      margin-top:32px;
@@ -185,103 +35,16 @@
      height: 286px;
      left: 16px;
      top: 32px;
+     justify-content: space-between;
      
      border: 2px solid #666666;
    
    }
-   .row_hm_2_in{
-     margin-left:auto;
-     margin-right:auto;
-     margin-top:32px;
-     margin-bottom:17px;  
-       
-     width: 968px;
-     height: 286px;
-     left: 16px;
-     top: 32px;
-     
-     border: 2px solid #666666;
-   
-   
+   .row_hm_out{
+    width: 100vw;
+    background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
+    justify-content: space-between;
+    padding-left: 263px;
    }
 
-   .row_hm_4_in{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:32px;
-    margin-bottom:17px;     
-    width: 968px;
-    height: 286px;
-    left: 16px;
-    top: 32px;
-    
-    border: 2px solid #666666;
-  
-  
-  }
-  .row_hm_5_in{
-    margin-left:auto;
-     margin-right:auto;
-     margin-top:32px;
-     margin-bottom:17px;     
-     width: 968px;
-     height: 286px;
-     left: 16px;
-     top: 32px;
-     
-     border: 2px solid #666666;
    
-  
-  }
-  .row_hm_6_in{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:32px;
-    margin-bottom:17px;     
-    width: 968px;
-    height: 286px;
-    left: 16px;
-    top: 32px;
-    
-    border: 2px solid #666666;
-  
-  
-  }
-  .row_hm_7_in{
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:32px;
-    margin-bottom:17px;     
-    width: 968px;
-    height: 286px;
-    left: 16px;
-    top: 32px;
-    
-    border: 2px solid #666666;
-  
-  
-  }
- 
-  .row_hm_8_in{
-    margin-left:auto;
-     margin-right:auto;
-     margin-top:32px;
-     margin-bottom:17px;     
-     width: 968px;
-     height: 286px;
-     left: 16px;
-     top: 32px;
-     
-     border: 2px solid #666666;
-   
-  }
- 
- 
-  
-
-  
-
- 
-  
-
-  

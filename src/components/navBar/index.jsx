@@ -8,9 +8,10 @@ import user_profile_ from '../../assets/user_profile_.png';
 
 
 
+
 const Navbar = () => {
   return (
-    <>
+   
         <Nav>
             <NavLink to="/">
                 <img src={xletter_logo} classname="img" alt="xletter_logo" />
@@ -48,7 +49,7 @@ const Navbar = () => {
                 <NavBtnLink to="mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
             </NavBtn>
         </Nav>
-    </>
+      
   );
 };
 
