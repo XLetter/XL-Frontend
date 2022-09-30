@@ -23,12 +23,12 @@ function XloriginalGl(){
             </NavLink>
           </NavMenu>
         </Nav>
-      
+        <div className='gr_or_gl'>
         <Grid
         title="XL Original GL"
         fetchUrl={requests.fetchHorrorMovies}
         isLargeRow={true} 
-        />
+        /></div>
     </div>
   );
 }

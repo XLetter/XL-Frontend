@@ -18,8 +18,7 @@ table{
   display: flex;
   flex-direction:column;
   width:100vw;
-  background: linear-gradient(0deg, #04BEFE 0%, #4481EB 100%);
-
+  background-color:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
 }
 .Row_mp_2{
  margin-left:auto;

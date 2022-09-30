@@ -55,14 +55,14 @@ function Marketplace(){
       <button onClick={handleClick}>NFT detail page</button>
       <div className="Row_mp_1">
       <Row 
-        title="실시간 거래 작품"
+        title="Recent Selling"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
       /></div>
       <div className="Row_mp_2">
-      <Row  title="작품 별 Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div>
+      <Row  title="Novel Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div>
       <div className="Row_mp_3">
-      <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
+      <Row title="New Nft" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
       </div>
       </div>
 
