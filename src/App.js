@@ -33,7 +33,9 @@ function App() {
         <Route path="/original" element={<Original />} />
         <Route path="/series" element={<Series />} />
         <Route path="/marketplace" element={<Marketplace />} />
-        <Route path="/mypage" element={<MyPage />} />
+
+        <Route path="/mypage/wallet" element={<MyPage />} />
+
 
         <Route path="/xloriginalnft" element={<Xloriginalnft />} />
         <Route path="/nowtrend" element={<NowTrend />} />
