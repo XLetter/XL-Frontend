@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import { Routes, Route, useNavigate, NavLink } from 'react-router-dom'; 
+import { Routes, Route, useNavigate, NavLink } from 'react-router-dom';
 import Home from '../home/Home';
 import Original from '../original/Original';
 import Series from '../series/Series';
@@ -65,22 +65,22 @@ class MyPage extends Component {
   }
 
   render() {
-    const {viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting} = this.state;
+    const { viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
 
     return (
       <div className='MyPage'>
 
-  
+
         <WalletConnect />
-  
+
         <br />
         <br />
 
         <div className='componentChangeBtnWrapper'>
-          <button id='myNFTs'name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+          <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
             My NFTs
           </button>
-          
+
           <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
             buy XLT
           </button>
@@ -91,25 +91,25 @@ class MyPage extends Component {
             Setting
           </button>
         </div>
-  
+
         <br />
         <br />
 
         <div className='views'>
-          <div className='myNFTsView' style={{display: viewMyNFTs ? 'block' : 'none'}}>
+          <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
             <MyNFTs />
           </div>
-          <div className='buyXLTView' style={{display: viewBuyXLT ? 'block' : 'none'}}>
+          <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
             <BuyXLT />
           </div>
-          <div className='purchaseHistoryView' style={{display: viewPurchaseHistory ? 'block' : 'none'}}>
+          <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
             <PurchaseHistory />
           </div>
-          <div className='profileSettingView' style={{display: viewProfileSetting ? 'block' : 'none'}}>
+          <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
             <ProfileSetting />
           </div>
         </div>
-  
+
       </div>
     );
   }

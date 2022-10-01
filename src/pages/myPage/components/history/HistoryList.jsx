@@ -4,6 +4,8 @@ import CommonTable from '../table/CommonTable';
 import CommonTableColumn from '../table/CommonTableColumn';
 import CommonTableRow from '../table/CommonTableRow'
 
+import './HistoryList.css'
+
 import historyList from './Data';
 
 const HistoryList = props => {
@@ -13,9 +15,9 @@ const HistoryList = props => {
     useEffect(() => {
         setDataList(historyList);
     }, [])
- 
-    return(
-        <>
+
+    return (
+        <div className="history_table">
             <CommonTable headerName={['Date', 'Amount[XLT]', 'Amount[KLAY]']}>
                 {
                     dataList ? dataList.map((item, index) => {
@@ -29,7 +31,7 @@ const HistoryList = props => {
                     }) : ''
                 }
             </CommonTable>
-        </>
+        </div>
     )
 }
 
