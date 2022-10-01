@@ -24,11 +24,15 @@ import useSearchApi from "./search";
 
 const SearchPage= () => {
   return (
-        
-          <div>
-             <useSearchApi/>
-            
+      
+  
+          <div className="search_out">
+            <div className="search">
+                
 
+             <useSearchApi/>
+                     
+            </div>
           </div>
 
       
