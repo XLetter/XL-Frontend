@@ -35,32 +35,32 @@ function Banner() {
     다른 효과를 주기 위함. (서로 영향을 끼치지 않게 하기 위해) 
     */
     return (
-       <div className='banner_bg'>
+        <div className='banner_bg'>
+        <a href="http://localhost:3000/IndividualNovelPageOriginal">
         <header className="banner"
-            style={{
-                backgroundSize: "cover",
-                backgroundImage: `url(
-                "http://43.200.24.50:8080${webnovel?.thumbnailUrl}"
-                )`,
-                backgroundPosition: "center center",
-            }}
-        >
-            <div className="banner__contents">
-                <h1 className="banner__title">
-                    {webnovel?.title || webnovel?.writerName }
-                </h1>
+        style={{
+            backgroundSize: "cover",
+            backgroundImage: `url(
+            "http://43.200.24.50:8080/webnovel/${webnovel?.thumbnailUrl}"
+            )`,
+            backgroundPosition: "center center",
+        }}
+    >
+        <div className="banner__contents">
+            <h1 className="banner__title" >
+                {webnovel?.title || webnovel?.writerName}
+            </h1>
 
-                
+            
 
-                
-            </div>
-
-            <div className="banner--fadeBottom" />
-        </header>
+              
         </div>
-        
-    );
 
+        <div className="banner--fadeBottom" />
+    </header>
+    </a>
+    </div>
+    );
 }
 
 export default Banner

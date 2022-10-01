@@ -28,15 +28,18 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       <div className="row__posters">
         {webnovels&&webnovels.map((webnovel) => (
+          <a href='http://localhost:3000/IndividualNovelPageOriginal'>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <img
               key={webnovel.webnovelId}
               className={`${isLargeRow ? ' row__posterLarge' : 'row__poster'}`}
               src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
               alt={webnovel.title}
+              
             />
             <p id='row_content'>{webnovel.title}</p>
           </div>
+          </a>
         ))}
 
         
