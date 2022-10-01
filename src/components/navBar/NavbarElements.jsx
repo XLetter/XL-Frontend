@@ -2,16 +2,17 @@ import styled from 'styled-components';
 import { NavLink as Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
+
 export const Nav = styled.nav`
     background:  #D9D9D9;;
     height: 60px;
     display: flex;
     justify-content: center;
     margin:auto;
-    padding: 0.5rem calc((100vw - 1000px)/2);
+    padding: 0.5rem calc((100vw - 1120px)/2);
     z-index: 10;
     outline: black 2px solid;
-    width: 1000px;
+    width: 1120px;
 left: 400px;
 top: 0px
 `

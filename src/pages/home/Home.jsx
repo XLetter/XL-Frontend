@@ -8,22 +8,27 @@ import Banner from '../../components/banner/Banner'
 function Home(){
   
   return(
+    
+
     <div className="home">
+      <div className="row_hm_out">
       <Banner />
+      
+      <div className='row_hm'>
+        <div className="row_hm_in">
       <Row
-        title="New X-Letter"
+        title="XL Original"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
         
-     />
-     <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow={true} />
-      <Row title="Top Rated" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
-      <Row title="XL Originals" fetchUrl={requests.fetchActionMovies} isLargeRow={true}/>
-      <Row title="XL Series 인기작품" fetchUrl={requests.fetchComedyMovies} isLargeRow={true}/>
-      <Row title="XL Series-BL" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true}/>
-      <Row title="XL Series-GL" fetchUrl={requests.fetchRomanceMovies} isLargeRow={true}/>
-      <Row title="XL Series-HL" fetchUrl={requests.fetchDocumentaries} isLargeRow={true}/>
-
+     /></div></div>
+     <div className='row_hm'><div className='row_hm_in'>
+     <Row title="XL Series" fetchUrl={requests.fetchTrending} isLargeRow={true} /></div></div>
+     <div className='row_hm'><div className='row_hm_in'>
+      <Row title="Now Voting" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} /></div></div>
+      <div className='row_hm'><div className='row_hm_in'><Row title="Trending" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
+      
+    </div>
     </div>
   );
 }

@@ -8,28 +8,29 @@ import user_profile_ from '../../assets/image/user_profile_.png';
 
 
 
+
 const Navbar = () => {
   return (
-    <>
+   
         <Nav>
             <NavLink to="/">
                 <img src={xletter_logo} classname="img" alt="xletter_logo" />
             </NavLink>
             <Bars />
             <NavMenu>
-                <NavLink to="/" activeStyle>
+                <NavLink to="/" >
                     Home
                 </NavLink>
-                <NavLink to="/original" activeStyle>
+                <NavLink to="/original" >
                     XL Original
                 </NavLink>
-                <NavLink to="/series" activeStyle>
+                <NavLink to="/series" >
                     XL Series
                 </NavLink>
-                <NavLink to="/marketplace" activeStyle>
+                <NavLink to="/marketplace" >
                     Marketplace
                 </NavLink>
-                <NavLink to="/mypage/wallet" activeStyle>
+                <NavLink to="/mypage/wallet" >
                     My Page
                 </NavLink>
             </NavMenu>
@@ -38,17 +39,17 @@ const Navbar = () => {
                     <td>
                         <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
                         <button>
-                            <NavLink to="/searchpage">검색</NavLink></button>
+                            <NavLink to="/SearchPage">검색</NavLink></button>
                             
                     </td>
                 </tr>
             </table>
         
             <NavBtn>
-                <NavBtnLink to="mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
+                <NavBtnLink to="/mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
             </NavBtn>
         </Nav>
-    </>
+      
   );
 };
 

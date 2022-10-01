@@ -23,12 +23,13 @@ function XlseriesHl(){
           </NavLink>  
         </NavMenu>
       </Nav>
-      
+      <div className='gr_sr_hl_out'>
+<div className=' .gr_sr_hl'>
       <Grid
         title="XLSeries HL"
         fetchUrl={requests.fetchHorrorMovies}
         isLargeRow={true} 
-      />
+      /></div></div>
     </div>
   );
 }

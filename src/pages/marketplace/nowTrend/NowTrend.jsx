@@ -13,7 +13,7 @@ function NowTrend(){
           <td>
             <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} 
             search/>
-            <button>검색</button>
+            <button>검색<NavLink to="/SearchPage" /></button>
           </td>
         </tr>
       </table>
@@ -36,12 +36,12 @@ function NowTrend(){
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1> 
       </Nav>
-
+      <div className='gr_mk_nt'>
       <Grid
         title="최신 트렌드"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true} 
-      />
+      /></div>
     </div>
   );
 }

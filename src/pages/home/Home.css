@@ -1,10 +1,50 @@
-* {
-    margin: 0;
-  }
-
   .home{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width:100vw;
 
   }
+  .row_hm{
+    padding-left: 15px;
+    margin-left:auto;
+     margin-right:auto;
+     margin-top:44px;
+     margin-bottom:44px;    
+     width: 1120px;
+   height: 335px;
+   left: 402px;
+   top: 586px;
+   justify-content: center;
+   
+   /* background gray */
+   
+   background: #D5D5D5;
+   /* block_outside */
+   
+   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+   
+   
+   }
+ 
+   .row_hm_in{
+     margin-left:auto;
+     margin-right:auto;
+     margin-top:32px;
+     margin-bottom:17px;     
+     width: 1088px;
+     height: 286px;
+     left: 16px;
+     top: 32px;
+     justify-content: center;
+     
+     border: 2px solid #666666;
+   
+   }
+   .row_hm_out{
+    width: 100vw;
+    background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
+    justify-content: center;
+    padding-left: 210px;
+   }
+
+   

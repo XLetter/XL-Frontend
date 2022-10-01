@@ -2,10 +2,13 @@
     color: white;
     object-fit: contain;
     height: 448px;
+    justify-content: space-between;
+    width: 1120px;
+    
 }
 
 .banner__contents {
-    margin-left: 30px;
+    width: 1120px;
     padding-top: 140px;
     height: 190px;
 }
@@ -56,3 +59,4 @@
     );
 }
 /* banner 이미지 밑 부분이랑 Row 첫 줄 이어지는 부분 자연스럽게 gradient 적용 */
+

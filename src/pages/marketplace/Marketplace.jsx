@@ -8,7 +8,8 @@ import Banner from '../../components/banner/marketplaceBanner/MarketplaceBanner'
 import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
 import { API_URL, API_KEY } from '../../components/Config';
-import useSearchApi from '../searchPage/search';
+import SearchPage from '../searchPage/SearchPage';
+
 
 function Marketplace(){
 
@@ -16,6 +17,7 @@ function Marketplace(){
   const handleClick = () => navigate('/NFTDetailPage');
 
   return(
+    <div className="row_mp_out">
     <div className="marketplace">
       <Banner />
 
@@ -25,7 +27,7 @@ function Marketplace(){
           <td>
             <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} 
              search/>
-            <button>검색<useSearchApi/></button>
+            <button>검색<NavLink to="/SearchPage" /></button>
             
             <Nav_Btn_1>
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
@@ -53,17 +55,17 @@ function Marketplace(){
       </Nav>
 
       <button onClick={handleClick}>NFT detail page</button>
-      <div className="Row_mp_1">
+     <div className="row_mp"><div className="row_mp_in">
       <Row 
-        title="실시간 거래 작품"
+        title="Recent Selling"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
-      /></div>
-      <div className="Row_mp_2">
-      <Row  title="작품 별 Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div>
-      <div className="Row_mp_3">
-      <Row title="최근 추가된 Collection" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
-      </div>
+      /></div></div>
+      <div className="row_mp"><div className="row_mp_in">
+      <Row  title="Novel Collection" fetchUrl={requests.fetchTrending} isLargeRow={true}/></div></div>
+      <div className="row_mp"><div className="row_mp_in">
+      <Row title="New Nft" fetchUrl={requests.fetchTopRated} isLargeRow={true}/>
+      </div></div></div>
       </div>
 
     

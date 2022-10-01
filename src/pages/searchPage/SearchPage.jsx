@@ -9,7 +9,7 @@ import useSearchApi from "./search";
 
 <Routes>
   <Route path="searchpage">
-    <Route path="searchpage/:movieId" element={<axios />} />
+    <Route path="searchpage/:webnovelId" element={<axios />} />
   </Route>
 </Routes>;
 

@@ -69,6 +69,7 @@ class MyPage extends Component {
 
     return (
       <div className='MyPage'>
+
   
         <WalletConnect />
   

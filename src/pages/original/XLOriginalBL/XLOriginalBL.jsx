@@ -23,11 +23,15 @@ function XloriginalBl(){
             </NavLink>   
           </NavMenu> 
         </Nav>
+        <div className="gr_or_bl_out">
+        <div className='gr_or_bl'>
         <Grid
         title="XL Original BL"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
         />
+        </div>
+        </div>
     </div>
   );
 }

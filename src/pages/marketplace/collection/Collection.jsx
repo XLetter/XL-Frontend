@@ -13,7 +13,7 @@ function Collection(){
           <tr>
             <td>
               <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} search />
-              <button>검색</button>
+              <button>검색<NavLink to="/SearchPage" /></button>
             </td>
           </tr>
         </table>
@@ -37,12 +37,12 @@ function Collection(){
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1>
       </Nav>
-    
+      <div className='gr_mk_cl'>
       <Grid
       title="XL 시리즈 NFT"
       fetchUrl={requests.fetchNetflixOriginals}
       isLargeRow={true} 
-      />
+      /></div>
     </div>
   );
 }

@@ -4,14 +4,14 @@ import requests from '../../../requests/Requests';
 import "./MarketplaceBanner.css"
 
 function BannerMarketplace() {
-    const [movie, setMovie] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천
+    const [webnovel, setWebnovel] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천
 
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchNetflixOriginals);
-            setMovie(
-                request.data.results[
-                Math.floor(Math.random() * request.data.results.length - 1)
+            setWebnovel(
+                request.data[
+                Math.floor(Math.random() * (request.data.length - 1))
                 ]
             );
             //[novel1,novel2,novel3 ,,,] 중에 random으로 하나 뽑기
@@ -22,11 +22,11 @@ function BannerMarketplace() {
         fetchData();
     }, []);
 
-    console.log(movie);
+   
 
-    function truncate(str, n) {
-        return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-    }
+    //function truncate(str, n) {
+   //     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
+    //}
     //description이 길어졌을 때 말줄임표(...) 생성
 
 
@@ -35,30 +35,29 @@ function BannerMarketplace() {
     다른 효과를 주기 위함. (서로 영향을 끼치지 않게 하기 위해) 
     */
     return (
+        <div className='banner_bg'>
         <header className="banner"
             style={{
                 backgroundSize: "cover",
                 backgroundImage: `url(
-                "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
+                "http://43.200.24.50:8080/webnovel/${webnovel?.thumbnailUrl}"
                 )`,
                 backgroundPosition: "center center",
             }}
         >
             <div className="banner__contents">
                 <h1 className="banner__title">
-                    {movie?.title || movie?.name || movie?.original_name}
+                    {webnovel?.title || webnovel?.writerName}
                 </h1>
 
                 
 
-                <h1 className="banner__description">
-                    {truncate(movie?.overview, 150)}
-                    {/* 위에서 설정한 truncate 함수 사용 */}
-                </h1>
+               
             </div>
 
             <div className="banner--fadeBottom" />
         </header>
+        </div>
     );
 
 }

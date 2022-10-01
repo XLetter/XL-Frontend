@@ -33,7 +33,9 @@ function App() {
         <Route path="/original" element={<Original />} />
         <Route path="/series" element={<Series />} />
         <Route path="/marketplace" element={<Marketplace />} />
+
         <Route path="/mypage/wallet" element={<MyPage />} />
+
 
         <Route path="/xloriginalnft" element={<Xloriginalnft />} />
         <Route path="/nowtrend" element={<NowTrend />} />
@@ -44,7 +46,7 @@ function App() {
         <Route path="/xlseriesbl" element={<XlseriesBl />} />
         <Route path="/xlseriesgl" element={<XlseriesGl />} />
         <Route path="/xlserieshl" element={<XlseriesHl />} />
-        <Route path="/SeaarchPage" element={<SearchPage/>}/>
+        <Route path="/SearchPage" element={<SearchPage/>}/>
         <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
         <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
