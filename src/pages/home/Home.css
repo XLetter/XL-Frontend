@@ -10,11 +10,11 @@
      margin-right:auto;
      margin-top:44px;
      margin-bottom:44px;    
-     width: 1000px;
+     width: 1120px;
    height: 335px;
    left: 402px;
    top: 586px;
-   justify-content: space-between;
+   justify-content: center;
    
    /* background gray */
    
@@ -31,11 +31,11 @@
      margin-right:auto;
      margin-top:32px;
      margin-bottom:17px;     
-     width: 968px;
+     width: 1088px;
      height: 286px;
      left: 16px;
      top: 32px;
-     justify-content: space-between;
+     justify-content: center;
      
      border: 2px solid #666666;
    
@@ -43,8 +43,8 @@
    .row_hm_out{
     width: 100vw;
     background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
-    justify-content: space-between;
-    padding-left: 263px;
+    justify-content: center;
+    padding-left: 210px;
    }
 
    

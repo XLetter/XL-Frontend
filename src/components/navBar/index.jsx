@@ -18,19 +18,19 @@ const Navbar = () => {
             </NavLink>
             <Bars />
             <NavMenu>
-                <NavLink to="/" activeStyle>
+                <NavLink to="/" >
                     Home
                 </NavLink>
-                <NavLink to="/original" activeStyle>
+                <NavLink to="/original" >
                     XL Original
                 </NavLink>
-                <NavLink to="/series" activeStyle>
+                <NavLink to="/series" >
                     XL Series
                 </NavLink>
-                <NavLink to="/marketplace" activeStyle>
+                <NavLink to="/marketplace" >
                     Marketplace
                 </NavLink>
-                <NavLink to="/mypage/wallet" activeStyle>
+                <NavLink to="/mypage/wallet" >
                     My Page
                 </NavLink>
             </NavMenu>

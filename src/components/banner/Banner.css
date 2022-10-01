@@ -3,12 +3,12 @@
     object-fit: contain;
     height: 448px;
     justify-content: space-between;
-    
+    width: 1120px;
     
 }
 
 .banner__contents {
-    
+    width: 1120px;
     padding-top: 140px;
     height: 190px;
 }

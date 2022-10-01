@@ -17,20 +17,17 @@ function Home(){
       <div className='row_hm'>
         <div className="row_hm_in">
       <Row
-        title="New X-Letter"
+        title="XL Original"
         fetchUrl={requests.fetchNetflixOriginals}
         isLargeRow={true}
         
      /></div></div>
      <div className='row_hm'><div className='row_hm_in'>
-     <Row title="Trending Now" fetchUrl={requests.fetchTrending} isLargeRow={true} /></div></div>
+     <Row title="XL Series" fetchUrl={requests.fetchTrending} isLargeRow={true} /></div></div>
      <div className='row_hm'><div className='row_hm_in'>
-      <Row title="Top Rated" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} /></div></div>
-      <div className='row_hm'><div className='row_hm_in'><Row title="XL Originals" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
-      <div className='row_hm'><div className='row_hm_in'><Row title="Trend-XL Series" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
-    <div className='row_hm'><div className='row_hm_in'><Row title="XL Series-BL" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
-     <div className='row_hm'><div className='row_hm_in'><Row title="XL Series-GL" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
-      <div className='row_hm'><div className='row_hm_in'><Row title="XL Series-HL" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true}/></div></div>
+      <Row title="Now Voting" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} /></div></div>
+      <div className='row_hm'><div className='row_hm_in'><Row title="Trending" fetchUrl={requests.fetchNetflixOriginals}isLargeRow={true}/></div></div>
+      
     </div>
     </div>
   );

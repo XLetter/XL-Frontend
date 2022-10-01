@@ -11,7 +11,7 @@
      margin-right:auto;
      margin-top:44px;
      margin-bottom:44px;    
-     width: 1000px;
+     width: 1120px;
    height: 335px;
    left: 402px;
    top: 586px;
@@ -32,7 +32,7 @@
      margin-right:auto;
      margin-top:32px;
      margin-bottom:17px;     
-     width: 968px;
+     width: 1088px;
      height: 286px;
      left: 16px;
      top: 32px;
@@ -45,5 +45,5 @@
     width: 100vw;
     background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
     justify-content: space-between;
-    padding-left: 263px;
+    padding-left: 290px;
    }

@@ -11,7 +11,7 @@ function Banner() {
             const request = await axios.get(requests.fetchNetflixOriginals);
             setWebnovel(
                 request.data[
-                Math.floor(Math.random() * request.data.length - 1)
+                Math.floor(Math.random() *( request.data.length - 1))
                 ]
             );
             //[novel1,novel2,novel3 ,,,] 중에 random으로 하나 뽑기
