@@ -8,7 +8,8 @@ import Banner from '../../components/banner/marketplaceBanner/MarketplaceBanner'
 import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
 import { API_URL, API_KEY } from '../../components/Config';
-import useSearchApi from '../searchPage/search';
+import SearchPage from '../searchPage/SearchPage';
+
 
 function Marketplace(){
 
@@ -26,7 +27,7 @@ function Marketplace(){
           <td>
             <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} 
              search/>
-            <button>검색<useSearchApi/></button>
+            <button>검색<NavLink to="/SearchPage" /></button>
             
             <Nav_Btn_1>
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>

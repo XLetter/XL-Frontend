@@ -14,7 +14,7 @@ function Xloriginalnft(){
                 <td>
                   <input type="text" className={'input-sm'} placeholder={"작품을 입력하세요"} 
                   search/>
-                  <button>검색</button>
+                  <button>검색<NavLink to="/SearchPage" /></button>
                 </td>
               </tr>
             </table>

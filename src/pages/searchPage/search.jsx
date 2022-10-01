@@ -4,7 +4,7 @@ import React, {useEffect,useState}from "react";
 function axiosTest() {
   return axios.get(fetchURL).then(response => response.data)
 }
-const fetchURL="https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213";
+const fetchURL="http://43.200.24.50:8080/apis/webnovel/search?keyword={keyword}";
 const useSearchApi = (initialSearchKeyword) => {
     const [searchKeyword, setSearchKeyword] = useState(initialSearchKeyword);
     const [data, setData] = useState(null);
@@ -20,7 +20,7 @@ const useSearchApi = (initialSearchKeyword) => {
   
         try {
           const result = await axiosTest(
-            `${process.env.API_HOST}/search?keyword=${searchKeyword}`
+            `apis/webnovel/search?keyword={keyword}`
           );
           setData(result.data);
           setIsLoading(false);
