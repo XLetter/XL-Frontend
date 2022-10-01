@@ -29,6 +29,7 @@ const SearchPage= () => {
           <div className="search_out">
             <div className="search">
                 
+
              <useSearchApi/>
                      
             </div>
