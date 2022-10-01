@@ -36,7 +36,8 @@ function BannerMarketplace() {
     */
     return (
         <div className='banner_bg'>
-        <header className="banner"
+            <a href="http://localhost:3000/IndividualNovelPageOriginal">
+            <header className="banner"
             style={{
                 backgroundSize: "cover",
                 backgroundImage: `url(
@@ -46,18 +47,20 @@ function BannerMarketplace() {
             }}
         >
             <div className="banner__contents">
-                <h1 className="banner__title">
+                <h1 className="banner__title" >
                     {webnovel?.title || webnovel?.writerName}
                 </h1>
 
                 
 
-               
+                  
             </div>
 
             <div className="banner--fadeBottom" />
         </header>
+        </a>
         </div>
+        
     );
 
 }
