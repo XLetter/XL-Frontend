@@ -8,7 +8,7 @@ function NFTDetailDetails() {
   const handleClickOffers = () => navigate('/NFTDetailOffers');
 
   return (
-    <div>
+    <div className="Details">
       <div id="containerOne" className="box">
         <div id="frame"></div>
         <img id="nftImage"></img>

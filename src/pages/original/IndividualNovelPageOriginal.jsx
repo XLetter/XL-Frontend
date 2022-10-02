@@ -4,14 +4,12 @@ import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
-import requests from '../../requests/Requests';
-import axios from 'axios';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
 const IndividualNovelPageOriginal = () => {
-  const [movie, setMovie] = useState([]);
+  const [Movie, setMovie] = useState([]);
   const [buttonPopup, setButtonPopup] = useState(false);
 
   const navigate = useNavigate();
@@ -23,23 +21,14 @@ const IndividualNovelPageOriginal = () => {
 
   async function getMovie() {
     const response = await fetch(api_url);
+    console.log(response);
     const data = await response.json();
-    const { original_title, overview, illustration_writer } = data;
+    const { original_title, summary, illustrationWrtier } = data;
 
     document.getElementById('workName').textContent = original_title;
-    document.getElementById('summary').textContent = overview;
-    document.getElementById('authorInfo').textContent = illustration_writer;
+    document.getElementById('summary').textContent = summary;
+    document.getElementById('illustrationWrtier').textContent = illustrationWrtier;
   }
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const request = await axios.get(requests.fetchNovelInfo);
-  //     setWebNovel(request.data[Math.floor(Math.random() * (request.data.length - 1))]);
-
-  //     return request;
-  //   }
-  //   fetchData();
-  // }, []);
 
   getMovie();
 
@@ -55,8 +44,8 @@ const IndividualNovelPageOriginal = () => {
           </div>
 
           <div id="workName">작품 제목</div>
-          <div id="authorInfo">{``}</div>
-          <p id="summary">{``}</p>
+          <div id="illustrationWrtier">author {''}</div>
+          <p id="summary">{''}</p>
 
           <button id="readFirst" onClick={handleClickOne}>
             Read First Episode

@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+div {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
 #containerOne {
   position: relative;
   display: flex;
@@ -7,7 +15,7 @@
   height: 504px;
   background: #d5d5d5;
   top: 36px;
-  left: 11%;
+  /* left: 11%; */
   right: 10%;
 
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
