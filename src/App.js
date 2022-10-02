@@ -18,12 +18,22 @@ import XloriginalHl from './pages/original/XLOriginalHL/XLOriginalHL';
 import XlseriesBl from './pages/series/XLSeriesBL/XLSeriesBL';
 import XlseriesGl from './pages/series/XLSeriesGL/XLSeriesGL';
 import XlseriesHl from './pages/series/XLSeriesHL/XLSeriesHL';
-import SearchPage from './pages/searchPage/SearchPage'
+import SearchPage from './pages/searchPage/SearchPage';
+
 import IndividualNovelPageOriginal from './pages/original/IndividualNovelPageOriginal';
 import SampleChapterOriginalOne from './pages/original/sections/SampleChapterOriginalOne';
 import SampleChapterOriginalTwo from './pages/original/sections/SampleChapterOriginalTwo';
 import SampleChapterOriginalThree from './pages/original/sections/SampleChapterOriginalThree';
-import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailPage';
+
+// import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailItemsHistory/NFTDetailItemsHistory';
+// import NFTDetailItemsHistory from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailItemsHistory/NFTDetailItemsHistory';
+// import NFTDetailOffers from './pages/marketplacemarketplaceElements/NFTDetail/nftDetailOffers/NFTDetailOffer';
+// import NFTDetailDetails from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailDetails/NFTDetailDetails';
+
+import NFTDetailDetails from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailDetails/NFTDetailDetails';
+import NFTDetailItemsHistory from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailItemsHistory/NFTDetailItemsHistory';
+import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailOffers/NFTDetailOffers';
+
 function App() {
   return (
     <Router>
@@ -36,7 +46,6 @@ function App() {
 
         <Route path="/mypage/wallet" element={<MyPage />} />
 
-
         <Route path="/xloriginalnft" element={<Xloriginalnft />} />
         <Route path="/nowtrend" element={<NowTrend />} />
         <Route path="/collection" element={<Collection />} />
@@ -46,12 +55,16 @@ function App() {
         <Route path="/xlseriesbl" element={<XlseriesBl />} />
         <Route path="/xlseriesgl" element={<XlseriesGl />} />
         <Route path="/xlserieshl" element={<XlseriesHl />} />
-        <Route path="/SearchPage" element={<SearchPage/>}/>
+        <Route path="/SearchPage" element={<SearchPage />} />
         <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
         <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
         <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
         <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
-        <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
+
+        {/* <Route path="/NFTDetailPage" element={<NFTDetailPage />} /> */}
+        <Route path="/NFTDetailItemsHistory" element={<NFTDetailItemsHistory />} />
+        <Route path="/NFTDetailOffers" element={<NFTDetailOffers />} />
+        <Route path="/NFTDetailDetails" element={<NFTDetailDetails />} />
       </Routes>
     </Router>
   );
