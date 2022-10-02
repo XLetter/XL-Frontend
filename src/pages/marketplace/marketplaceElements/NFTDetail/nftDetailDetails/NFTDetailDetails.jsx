@@ -9,7 +9,7 @@ function NFTDetailDetails() {
 
   return (
     <div className="Details">
-      <div id="containerOne" className="box">
+      <div className="containerOne">
         <div id="frame"></div>
         <img id="nftImage"></img>
         <p id="nameWork">Novel Title</p>
@@ -22,7 +22,7 @@ function NFTDetailDetails() {
         <button id="buyNft">Buy Now</button>
         <button id="makeOffer">Make Offer</button>
       </div>
-      <div id="containerTwo3">
+      <div className="containerTwo3">
         <div id="details">Details</div>
         <div>
           <div id="categoryItemHistory3" onClick={handleClickItemHistory}>

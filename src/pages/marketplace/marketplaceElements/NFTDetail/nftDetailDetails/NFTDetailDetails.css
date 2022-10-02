@@ -1,25 +1,25 @@
-* {
-  margin: 0;
-}
-div {
-  display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
-}
-#containerOne {
-  position: relative;
+.Details {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1120px;
-  height: 504px;
-  background: #d5d5d5;
-  top: 36px;
-  /* left: 11%; */
-  right: 10%;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100vw;
+}
 
+.containerOne {
+  position: absolute;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+  width: 1119px;
+  height: 504px;
+  top: 350px;
+
+  background: #d5d5d5;
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
     inset 2px 2px 0px #dbdbdb;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #frame {
@@ -200,9 +200,10 @@ div {
   color: #000000;
 }
 
-#containerTwo3 {
-  position: absolute;
-
+.containerTwo3 {
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   /* Gray Main */
   background: #bfbfbf;
   /* Window Framing */
@@ -210,9 +211,9 @@ div {
     inset 2px 2px 0px #ffffff;
   position: absolute;
   width: 1120px;
-  height: 365px;
-  left: 125px;
-  top: 713px;
+  height: 244px;
+  /* left: 125px;*/
+  top: 763px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
