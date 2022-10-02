@@ -4,32 +4,30 @@ import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
+import axios from 'axios';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
-const IndividualNovelPageOriginal = () => {
-  const [Movie, setMovie] = useState([]);
+const IndividualNovelPageOriginal = (webnovel_id) => {
+  const [Movie, setMovie] = useState(webnovel_id);
   const [buttonPopup, setButtonPopup] = useState(false);
+
+  const api = `http://43.200.24.50:8080/apis/webnovel/{$webnovel_id}`;
 
   const navigate = useNavigate();
   const handleClickOne = () => navigate('/SampleChapterOriginalOne');
   const handleClickTwo = () => navigate('/SampleChapterOriginalTwo');
   const handleClickThree = () => navigate('/SampleChapterOriginalThree');
 
-  const api_url = `http://43.200.24.50:8080/webnovel/1`;
-
   async function getMovie() {
-    const response = await fetch(api_url);
-    console.log(response);
-    const data = await response.json();
-    const { original_title, summary, illustrationWrtier } = data;
-
-    document.getElementById('workName').textContent = original_title;
-    document.getElementById('summary').textContent = summary;
-    document.getElementById('illustrationWrtier').textContent = illustrationWrtier;
+    const response = await fetch('http://43.200.24.50:8080/apis/webnovel/1')
+      .then((response) => response.json())
+      .then((response) => {
+        document.getElementById('summary').textContent = response.summary;
+        document.getElementById('illustrationWrtier').textContent = response.illustrationWrtier;
+      });
   }
-
   getMovie();
 
   return (
@@ -44,7 +42,7 @@ const IndividualNovelPageOriginal = () => {
           </div>
 
           <div id="workName">작품 제목</div>
-          <div id="illustrationWrtier">author {''}</div>
+          <div id="illustrationWrtier"> {''}</div>
           <p id="summary">{''}</p>
 
           <button id="readFirst" onClick={handleClickOne}>
