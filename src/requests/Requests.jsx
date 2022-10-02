@@ -7,7 +7,7 @@ const requests = {
   fetchHorrorMovies: `apis/webnovel?type=0&genre=gl`,
   fetchRomanceMovies: `apis/webnovel?type=0&genre=hl`,
   fetchDocumentaries: `apis/webnovel?type=1&genre=bl`,
-  fetchNovelInfo: `apis/webnovel/0`,
+  fetchNovelInfo: `apis/webnovel/{webnovel_id}`,
 };
 
 export default requests;
