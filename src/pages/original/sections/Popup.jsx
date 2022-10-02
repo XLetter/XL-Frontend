@@ -9,14 +9,21 @@ function Popup(props) {
 
   return props.trigger ? (
     <div className="popup">
-      <div className="popup-inner">
-        <button className="buyButton" onClick={handleClick}>
-          3 XLT로 구매하기
-        </button>
-        <button className="cancelButton" onClick={() => props.setTrigger(false)}>
-          취소하기
-        </button>
-        {props.children}
+      <div id="inner">
+        <div id="title"> ;XLetter</div>
+        <div className="popup-inner">
+          <div id="question">Would you like to purchase Episode 3?</div>
+          <div id="remaining">Retained Token: nn Token</div>
+          <div id="buttons">
+            <button className="buyButton" onClick={handleClick}>
+              Buy with 3 XLT
+            </button>
+            <button className="cancelButton" onClick={() => props.setTrigger(false)}>
+              Cancel
+            </button>
+            {props.children}
+          </div>
+        </div>
       </div>
     </div>
   ) : (
