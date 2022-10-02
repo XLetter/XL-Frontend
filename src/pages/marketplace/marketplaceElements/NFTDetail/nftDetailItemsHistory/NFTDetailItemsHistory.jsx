@@ -8,7 +8,7 @@ function NFTDetailItemsHistory() {
   const handleClickDetails = () => navigate('/NFTDetailDetails');
 
   return (
-    <div>
+    <div className="itemsHistory">
       <div id="containerOne" className="box">
         <div id="frame"></div>
         <img id="nftImage"></img>

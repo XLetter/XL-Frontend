@@ -1,3 +1,8 @@
+.itemsHistory {
+  position: relative;
+  flex-direction: column;
+}
+
 #containerOne {
   position: relative;
   display: flex;
@@ -6,9 +11,12 @@
   width: 1120px;
   height: 504px;
   background: #d5d5d5;
-  top: 36px;
-  left: 11%;
-  right: 10%;
+  top: 108px;
+  /* left: 11%;
+  right: 10%; */
+
+  left: 50%;
+  right: 50%;
 
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
     inset 2px 2px 0px #dbdbdb;
@@ -193,6 +201,8 @@
 }
 
 #containerTwo {
+  left: 50%;
+  right: 50%;
   position: absolute;
 
   /* Gray Main */
@@ -203,8 +213,8 @@
   position: absolute;
   width: 1120px;
   height: 244px;
-  left: 125px;
-  top: 713px;
+  /* left: 125px;
+  top: 713px; */
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
