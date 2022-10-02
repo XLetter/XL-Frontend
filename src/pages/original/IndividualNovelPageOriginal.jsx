@@ -42,7 +42,7 @@ const IndividualNovelPageOriginal = () => {
           </div>
 
           <div id="workName">작품 제목</div>
-          <div id="authorInfo">일러스트 {''}</div>
+          <div id="authorInfo">author {''}</div>
           <p id="summary">{''}</p>
 
           <button id="readFirst" onClick={handleClickOne}>
@@ -92,9 +92,9 @@ const IndividualNovelPageOriginal = () => {
           </div>
 
           <div className="readChapterThree">
-            <div id="episodeTitle">episode title and number = 3{''}</div>
+            <div id="episodeTitleThree">episode title and number = 3{''}</div>
             <div id="date ">{''}</div>
-            <button id="read" onClick={() => setButtonPopup(true)}>
+            <button id="readThree" onClick={() => setButtonPopup(true)}>
               Read
             </button>
 

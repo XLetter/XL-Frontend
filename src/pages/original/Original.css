@@ -40,7 +40,7 @@
   width: 180px;
   height: 270px;
   left: 53.28px;
-  top: 61px;
+  top: 39px;
 }
 
 .XLOriginalButton {
@@ -48,7 +48,7 @@
   width: 62px;
   height: 15px;
   left: 262px;
-  top: 136px;
+  top: 42px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -63,7 +63,6 @@
   width: 84px;
   height: 24px;
   left: 262px;
-  top: 63px;
 
   background: transparent;
   border: 1px solid #000000;
@@ -74,7 +73,7 @@
   width: 95px;
   height: 29px;
   left: 262px;
-  top: 95px;
+  top: 73px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -93,7 +92,7 @@
   width: 252px;
   height: 17px;
   left: 262px;
-  top: 132px;
+  top: 110px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -110,7 +109,7 @@
   width: 586px;
   height: 51px;
   left: 262px;
-  top: 175px;
+  top: 153px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -129,7 +128,13 @@
   width: 160px;
   height: 40px;
   left: 262px;
-  top: 287px;
+  top: 265px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 
   background: #ffffff;
   border: 1px solid #000000;
@@ -143,7 +148,13 @@
   width: 160px;
   height: 40px;
   left: 438px;
-  top: 287px;
+  top: 265px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 
   background: #ffffff;
   border: 1px solid #000000;
@@ -162,7 +173,7 @@
   width: 52px;
   height: 17px;
   left: 978px;
-  top: 120px;
+  top: 108px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -178,7 +189,7 @@
   width: 50px;
   height: 50px;
   left: 1469px;
-  top: 132px;
+  top: 110px;
   border: 2px;
 }
 
@@ -187,7 +198,7 @@
   width: 56px;
   height: 17px;
   left: 1042px;
-  top: 120px;
+  top: 108px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -207,7 +218,7 @@
   width: 1119px;
   height: 973px;
   /* left: 403px; */
-  top: 830px;
+  top: 630px;
 
   background: #b7bbc1;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
@@ -392,7 +403,7 @@
 #readOne {
   position: absolute;
   left: 908px;
-  top: 29px;
+  top: 27px;
 
   width: 76px;
   height: 25px;
@@ -417,10 +428,9 @@
 
 #episodeTitleTwo {
   position: absolute;
-  width: 113px;
   height: 24px;
   left: 18px;
-  top: 691px;
+  top: 30px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -450,13 +460,9 @@
 }
 
 #readTwo {
-  box-sizing: border-box;
   position: absolute;
-
-  width: 80px;
-  height: 40px;
   left: 908px;
-  top: 708x;
+  top: 27px;
 
   width: 76px;
   height: 25px;
@@ -481,10 +487,10 @@
 
 #episodeTitleThree {
   position: absolute;
-  width: 113px;
+
   height: 24px;
   left: 18px;
-  top: 890px;
+  top: 30px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -514,13 +520,9 @@
 }
 
 #readThree {
-  box-sizing: border-box;
-
-  position: relative;
-  width: 80px;
-  height: 40px;
+  position: absolute;
   left: 908px;
-  top: 900px;
+  top: 27px;
 
   width: 76px;
   height: 25px;
