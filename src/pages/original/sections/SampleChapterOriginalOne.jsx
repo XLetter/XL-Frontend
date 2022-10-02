@@ -19,21 +19,23 @@ function SampleChapterOriginalOne() {
   // }
   return (
     <div className="wholestory">
-      <body>
-        <h1>Episode 1</h1>
-        <p className="storyContent"> blablabla{''}</p>
-        <p className="question">Question: {''}</p>
-        <button id="optionA">1번선택지</button>
-        <button id="optionB">2번선택지</button>
-        <div className="bottomButtons">
-          <button id="contentButton">Content</button>
-          <button id="commentButton">Comment</button>
-          <button id="previousButton">Previous</button>
-          <button id="nextButton" onClick={handleClickAfter}>
-            Next
-          </button>
-        </div>
-      </body>
+      <div id="innerSquare">
+        <body>
+          <h1 id="episodeTitle">Episode 1</h1>
+          <p className="storyContent"> blablabla{''}</p>
+          <p className="question">Question: {''}</p>
+          <button id="optionA">1번선택지</button>
+          <button id="optionB">2번선택지</button>
+          <div className="bottomButtons">
+            <button id="contentButton">Content</button>
+            <button id="commentButton">Comment</button>
+            <button id="previousButton">Previous</button>
+            <button id="nextButton" onClick={handleClickAfter}>
+              Next
+            </button>
+          </div>
+        </body>
+      </div>
     </div>
   );
 }
