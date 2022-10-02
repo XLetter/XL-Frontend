@@ -24,11 +24,11 @@ function SampleChapterOriginalOne() {
           <h1 id="episodeTitle">Episode 1</h1>
           <p className="storyContent"> blablabla{''}</p>
           <p className="question">Question: {''}</p>
-          <button id="optionA">1번선택지</button>
-          <button id="optionB">2번선택지</button>
+          <button id="optionA">Option A</button>
+          <button id="optionB">Option B</button>
           <div className="bottomButtons">
             <button id="contentButton">Content</button>
-            <button id="commentButton">Comment</button>
+            {/* <button id="commentButton">Comment</button> */}
             <button id="previousButton">Previous</button>
             <button id="nextButton" onClick={handleClickAfter}>
               Next

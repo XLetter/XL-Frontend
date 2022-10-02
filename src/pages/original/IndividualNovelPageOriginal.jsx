@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
+import requests from '../../requests/Requests';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
@@ -17,7 +18,7 @@ const IndividualNovelPageOriginal = () => {
   const handleClickTwo = () => navigate('/SampleChapterOriginalTwo');
   const handleClickThree = () => navigate('/SampleChapterOriginalThree');
 
-  const api_url = `https://api.themoviedb.org/3/movie/755566?api_key=f7b82b7f68941967b5871703e2789841&language=en-US`;
+  const api_url = `apis/webnovel/0`;
 
   async function getMovie() {
     const response = await fetch(api_url);

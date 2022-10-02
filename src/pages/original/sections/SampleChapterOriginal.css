@@ -42,3 +42,73 @@
   /* main pink */
   color: #ed497b;
 }
+
+#optionA {
+  position: relative;
+  width: 158px;
+  height: 52px;
+
+  background: #bfbfbf;
+  /* Button Framing */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.5px;
+  line-height: 21px;
+}
+
+#optionB {
+  position: relative;
+  width: 158px;
+  height: 52px;
+
+  background: #bfbfbf;
+  /* Button Framing */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.5px;
+  line-height: 21px;
+}
+
+#previousButton {
+  position: relative;
+  width: 118.56px;
+  height: 39px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.5px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+  background: #bfbfbf;
+  box-shadow: inset -1.56px -1.56px 0px #000000, inset 1.56px 1.56px 0px #ffffff,
+    inset -3.12px -3.12px 0px #808080, inset 3.12px 3.12px 0px #dbdbdb;
+}
+
+#nextButton {
+  position: relative;
+  width: 118.56px;
+  height: 39px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19.5px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+  background: #bfbfbf;
+  box-shadow: inset -1.56px -1.56px 0px #000000, inset 1.56px 1.56px 0px #ffffff,
+    inset -3.12px -3.12px 0px #808080, inset 3.12px 3.12px 0px #dbdbdb;
+}

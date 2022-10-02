@@ -4,7 +4,7 @@ import './NFTDetailPage.css';
 
 function NFTDetailPage() {
   return (
-    <div>
+    <div className="nftDetailPage">
       <div id="containerOne" className="box">
         <div id="frame"></div>
         <img id="nftImage"></img>
