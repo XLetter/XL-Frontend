@@ -1,0 +1,14 @@
+.Select {
+  margin: 10px;
+}
+
+#info {
+  font-family: w95fa;
+}
+
+.SelectRadioBtnWrapper {
+  display: flex;
+  flex-direction: column;
+
+  font-family: w95fa;
+}

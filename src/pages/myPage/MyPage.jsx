@@ -9,7 +9,7 @@ import WalletConnect from './WalletConnect';
 import './MyPage.css';
 
 import MyNFTs from './components/MyNFTs';
-import BuyXLT from './components/BuyXLT';
+import BuyXLT from './components/buyXLT/BuyXLT';
 import PurchaseHistory from './components/history/PurchaseHistory';
 import ProfileSetting from './components/profileSetting/ProfileSetting';
 
