@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import "./SettingUserProfile";
 
 const SettingUserProfile = props => {
     return (
-        <div className="file_upload">
-            <input type={"file"} />
+        <div>
+            <input type={"file"} id="file_upload" />
         </div>
     )
 }
