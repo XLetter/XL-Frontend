@@ -37,8 +37,14 @@ import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/n
 function App() {
   return (
     <div className='default'>
+
+      <br />
+
       <Router>
-        <Navbar />
+        <div className='nav'>
+          <Navbar />
+        </div>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/original" element={<Original />} />
