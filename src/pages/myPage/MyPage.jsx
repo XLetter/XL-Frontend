@@ -68,48 +68,45 @@ class MyPage extends Component {
     const { viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
 
     return (
-      <div className='MyPage'>
+      <div className='cover'>
+        <div className='MyPage'>
 
+          <WalletConnect />
 
-        <WalletConnect />
+          <div className='componentChangeBtnWrapper'>
+            <div className='buttons'>
+              <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+                My NFTs
+              </button>
 
-        <br />
-        <br />
+              <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
+                buy XLT
+              </button>
+              <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
+                Purchase History
+              </button>
+              <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
+                Setting
+              </button>
+            </div>
+          </div>
 
-        <div className='componentChangeBtnWrapper'>
-          <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
-            My NFTs
-          </button>
+          <div className='views'>
+            <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
+              <MyNFTs />
+            </div>
+            <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
+              <BuyXLT />
+            </div>
+            <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
+              <PurchaseHistory />
+            </div>
+            <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
+              <ProfileSetting />
+            </div>
+          </div>
 
-          <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
-            buy XLT
-          </button>
-          <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
-            Purchase History
-          </button>
-          <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
-            Setting
-          </button>
         </div>
-
-        <br />
-        <br />
-
-        <div className='views'>
-          <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
-            <MyNFTs />
-          </div>
-          <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
-            <BuyXLT />
-          </div>
-          <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
-            <PurchaseHistory />
-          </div>
-          <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
-            <ProfileSetting />
-          </div>
-        </div>
-
       </div>
     );
   }
