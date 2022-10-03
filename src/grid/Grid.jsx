@@ -33,7 +33,7 @@ function Grid({ title, fetchUrl, isLargeRow }) {
             <img
               key={webnovel.webnovelId}
               className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
-              src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
+              src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
               alt={webnovel.title}
             />
             <p>{webnovel.title}</p>

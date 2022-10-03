@@ -33,7 +33,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             <img
               key={webnovel.webnovelId}
               className={`${isLargeRow ? ' row__posterLarge' : 'row__poster'}`}
-              src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
+              src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
               alt={webnovel.title}
               
             />
