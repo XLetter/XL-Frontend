@@ -11,6 +11,8 @@
 
 #row_content {
     font-family: w95fa;
+    justify-content:center;
+
 }
 
 .row__posters {
@@ -19,7 +21,7 @@
     height: 240px;
     overflow-x: scroll;
     overflow-y: hidden;
-    justify-content: space-between;
+    justify-content:left;
    
     
 }
@@ -51,6 +53,8 @@ box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
     margin-left: auto;
     margin-right:auto;
     transition: transform 450ms;
+   
+    
 }
 
 .row__poster:hover {
@@ -65,3 +69,4 @@ box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
 .row__posterLarge:hover {
     transform: scale(1.09);
 }
+
