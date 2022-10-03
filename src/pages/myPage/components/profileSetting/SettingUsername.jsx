@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./SettingUsername.css";
 
 class SettingUsername extends Component {
     state = {
@@ -17,8 +18,8 @@ class SettingUsername extends Component {
                 <table className={"set_nickname"}>
                     <tr>
                         <td>
-                            <input type="text" className={'input_nickname'} placeholder={"Enter your nickname"} name="nickname" />
-                            <button onClick={this.handleChange}>
+                            <input type="text" className='input_nickname' placeholder={"Enter your nickname"} name="nickname" />
+                            <button id="UsernameBtn" onClick={this.handleChange}>
                                 save!
                             </button>
                         </td>
