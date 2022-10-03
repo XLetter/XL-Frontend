@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "msSansSerif";
-  src: url("./assets/font/MS\ Sans\ Serif\ 8pt\ bold.ttf");
+  font-family: 'msSansSerif';
+  src: url('./assets/font/MS\ Sans\ Serif\ 8pt\ bold.ttf');
 }
 
 @font-face {
-  font-family: "w95fa";
-  src: url("./assets/font/W95FA.otf");
+  font-family: 'w95fa';
+  src: url('./assets/font/W95FA.otf');
 }
 
 * {

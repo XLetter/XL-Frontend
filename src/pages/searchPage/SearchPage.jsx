@@ -1,11 +1,18 @@
-import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from "../../components/navBar/NavbarElements";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from '../../components/navBar/NavbarElements';
 import xletter_logo from '../../assets/image/xletter_logo.svg';
 import '../../components/navBar/NavbarElements.css';
 import React from 'react';
 import '../../grid/Grid.css';
-import axios from "../../axios/Axios";
-import { Routes, Route } from "react-router-dom";
-import useSearchApi from "./search";
+import axios from '../../axios/Axios';
+import { Routes, Route } from 'react-router-dom';
+import useSearchApi from './search';
 
 <Routes>
   <Route path="searchpage">
@@ -13,34 +20,14 @@ import useSearchApi from "./search";
   </Route>
 </Routes>;
 
-
-
-  
-  
-
-
-
-
-
-const SearchPage= () => {
+const SearchPage = () => {
   return (
-      
-  
-          <div className="search_out">
-            <div className="search">
-                
-
-             <useSearchApi/>
-                     
-            </div>
-          </div>
-
-      
-        
-    
-    
-
+    <div className="search_out">
+      <div className="search">
+        <useSearchApi />
+      </div>
+    </div>
   );
 };
 
-export default SearchPage
+export default SearchPage;

@@ -1,12 +1,11 @@
 .MyNFTs {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
 
-    margin-left: 10px;
-    padding: 10px;
+  margin-left: 10px;
+  padding: 10px;
 
-    background: #DADADA;
-    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
-
+  background: #dadada;
+  box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
 }

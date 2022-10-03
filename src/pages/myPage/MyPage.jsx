@@ -6,7 +6,7 @@ import Series from '../series/Series';
 import Marketplace from '../marketplace/Marketplace';
 import WalletConnect from './WalletConnect';
 
-import './MyPage.css'
+import './MyPage.css';
 
 import MyNFTs from './components/MyNFTs';
 import BuyXLT from './components/BuyXLT';
@@ -21,7 +21,7 @@ class MyPage extends Component {
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
-    }
+    };
   }
 
   handleNFTsBtnClick = () => {
@@ -31,8 +31,8 @@ class MyPage extends Component {
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
-    })
-  }
+    });
+  };
 
   handleXLTBtnClick = () => {
     this.setState({
@@ -41,8 +41,8 @@ class MyPage extends Component {
       viewBuyXLT: true,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
-    })
-  }
+    });
+  };
 
   handleHistoryBtnClick = () => {
     this.setState({
@@ -51,8 +51,8 @@ class MyPage extends Component {
       viewBuyXLT: false,
       viewPurchaseHistory: true,
       viewProfileSetting: false,
-    })
-  }
+    });
+  };
 
   handleProfileBtnClick = () => {
     this.setState({
@@ -61,33 +61,31 @@ class MyPage extends Component {
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: true,
-    })
-  }
+    });
+  };
 
   render() {
     const { viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
 
     return (
-      <div className='MyPage'>
-
-
+      <div className="MyPage">
         <WalletConnect />
 
         <br />
         <br />
 
-        <div className='componentChangeBtnWrapper'>
-          <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+        <div className="componentChangeBtnWrapper">
+          <button id="myNFTs" name="myNFTsBtn" onClick={this.handleNFTsBtnClick}>
             My NFTs
           </button>
 
-          <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
+          <button id="buyXLT" name="buyXLTBtn" onClick={this.handleXLTBtnClick}>
             buy XLT
           </button>
-          <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
+          <button id="history" name="historyBtn" onClick={this.handleHistoryBtnClick}>
             Purchase History
           </button>
-          <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
+          <button id="profile" name="profileBtn" onClick={this.handleProfileBtnClick}>
             Setting
           </button>
         </div>
@@ -95,21 +93,26 @@ class MyPage extends Component {
         <br />
         <br />
 
-        <div className='views'>
-          <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
+        <div className="views">
+          <div className="myNFTsView" style={{ display: viewMyNFTs ? 'block' : 'none' }}>
             <MyNFTs />
           </div>
-          <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
+          <div className="buyXLTView" style={{ display: viewBuyXLT ? 'block' : 'none' }}>
             <BuyXLT />
           </div>
-          <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
+          <div
+            className="purchaseHistoryView"
+            style={{ display: viewPurchaseHistory ? 'block' : 'none' }}
+          >
             <PurchaseHistory />
           </div>
-          <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
+          <div
+            className="profileSettingView"
+            style={{ display: viewProfileSetting ? 'block' : 'none' }}
+          >
             <ProfileSetting />
           </div>
         </div>
-
       </div>
     );
   }
