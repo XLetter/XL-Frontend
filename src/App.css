@@ -17,5 +17,19 @@
 }
 
 .default {
-  background: linear-gradient(225deg, #69eacb 0%, #eaccf8 47.87%, #6654f1 100%);
+  background: linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
+}
+
+.nav {
+  margin-left: calc((100vw - 1120px)/2);
+  margin-right: auto;
+  margin-bottom: 12px;
+
+  width: 1120px;
+  height: 60px;
+    
+  justify-content: center;
+    
+  background: #D9D9D9;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 }

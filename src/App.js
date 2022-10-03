@@ -36,34 +36,42 @@ import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/n
 
 function App() {
   return (
-    <div className="default">
+    <div className='default'>
+
+      <br />
+
       <Router>
-        <Navbar />
+        <div className='nav'>
+          <Navbar />
+        </div>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/original" element={<Original />} />
           <Route path="/series" element={<Series />} />
           <Route path="/marketplace" element={<Marketplace />} />
+
           <Route path="/mypage/wallet" element={<MyPage />} />
 
           <Route path="/xloriginalnft" element={<Xloriginalnft />} />
           <Route path="/nowtrend" element={<NowTrend />} />
           <Route path="/collection" element={<Collection />} />
-
           <Route path="/xloriginalbl" element={<XloriginalBl />} />
           <Route path="/xloriginalgl" element={<XloriginalGl />} />
           <Route path="/xloriginalhl" element={<XloriginalHl />} />
-
           <Route path="/xlseriesbl" element={<XlseriesBl />} />
           <Route path="/xlseriesgl" element={<XlseriesGl />} />
           <Route path="/xlserieshl" element={<XlseriesHl />} />
-
           <Route path="/SearchPage" element={<SearchPage />} />
           <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
           <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
           <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
           <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
-          <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
+
+          {/* <Route path="/NFTDetailPage" element={<NFTDetailPage />} /> */}
+          <Route path="/NFTDetailItemsHistory" element={<NFTDetailItemsHistory />} />
+          <Route path="/NFTDetailOffers" element={<NFTDetailOffers />} />
+          <Route path="/NFTDetailDetails" element={<NFTDetailDetails />} />
         </Routes>
       </Router>
     </div>

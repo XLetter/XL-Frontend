@@ -1,11 +1,17 @@
 .MyNFTs {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
-  margin-left: 10px;
-  padding: 10px;
+    width: 1120px;
+    height: 500px; /* 추후 수정 (내용 다 보이도록) */
+    overflow: hidden; /* 추후 수정 */
+    
+    justify-content: space-between;
+    
+    background: #D9D9D9;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 
-  background: #dadada;
-  box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
+    font-family: msSansSerif;
 }

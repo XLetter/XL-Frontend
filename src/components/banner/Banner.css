@@ -1,9 +1,10 @@
 .banner {
-  color: white;
-  object-fit: contain;
-  height: 448px;
-  justify-content: space-between;
-  width: 1120px;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+    justify-content: space-between;
+    width: 1120px;
+
 }
 
 .banner__contents {

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './BuyXLT.css';
 import Select from './select/Select';
-import Tokens from './Tokens';
+import Tokens from './tokens/Tokens';
 
 const BuyXLT = () => {
   return (
-    <div className="BuyXLT">
+    <div className='BuyXLT'>
       <h1>Buy XLT</h1>
-      <div className="BuyXLTelments">
+      <div className='BuyXLTelments'>
         <Select />
         <Tokens />
       </div>
