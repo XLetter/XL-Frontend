@@ -21,6 +21,15 @@
     flex-direction: column;
 }
 
+.picture_area {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.username_area {
+    margin-left: 15px;
+}
+
 .profile_picture {
     width: 100px;
     height: 100px;

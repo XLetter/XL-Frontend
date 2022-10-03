@@ -15,9 +15,6 @@ const ProfileSetting = () => {
         <div className='profile_content'>
           <h3>profile picture</h3>
 
-          <br />
-          <br />
-
           <div className='picture_area'>
             <div className='profile_picture'>
               <img className='profile' src={profile}></img>
