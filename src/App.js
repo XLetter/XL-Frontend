@@ -36,7 +36,7 @@ import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/n
 
 function App() {
   return (
-    <div className='default'>
+    <div className="default">
       <Router>
         <Navbar />
         <Routes>
@@ -45,19 +45,19 @@ function App() {
           <Route path="/series" element={<Series />} />
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/mypage/wallet" element={<MyPage />} />
-          
+
           <Route path="/xloriginalnft" element={<Xloriginalnft />} />
           <Route path="/nowtrend" element={<NowTrend />} />
           <Route path="/collection" element={<Collection />} />
-          
+
           <Route path="/xloriginalbl" element={<XloriginalBl />} />
           <Route path="/xloriginalgl" element={<XloriginalGl />} />
           <Route path="/xloriginalhl" element={<XloriginalHl />} />
-          
+
           <Route path="/xlseriesbl" element={<XlseriesBl />} />
           <Route path="/xlseriesgl" element={<XlseriesGl />} />
           <Route path="/xlserieshl" element={<XlseriesHl />} />
-          
+
           <Route path="/SearchPage" element={<SearchPage />} />
           <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
           <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />

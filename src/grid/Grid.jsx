@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from '../axios/Axios';
 import './Grid.css';
 
-
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';
 
 function Grid({ title, fetchUrl, isLargeRow }) {
@@ -21,24 +20,24 @@ function Grid({ title, fetchUrl, isLargeRow }) {
     }
     fetchData();
   });
- 
 
   return (
     <div className="grid">
       <h2>{title}</h2>
 
-    <div className="grid__posters">
-        {webnovels&&webnovels.map((webnovel) => (
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <img
-              key={webnovel.webnovelId}
-              className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
-              src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
-              alt={webnovel.title}
-            />
-            <p>{webnovel.title}</p>
-          </div>
-        ))}
+      <div className="grid__posters">
+        {webnovels &&
+          webnovels.map((webnovel) => (
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <img
+                key={webnovel.webnovelId}
+                className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
+                src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
+                alt={webnovel.title}
+              />
+              <p>{webnovel.title}</p>
+            </div>
+          ))}
       </div>
     </div>
   );

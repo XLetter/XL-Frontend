@@ -5,9 +5,9 @@ import Tokens from './Tokens';
 
 const BuyXLT = () => {
   return (
-    <div className='BuyXLT'>
+    <div className="BuyXLT">
       <h1>Buy XLT</h1>
-      <div className='BuyXLTelments'>
+      <div className="BuyXLTelments">
         <Select />
         <Tokens />
       </div>

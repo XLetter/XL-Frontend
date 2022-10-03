@@ -1,28 +1,27 @@
 .KaikasPage {
-    
-    width: 100vw;
-    height: 180px;
+  width: 100vw;
+  height: 180px;
 
-    margin-left: 10px;
-    padding: 10px;
+  margin-left: 10px;
+  padding: 10px;
 
-    background: #DADADA;
-    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
+  background: #dadada;
+  box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 #walletConnectBtn {
-    position: absolute;
-    width: 200px;
-    height: 25px;
+  position: absolute;
+  width: 200px;
+  height: 25px;
 
-    margin-top: 10px;
+  margin-top: 10px;
 
-    background: #CCCCCC;
-    box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
-    
-    font-family: w95fa;
+  background: #cccccc;
+  box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+  font-family: w95fa;
 }
 
 #network_info {
-    font-family: msSansSerif;
+  font-family: msSansSerif;
 }

@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "msSansSerif";
-  src: url("./assets/font/MS\ Sans\ Serif\ 8pt\ bold.ttf");
+  font-family: 'msSansSerif';
+  src: url('./assets/font/MS\ Sans\ Serif\ 8pt\ bold.ttf');
 }
 
 @font-face {
-  font-family: "w95fa";
-  src: url("./assets/font/W95FA.otf");
+  font-family: 'w95fa';
+  src: url('./assets/font/W95FA.otf');
 }
 
 * {
@@ -17,5 +17,5 @@
 }
 
 .default {
-  background: linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
+  background: linear-gradient(225deg, #69eacb 0%, #eaccf8 47.87%, #6654f1 100%);
 }
