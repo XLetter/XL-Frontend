@@ -1,60 +1,41 @@
-.original {
+.original{
   display: flex;
-  flex-direction: column;
-  width: 100vw;
+  flex-direction:column;
+  width:100vw;
+
 }
+
 
 .IndividualNovelPageOriginal {
   position: relative;
   flex-direction: row;
 }
 
-.infoOfNovel {
-  width: 1119px;
-  height: 383px;
-  left: 403px;
-  top: 250px;
-
-  background: #b7bbc1;
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-
-  position: relative;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#insideSquare {
-  position: absolute;
-  width: 1104px;
-  height: 348px;
-  left: 7px;
-  top: 21px;
-
-  background: #dadada;
-  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
 #thumbnail {
   position: absolute;
   width: 180px;
   height: 270px;
-  left: 53.28px;
-  top: 39px;
+  left: 400px;
+  top: 126px;
 }
 
 .XLOriginalButton {
+  /* XL Original */
+
   position: absolute;
   width: 62px;
   height: 15px;
-  left: 262px;
-  top: 42px;
+  left: 623px;
+  top: 136px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 15px;
+  text-align: center;
+  /* identical to box height */
+
   color: #000000;
 
   box-sizing: border-box;
@@ -62,20 +43,23 @@
   position: absolute;
   width: 84px;
   height: 24px;
-  left: 262px;
+  left: 612px;
+  top: 132px;
 
-  background: transparent;
+  background: #ffffff;
   border: 1px solid #000000;
 }
 
 #workName {
+  /* 작품 제목 */
+
   position: absolute;
   width: 95px;
   height: 29px;
-  left: 262px;
-  top: 73px;
+  left: 612px;
+  top: 164px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -87,14 +71,14 @@
   color: #000000;
 }
 
-#illustrationWrtier {
+#authorInfo {
   position: absolute;
   width: 252px;
   height: 17px;
-  left: 262px;
-  top: 110px;
+  left: 612px;
+  top: 201px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -108,10 +92,10 @@
   position: absolute;
   width: 586px;
   height: 51px;
-  left: 262px;
-  top: 153px;
+  left: 612px;
+  top: 244px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -127,16 +111,9 @@
   position: absolute;
   width: 160px;
   height: 40px;
-  left: 262px;
-  top: 265px;
+  left: 612px;
+  top: 356px;
 
-  font-family: 'W95FA';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-
-  background: #ffffff;
   border: 1px solid #000000;
 }
 
@@ -147,16 +124,9 @@
   position: absolute;
   width: 160px;
   height: 40px;
-  left: 438px;
-  top: 265px;
+  left: 788px;
+  top: 356px;
 
-  font-family: 'W95FA';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-
-  background: #ffffff;
   border: 1px solid #000000;
 }
 
@@ -172,14 +142,15 @@
   position: absolute;
   width: 52px;
   height: 17px;
-  left: 978px;
-  top: 108px;
+  left: 1300px;
+  top: 192px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
   color: #000000;
 }
@@ -189,82 +160,38 @@
   width: 50px;
   height: 50px;
   left: 1469px;
-  top: 110px;
+  top: 132px;
   border: 2px;
 }
 
 #rankingName {
+  /* 나의 랭킹 */
+
   position: absolute;
   width: 56px;
   height: 17px;
-  left: 1042px;
-  top: 108px;
+  left: 1200px;
+  top: 192px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
   color: #000000;
 }
 
-#chapterListBigSquare {
-  position: relative;
-  right: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  width: 1119px;
-  height: 973px;
-  /* left: 403px; */
-  top: 630px;
-
-  background: #b7bbc1;
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
-}
-
-#innerSquareStoryList {
+#myNFT {
   position: absolute;
-  width: 1104px;
-  height: 928px;
-  left: 7px;
-  top: 21px;
-
-  background: #dadada;
-  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.6);
+  width: 1121px;
+  height: 296px;
+  left: 397px;
+  top: 446px;
 }
 
-#vectorForNFT {
-  position: absolute;
-  width: 1064px;
-  height: 378px;
-  left: 21px;
-  top: 74px;
-
-  border: 2px solid #bcbcbc;
-}
-
-#myNftsTitle {
-  position: absolute;
-  width: 120px;
-  height: 26px;
-  left: 75px;
-  top: 61px;
-
-  font-family: 'W95FA';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-
-  color: #000000;
-
-  background-color: #dadada;
-}
-
-/* #nft {
+#sampleNFT {
   position: relative;
   height: 180px;
   width: 600px;
@@ -274,48 +201,19 @@
 
   padding: 0.5rem calc((100vw - 1000px) / 2);
   display: flex;
-} */
-
-#vectorForStoryList {
-  position: absolute;
-  width: 1064px;
-  height: 400px;
-  left: 21px;
-  top: 514px;
-
-  border: 2px solid #bcbcbc;
-}
-
-#storyListTitle {
-  position: absolute;
-  width: 120px;
-  height: 26px;
-  left: 75px;
-  top: 495px;
-
-  font-family: 'W95FA';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-
-  color: #000000;
-
-  background-color: #dadada;
 }
 
 #buyAll {
   position: absolute;
-  width: 122px;
+  width: 93px;
   height: 19px;
-  left: 50px;
-  top: 546px;
+  left: 397px;
+  top: 804px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 19px;
 
   color: #000000;
@@ -337,43 +235,34 @@
   color: #000000;
 }
 
-#episodeOrder {
+#fromRecent {
   position: absolute;
-  width: 248px;
+  width: 140px;
   height: 19px;
-  left: 818px;
-  top: 546px;
+  left: 1300px;
+  top: 804px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
 
   color: #000000;
 }
 
-.readChapterOne {
-  position: absolute;
-  width: 1024px;
-  height: 82px;
-  left: 43px;
-  top: 597px;
-
-  background: #bbbbbb;
-  box-shadow: inset -2px -2px 0px #ed497b, inset 2px 2px 0px #ffffff, inset -4px -4px 0px #808080,
-    inset -4px -4px 0px #ed497b;
+.readChapter {
+  position: relative;
 }
 
 #episodeTitleOne {
-  position: absolute;
-  /* width: 113px; */
+  position: relative;
+  width: 113px;
   height: 24px;
-  left: 18px;
-  top: 30px;
+  left: 432px;
+  top: 560px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -401,38 +290,26 @@
 }
 
 #readOne {
+  box-sizing: border-box;
+
   position: absolute;
-  left: 908px;
-  top: 27px;
+  width: 80px;
+  height: 40px;
+  left: 1008px;
+  top: 580px;
 
-  width: 76px;
-  height: 25px;
-  /* Gray Main */
-  background: #bfbfbf;
-  /* Button Framing */
-  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
-    inset 2px 2px 0px #dbdbdb;
-}
-
-.readChapterTwo {
-  position: absolute;
-  width: 1024px;
-  height: 82px;
-  left: 43px;
-  top: 680px;
-
-  background: #bbbbbb;
-  box-shadow: inset -2px -2px 0px #ed497b, inset 2px 2px 0px #ffffff, inset -4px -4px 0px #808080,
-    inset -4px -4px 0px #ed497b;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 #episodeTitleTwo {
-  position: absolute;
+  position: relative;
+  width: 113px;
   height: 24px;
-  left: 18px;
-  top: 30px;
+  left: 432px;
+  top: 710px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -460,39 +337,26 @@
 }
 
 #readTwo {
+  box-sizing: border-box;
+
   position: absolute;
-  left: 908px;
-  top: 27px;
+  width: 80px;
+  height: 40px;
+  left: 1008px;
+  top: 730px;
 
-  width: 76px;
-  height: 25px;
-  /* Gray Main */
-  background: #bfbfbf;
-  /* Button Framing */
-  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
-    inset 2px 2px 0px #dbdbdb;
-}
-
-.readChapterThree {
-  position: absolute;
-  width: 1024px;
-  height: 82px;
-  left: 43px;
-  top: 762px;
-
-  background: #bbbbbb;
-  box-shadow: inset -2px -2px 0px #ed497b, inset 2px 2px 0px #ffffff, inset -4px -4px 0px #808080,
-    inset -4px -4px 0px #ed497b;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 #episodeTitleThree {
-  position: absolute;
-
+  position: relative;
+  width: 113px;
   height: 24px;
-  left: 18px;
-  top: 30px;
+  left: 432px;
+  top: 880px;
 
-  font-family: 'W95FA';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -520,15 +384,56 @@
 }
 
 #readThree {
-  position: absolute;
-  left: 908px;
-  top: 27px;
+  box-sizing: border-box;
 
-  width: 76px;
-  height: 25px;
-  /* Gray Main */
-  background: #bfbfbf;
-  /* Button Framing */
-  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
-    inset 2px 2px 0px #dbdbdb;
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  left: 1008px;
+  top: 900px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.row_or{
+  padding-left: 15px;
+  margin-left:auto;
+   margin-right:auto;
+   margin-top:44px;
+   margin-bottom:44px;    
+   width: 1120px;
+ height: 335px;
+ left: 402px;
+ top: 586px;
+ justify-content: space-between;
+ 
+ /* background gray */
+ 
+ background: #D5D5D5;
+ /* block_outside */
+ 
+ box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+ 
+ 
+ }
+ .row_or_in{
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:32px;
+  margin-bottom:17px;     
+  width: 1088px;
+  height: 286px;
+  left: 16px;
+  top: 32px;
+  justify-content: space-between;
+  
+  border: 2px solid #666666;
+
+}
+.row_or_out{
+ width: 100vw;
+ background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
+ justify-content: space-between;
+ padding-left:  290px;
 }
