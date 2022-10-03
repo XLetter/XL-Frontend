@@ -26,34 +26,36 @@ import SampleChapterOriginalThree from './pages/original/sections/SampleChapterO
 import NFTDetailPage from './pages/marketplace/marketplaceElements/NFTDetail/NFTDetailPage';
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/original" element={<Original />} />
-        <Route path="/series" element={<Series />} />
-        <Route path="/marketplace" element={<Marketplace />} />
+    <div className='default'>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/original" element={<Original />} />
+          <Route path="/series" element={<Series />} />
+          <Route path="/marketplace" element={<Marketplace />} />
 
-        <Route path="/mypage/wallet" element={<MyPage />} />
+          <Route path="/mypage/wallet" element={<MyPage />} />
 
 
-        <Route path="/xloriginalnft" element={<Xloriginalnft />} />
-        <Route path="/nowtrend" element={<NowTrend />} />
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/xloriginalbl" element={<XloriginalBl />} />
-        <Route path="/xloriginalgl" element={<XloriginalGl />} />
-        <Route path="/xloriginalhl" element={<XloriginalHl />} />
-        <Route path="/xlseriesbl" element={<XlseriesBl />} />
-        <Route path="/xlseriesgl" element={<XlseriesGl />} />
-        <Route path="/xlserieshl" element={<XlseriesHl />} />
-        <Route path="/SearchPage" element={<SearchPage/>}/>
-        <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
-        <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
-        <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
-        <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
-        <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
-      </Routes>
-    </Router>
+          <Route path="/xloriginalnft" element={<Xloriginalnft />} />
+          <Route path="/nowtrend" element={<NowTrend />} />
+          <Route path="/collection" element={<Collection />} />
+          <Route path="/xloriginalbl" element={<XloriginalBl />} />
+          <Route path="/xloriginalgl" element={<XloriginalGl />} />
+          <Route path="/xloriginalhl" element={<XloriginalHl />} />
+          <Route path="/xlseriesbl" element={<XlseriesBl />} />
+          <Route path="/xlseriesgl" element={<XlseriesGl />} />
+          <Route path="/xlserieshl" element={<XlseriesHl />} />
+          <Route path="/SearchPage" element={<SearchPage />} />
+          <Route path="/IndividualNovelPageOriginal" element={<IndividualNovelPageOriginal />} />
+          <Route path="/SampleChapterOriginalOne" element={<SampleChapterOriginalOne />} />
+          <Route path="/SampleChapterOriginalTwo" element={<SampleChapterOriginalTwo />} />
+          <Route path="/SampleChapterOriginalThree" element={<SampleChapterOriginalThree />} />
+          <Route path="/NFTDetailPage" element={<NFTDetailPage />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
