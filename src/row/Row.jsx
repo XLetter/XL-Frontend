@@ -28,7 +28,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       <div className="row__posters">
         {webnovels&&webnovels.map((webnovel) => (
-          <a href='http://localhost:3000/IndividualNovelPageOriginal'>
+          
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <img
               key={webnovel.webnovelId}
@@ -39,7 +39,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             />
             <p id='row_content'>{webnovel.title}</p>
           </div>
-          </a>
+          
         ))}
 
         
