@@ -7,10 +7,12 @@
 
 }
 
+
 .banner__contents {
   width: 1120px;
   padding-top: 140px;
   height: 190px;
+  justify-content: space-between;
 }
 
 .banner__title {

@@ -3,6 +3,8 @@ import axios from '../../axios/Axios';
 import requests from '../../requests/Requests';
 import './Banner.css';
 
+const base_url='http://43.200.24.50:8080/apis/webnovel/banner/'
+
 function Banner() {
   const [webnovel, setWebnovel] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천
 
@@ -29,24 +31,25 @@ function Banner() {
     */
   return (
     <div className="banner_bg">
-      <a href="http://localhost:3000/IndividualNovelPageOriginal">
+        
+      
         <header
           className="banner"
           style={{
             backgroundSize: 'cover',
-            backgroundImage: `url(
-            "http://43.200.24.50:8080/webnovel/${webnovel?.thumbnailUrl}"
-            )`,
             backgroundPosition: 'center center',
           }}
         >
+          <img  
+          src={`${webnovel.bannerUrl}`}/>
           <div className="banner__contents">
-            <h1 className="banner__title">{webnovel?.title || webnovel?.writerName}</h1>
+            <h1 className="banner__title">{webnovel?.title}</h1>
+            <h3 className='banner_summary'>{webnovel?.summary}</h3>
           </div>
 
           <div className="banner--fadeBottom" />
         </header>
-      </a>
+       
     </div>
   );
 }

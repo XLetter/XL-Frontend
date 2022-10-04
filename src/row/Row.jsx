@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axios/Axios';
 import './Row.css';
+import {poster_id_Matching} from './poster_id_Matching';
+
 
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';
+
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [webnovels, setWebnovels] = useState([]);
@@ -13,13 +16,14 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
     async function fetchData() {
       const response = await axios.get(fetchUrl);
-      //home.js의 fetchUrl
-      // ex) https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213
+    
 
       setWebnovels(response.data);
     }
     fetchData();
   });
+  
+  
 
   return (
     <div className="row">
@@ -28,7 +32,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
       <div className="row__posters">
         {webnovels&&webnovels.map((webnovel) => (
           
+          
+          
           <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <poster_id_Matching>
             <img
               key={webnovel.webnovelId}
               className={`${isLargeRow ? ' row__posterLarge' : 'row__poster'}`}
@@ -36,7 +43,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
               alt={webnovel.title}
               
             />
-            <p id='row_content'>{webnovel.title}</p>
+            
+              <button id='row_contents'>
+                {webnovel.title}
+              </button></poster_id_Matching>
+            
+            
+            
           </div>
           
         ))}
@@ -44,5 +57,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
     </div>
   );
 }
+
 
 export default Row;
