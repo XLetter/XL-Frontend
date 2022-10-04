@@ -1,12 +1,9 @@
 .row {
-    
-    width:100%;
-    
-
+  width: 100%;
 }
 
 #row_title {
-    font-family: msSansSerif;
+  font-family: msSansSerif;
 }
 
 #row_content {
@@ -22,28 +19,22 @@
     overflow-x: scroll;
     overflow-y: hidden;
     justify-content:left;
-   
-    
 }
 
 .row__posters::-webkit-scrollbar {
-    display: hidden;
-    width:auto;
-    
-    
-    
-   /* 스크롤 노출 유무 (작동엔 영향 없음) */
+  display: hidden;
+  width: auto;
+
+  /* 스크롤 노출 유무 (작동엔 영향 없음) */
 }
-.row__posters::-webkit-scrollbar-thumb{
-    
-    height: 5%;
-    
-    
-background-color: #ED497B;
-box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+.row__posters::-webkit-scrollbar-thumb {
+  height: 5%;
+
+  background-color: #ed497b;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
 }
-.row__poster::-webkit-scrollbar-track{
-    background: #B7BBC1;
+.row__poster::-webkit-scrollbar-track {
+  background: #b7bbc1;
 }
 
 .row__poster {
@@ -53,20 +44,17 @@ box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
     margin-left: auto;
     margin-right:auto;
     transition: transform 450ms;
-   
-    
 }
 
 .row__poster:hover {
-    transform: scale(1.08);
-
+  transform: scale(1.08);
 }
 
 .row__posterLarge {
-    max-height: 180px;
+  max-height: 180px;
 }
 
 .row__posterLarge:hover {
-    transform: scale(1.09);
+  transform: scale(1.09);
 }
 

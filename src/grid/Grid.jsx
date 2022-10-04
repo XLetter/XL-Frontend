@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from '../axios/Axios';
 import './Grid.css';
 
-
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';
 
 function Grid({ title, fetchUrl, isLargeRow }) {
@@ -21,7 +20,6 @@ function Grid({ title, fetchUrl, isLargeRow }) {
     }
     fetchData();
   });
- 
 
   return (
     <div className="grid">

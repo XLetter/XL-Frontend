@@ -1,70 +1,61 @@
 .banner {
-    margin-top: 72px;
-    object-fit:scale-down;
-    justify-content: space-between;
-    
+  margin-top: 72px;
+  object-fit: scale-down;
+  justify-content: space-between;
 
-    
-    width: 1120px;
-    height: 275px;
-   
-    top: 132px;
-   
-  
+  width: 1120px;
+  height: 275px;
 
-background: #D3D3D3;
-border: 1px solid #000000;
+  top: 132px;
+
+  background: #d3d3d3;
+  border: 1px solid #000000;
 }
 
 .banner__contents {
-    margin-left: 30px;
-    padding-top: 140px;
-    height: 190px;
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
 }
 
 .banner__title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding-bottom: 0.1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 0.1rem;
 }
 
 .banner__description {
-    width: 45rem;
-    line-height: 1.3;
-    padding-top: 1rem;
-    font-size: 0.8rem;
-    max-width: 360px;
-    height: 80px;
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
 }
 
 .banner__button {
-    cursor: pointer;
-    color: #fff;
-    outline: none;
-    border: none;
-    font-weight: 700;
-    border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
 }
 
 .banner__button:hover {
-    color: #000;
-    background-color: #e6e6e6;
-    transition: all 0.2s;
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
 }
 
 .banner--fadeBottom {
-    height: 7.4rem;
-    background-image: linear-gradient(
-        180deg,
-        transparent,
-        rgba(37, 37, 37, 0.61),
-        #111
-    );
+  height: 7.4rem;
+  background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 /* banner 이미지 밑 부분이랑 Row 첫 줄 이어지는 부분 자연스럽게 gradient 적용 */

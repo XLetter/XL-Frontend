@@ -5,18 +5,20 @@ import SettingUserProfile from './SettingUserProfile';
 import SettingUsername from './SettingUsername';
 
 const ProfileSetting = () => {
-
   return (
-    <div className='ProfileSetting'>
-        <h1>Settings</h1>
+    <div className="ProfileSetting">
+      <h1>Settings</h1>
+      <br />
+      <h2>Profile</h2>
+
+      <div className="profile_content">
+        <h3>profile picture</h3>
+
         <br />
-        <h2>Profile</h2>
+        <br />
 
         <div className='profile_content'>
           <h3>profile picture</h3>
-
-          <br />
-          <br />
 
           <div className='picture_area'>
             <div className='profile_picture'>
@@ -29,18 +31,21 @@ const ProfileSetting = () => {
             </div>
           </div>
 
-          <br />
-          <br />
-
-          <div className='username_area'>
-            <div className='profile_username'>
-              <h3>username: </h3>
-              <SettingUsername />
-
-            </div>
+          <div className="profile_picture_edit">
+            <SettingUserProfile />
           </div>
-          
         </div>
+
+        <br />
+        <br />
+
+        <div className="username_area">
+          <div className="profile_username">
+            <h3>username: </h3>
+            <SettingUsername />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

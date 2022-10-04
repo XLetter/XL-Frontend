@@ -20,11 +20,10 @@ function Row({ title, fetchUrl, isLargeRow }) {
     }
     fetchData();
   });
- 
 
   return (
     <div className="row">
-      <h2 id='row_title'>{title}</h2>
+      <h2 id="row_title">{title}</h2>
 
       <div className="row__posters">
         {webnovels&&webnovels.map((webnovel) => (
@@ -41,8 +40,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
           </div>
           
         ))}
-
-        
       </div>
     </div>
   );
