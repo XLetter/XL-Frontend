@@ -25,19 +25,18 @@ function Grid({ title, fetchUrl, isLargeRow }) {
     <div className="grid">
       <h2>{title}</h2>
 
-      <div className="grid__posters">
-        {webnovels &&
-          webnovels.map((webnovel) => (
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <img
-                key={webnovel.webnovelId}
-                className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
-                src={`${base_url}${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
-                alt={webnovel.title}
-              />
-              <p>{webnovel.title}</p>
-            </div>
-          ))}
+    <div className="grid__posters">
+        {webnovels&&webnovels.map((webnovel) => (
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <img
+              key={webnovel.webnovelId}
+              className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
+              src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
+              alt={webnovel.title}
+            />
+            <p>{webnovel.title}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
