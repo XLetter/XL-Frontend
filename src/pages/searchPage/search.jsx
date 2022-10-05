@@ -17,7 +17,7 @@ const useSearchApi = (initialSearchKeyword) => {
       setIsLoading(true);
 
       try {
-        const result = await axiosTest(`apis/webnovel/search?keyword={keyword}`);
+        const result = await axiosTest(`apis/webnovel/search?keyword=${initialSearchKeyword}`);
         setData(result.data);
         setIsLoading(false);
       } catch (error) {

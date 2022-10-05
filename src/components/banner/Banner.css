@@ -1,6 +1,6 @@
 .banner {
     color: white;
-    object-fit: contain;
+    object-fit:scale-down;
     height: 448px;
     justify-content: space-between;
     width: 1120px;

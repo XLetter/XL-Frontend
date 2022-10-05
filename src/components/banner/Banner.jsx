@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from '../../axios/Axios';
 import requests from '../../requests/Requests';
 import './Banner.css';
+import { useNavigate } from 'react-router-dom';
 
 const base_url='http://43.200.24.50:8080/apis/webnovel/banner/'
 
@@ -29,27 +30,28 @@ function Banner() {
     header를 따로 banner로 설정한 이유는 banner의 이미지와 banner의 콘텐츠(내용)에 
     다른 효과를 주기 위함. (서로 영향을 끼치지 않게 하기 위해) 
     */
+    const navigate = useNavigate();
   return (
     <div className="banner_bg">
-        
-      
-        <header
-          className="banner"
+       
+        <header className="banner"
           style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
+            backgroundImage: `url("${webnovel?.thumbnailUrl}")`,
           }}
-        >
-          <img  
-          src={`${webnovel.bannerUrl}`}/>
+          onClick={() => {
+            navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`) }}>
+    
           <div className="banner__contents">
             <h1 className="banner__title">{webnovel?.title}</h1>
             <h3 className='banner_summary'>{webnovel?.summary}</h3>
           </div>
 
           <div className="banner--fadeBottom" />
-        </header>
+        
        
+        </header>
     </div>
   );
 }
