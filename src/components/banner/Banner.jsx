@@ -4,14 +4,13 @@ import requests from '../../requests/Requests';
 import './Banner.css';
 import { useNavigate } from 'react-router-dom';
 
-const base_url='http://43.200.24.50:8080/apis/webnovel/banner/'
 
 function Banner() {
   const [webnovel, setWebnovel] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchNetflixOriginals);
+      const request = await axios.get(requests.fetchBannerInfo);
       setWebnovel(request.data[Math.floor(Math.random() * (request.data.length - 1))]);
       //[novel1,novel2,novel3 ,,,] 중에 random으로 하나 뽑기
       // -1 은 아마 array개수 안 넘어가게 하려고?
@@ -38,7 +37,7 @@ function Banner() {
           style={{
             backgroundSize: 'cover',
             backgroundPosition: 'center center',
-            backgroundImage: `url("${webnovel?.thumbnailUrl}")`,
+            backgroundImage: `url("${webnovel?.bannerUrl}")`,
           }}
           onClick={() => {
             navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`) }}>
