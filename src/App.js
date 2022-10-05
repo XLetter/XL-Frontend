@@ -33,6 +33,7 @@ import SampleChapterOriginalThree from './pages/original/sections/SampleChapterO
 import NFTDetailDetails from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailDetails/NFTDetailDetails';
 import NFTDetailItemsHistory from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailItemsHistory/NFTDetailItemsHistory';
 import NFTDetailOffers from './pages/marketplace/marketplaceElements/NFTDetail/nftDetailOffers/NFTDetailOffers';
+import { Row, Switch } from 'antd';
 
 function App() {
   return (
@@ -72,8 +73,13 @@ function App() {
           <Route path="/NFTDetailItemsHistory" element={<NFTDetailItemsHistory />} />
           <Route path="/NFTDetailOffers" element={<NFTDetailOffers />} />
           <Route path="/NFTDetailDetails" element={<NFTDetailDetails />} />
+
+          <Route exact path='/IndividualNovelPageOriginal/:poster_id' element={<IndividualNovelPageOriginal/>}/>
         </Routes>
       </Router>
+      
+         
+        
     </div>
   );
 }

@@ -8,6 +8,7 @@ const requests = {
   fetchRomanceMovies: `apis/webnovel?type=0&genre=hl`,
   fetchDocumentaries: `apis/webnovel?type=1&genre=bl`,
   fetchNovelInfo: `apis/webnovel/{webnovel_id}`,
+  fetchBannerInfo: `apis/webnovel/banner`,
 };
 
 export default requests;

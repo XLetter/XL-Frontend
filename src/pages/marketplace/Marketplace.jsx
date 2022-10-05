@@ -10,7 +10,7 @@ import {
 } from '../../components/navBar/NavbarElements';
 import Row from '../../row/Row';
 import requests from '../../requests/Requests';
-import Banner from '../../components/banner/marketplaceBanner/MarketplaceBanner';
+import Banner from '../../components/banner/Banner';
 
 import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
