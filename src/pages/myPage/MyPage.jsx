@@ -75,17 +75,39 @@ class MyPage extends Component {
 
           <div className='componentChangeBtnWrapper'>
             <div className='buttons'>
-              <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+              <button 
+                id='myNFTs' 
+                name='myNFTsBtn' 
+                onClick={this.handleNFTsBtnClick} 
+                style={{ color: viewMyNFTs ? '#ED497B' : 'black' }}
+                >
                 My NFTs
               </button>
 
-              <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
+              <button 
+                id='buyXLT' 
+                name='buyXLTBtn' 
+                onClick={this.handleXLTBtnClick}
+                style={{ color: viewBuyXLT ? '#ED497B' : 'black' }}
+                >
                 buy XLT
               </button>
-              <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
+
+              <button 
+                id='history' 
+                name='historyBtn' 
+                onClick={this.handleHistoryBtnClick}
+                style={{ color: viewPurchaseHistory ? '#ED497B' : 'black' }}
+                >
                 Purchase History
               </button>
-              <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
+
+              <button 
+                id='profile' 
+                name='profileBtn' 
+                onClick={this.handleProfileBtnClick}
+                style={{ color: viewProfileSetting ? '#ED497B' : 'black' }}
+                >
                 Setting
               </button>
             </div>
