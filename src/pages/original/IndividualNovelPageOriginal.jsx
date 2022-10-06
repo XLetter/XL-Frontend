@@ -4,7 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import Popup from './sections/Popup';
-import axios from 'axios';
+import RowNft from '/Users/yenas/Documents/GitHub/XL-Frontend/src/pages/original/components/RowNft';
+import requests from '/Users/yenas/Documents/GitHub/XL-Frontend/src/requests/Requests';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
@@ -68,6 +69,9 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
         <div id="innerSquareStoryList">
           <div id="vectorForNFT"></div>
           <div id="myNftsTitle">My NFTs</div>
+          <div id="myNFTsView">
+            <RowNft title="My NFTs" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
+          </div>
           <div id="nft"></div>
 
           <div id="vectorForStoryList"></div>
