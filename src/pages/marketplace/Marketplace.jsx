@@ -33,12 +33,32 @@ async function search(searchKeyword) {
 };
 
 function Marketplace() {
-  const navigate = useNavigate();
-  const handleClick = () => navigate('/NFTDetailItemsHistory');
   const [input, setInput] = useState('');
-  function onChangeAction (e) {
-  setInput(e.target.value);
-  }
+        const navigate = useNavigate();
+async function search(searchKeyword) {
+    try {  
+      const result = await axios(
+        `${IMAGE_BASE_URL}/search?keyword=${searchKeyword}`
+      ).then((res)=>res.data,);
+      navigate('/SearchPage',{
+        state:{
+            data:result,
+        },
+      });
+
+    } catch (error) {
+    return "error";
+    }
+}
+const handleClick = event => {
+    if (event.key === 'Enter') {
+      search(input)
+
+        }
+      };
+        function onChangeAction (e) {
+        setInput(e.target.value);
+        }  
 
   return (
     <div className="row_mp_out">
@@ -49,10 +69,11 @@ function Marketplace() {
         <table className={"table"}>
                     <tr>
                         <td>
-                        <input value={input} onChange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} search />
+                        <input value={input} onChange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} 
+                        onKeyPress={handleClick}search />
                             
                             <button id='searchBtn' onClick={async ()=> search(input)}>
-                                <NavLink to="/SearchPage">search</NavLink>
+                                search
                             </button>
                            <Nav_Btn_1>
                             <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
