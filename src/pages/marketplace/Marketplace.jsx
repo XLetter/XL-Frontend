@@ -23,7 +23,7 @@ async function search(searchKeyword) {
   
   
     const result = await axios(
-      `${process.env.API_HOST}/search?keyword=${searchKeyword}`
+      `${process.env.REACT_APP_API_HOST}/search?keyword=${searchKeyword}`
     ).then((res)=>res.data)
 
     return result

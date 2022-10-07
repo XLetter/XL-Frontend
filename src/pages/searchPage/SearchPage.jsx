@@ -29,23 +29,26 @@ function Search({fetchUrl, isLargeRow}) {
     
     <div className="search_out">
       <div className="search" >
-       
-      
-            <div style={{ display: 'flex', flexDirection: 'column' }} key={keyword.webnovelId}>
-              <img
-                className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
-                src={`${isLargeRow ? keyword.thumbnailUrl : keyword.thumbnailUrl}`}
-                alt={keyword.title}
-                onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal/${keyword.webnovelId}`);
+        {keyword.state.data.length>0?(
+          keyword.state.data.map((d,i)=>{
+            return(
+              <div style={{display:'flex', flexDirection:' column'}}key={d.webnovelId}>
+                <img
+                className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`} src={`${isLargeRow ? d.thumbnailUrl : d.thumbnailUrl}`}
+                alt={d.title}
+                onClick={()=>{
+                  navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
                 }}
-              />
-
-              <button id="grid_contents">{keyword.title}</button>
-            </div>
-          
-         
-    </div>
+                />
+                <button id="grid_contents">{d.title}</button>
+              </div>
+            );
+          })
+        ) : (
+          <div style={{display:'flex',flexDirection: 'column'}}><button id="grid_contents">없는 제목입니다!</button></div>
+        )}
+       
+      </div>
    </div> 
     
   );

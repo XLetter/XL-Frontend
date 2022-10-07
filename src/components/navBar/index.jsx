@@ -5,47 +5,39 @@ import './NavbarElements.css';
 import user_profile_ from '../../assets/image/user_profile_.png';
 import axios from '../../axios/Axios';
 import {useNavigate} from 'react-router-dom';
+import {IMAGE_BASE_URL} from '../Config'
 
+
+
+      const Navbar = () => {
+        const [input, setInput] = useState('');
+        const navigate = useNavigate();
 async function search(searchKeyword) {
-    try {
-    
-    
-    
+    try {  
       const result = await axios(
-        `${process.env.API_HOST}/search?keyword=${searchKeyword}`
-      ).then((res)=>res.data)
+        `${IMAGE_BASE_URL}/search?keyword=${searchKeyword}`
+      ).then((res)=>res.data,);
+      navigate('/SearchPage',{
+        state:{
+            data:result,
+        },
+      });
 
-      return result
     } catch (error) {
-    return "error"
+    return "error";
     }
-};
+}
+const handleClick = event => {
+    if (event.key === 'Enter') {
+      search(input)
 
-
-
-
-
-
-const Navbar = () => {
-    const [input, setInput] = useState('');
-    function onChangeAction (e) {
-    setInput(e.target.value);
-    }
-    const navigate = useNavigate();
-
-    const handleClick = event => {
-      if (event.key === 'Enter') {
-        navigate('/SearchPage', {
-          state: {
-              data: input
-
-          },
-        });
-      }
-    };
-    
-    return (
-        <Nav>
+        }
+      };
+        function onChangeAction (e) {
+        setInput(e.target.value);
+        }  
+        return (
+         <Nav>
             <NavLink to="/">
                     <img src={xletter_logo} classname="img" alt="xletter_logo" />
                 </NavLink>
@@ -83,7 +75,7 @@ const Navbar = () => {
                 <NavBtn>
                     <NavBtnLink to="/mypage/wallet"><img src={user_profile_} classname="img_2" alt="profile" /></NavBtnLink>
                 </NavBtn>
-        </Nav>
+         </Nav>
     );
 };
 
