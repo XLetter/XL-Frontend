@@ -1,16 +1,14 @@
-const API_KEY = "bed0174241bc8d724d59020eca783be8";
-
 const requests = {
-    fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US&name?api_key=${API_KEY}`,
-    fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
-    fetchTopRated: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
-    fetchActionMovies: `/discover/movie?api_key=${API_KEY}&with_genres=28`,
-    fetchComedyMovies: `/discover/movie?api_key=${API_KEY}&with_genres=35`,
-    fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
-    fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
-    fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
-
-}
+  fetchTrending: `apis/webnovel?type=0`,
+  fetchNetflixOriginals: `apis/webnovel`,
+  fetchTopRated: `apis/webnovel?type=1`,
+  fetchActionMovies: `apis/webnovel?type=0&genre=bl`,
+  fetchComedyMovies: `apis/webnovel/bookmark?uesrId={userId}&type={type}&genre={genre}`,
+  fetchHorrorMovies: `apis/webnovel?type=0&genre=gl`,
+  fetchRomanceMovies: `apis/webnovel?type=0&genre=hl`,
+  fetchDocumentaries: `apis/webnovel?type=1&genre=bl`,
+  fetchNovelInfo: `apis/webnovel/{webnovel_id}`,
+  fetchBannerInfo: `apis/webnovel/banner`,
+};
 
 export default requests;
-
