@@ -3,6 +3,7 @@ import React, {useState,useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../../grid/Grid.css';
+import './SearchPage.css';
 
 function Search({fetchUrl, isLargeRow}) {
   const [webnovels, setWebnovels] = useState([]);
@@ -27,24 +28,27 @@ function Search({fetchUrl, isLargeRow}) {
   return (
     
     <div className="search_out">
-      <div className="search">
-      <div className="search_in" > 
-      {keyword.map((keyword) => (
-            <div style={{ display: 'flex', flexDirection: 'column' }} key={keyword.webnovelId}>
-              <img
-                className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
-                src={`${isLargeRow ? keyword.thumbnailUrl : keyword.thumbnailUrl}`}
-                alt={keyword.title}
-                onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal/${keyword.webnovelId}`);
+      <div className="search" >
+        {keyword.state.data.length>0?(
+          keyword.state.data.map((d,i)=>{
+            return(
+              <div style={{display:'flex', flexDirection:' column'}}key={d.webnovelId}>
+                <img
+                className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`} src={`${isLargeRow ? d.thumbnailUrl : d.thumbnailUrl}`}
+                alt={d.title}
+                onClick={()=>{
+                  navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
                 }}
-              />
-
-              <button id="grid_contents">{keyword.title}</button>
-            </div>
-          ))}
-          </div>
-    </div>
+                />
+                <button id="grid_contents">{d.title}</button>
+              </div>
+            );
+          })
+        ) : (
+          <div style={{display:'flex',flexDirection: 'column'}}><button id="grid_contents">없는 제목입니다!</button></div>
+        )}
+       
+      </div>
    </div> 
     
   );
