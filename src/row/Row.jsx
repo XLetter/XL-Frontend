@@ -18,7 +18,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       setWebnovels(response.data);
     }
     fetchData();
-  });
+  },[]);
 
   const navigate = useNavigate();
   return (

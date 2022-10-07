@@ -4,6 +4,7 @@ import xletter_logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
 import user_profile_ from '../../assets/image/user_profile_.png';
 import axios from '../../axios/Axios';
+import {useNavigate} from 'react-router-dom';
 
 async function search(searchKeyword) {
     try {
@@ -26,6 +27,22 @@ async function search(searchKeyword) {
 
 
 const Navbar = () => {
+    const [input, setInput] = useState('');
+    function onChangeAction (e) {
+    setInput(e.target.value);
+    }
+    const navigate = useNavigate();
+
+    const handleClick = event => {
+      if (event.key === 'Enter') {
+        navigate('/SearchPage', {
+          state: {
+              data: input
+
+          },
+        });
+      }
+    };
     
     return (
         <Nav>
@@ -53,10 +70,11 @@ const Navbar = () => {
                 <table className={"table"}>
                     <tr>
                         <td>
-                        <input value={input} onchange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} search />
+                        <input value={input} onChange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} 
+                        onKeyPress={handleClick}search />
                             
-                            <button id='searchBtn' onClick={async ()=> search(<input />)}>
-                                <NavLink to="/SearchPage">search</NavLink>
+                            <button id='searchBtn' onClick={async ()=> search(input)}>
+                                search
                             </button>
                         </td>
                     </tr>

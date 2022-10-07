@@ -16,10 +16,29 @@ import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
 import { API_URL, API_KEY } from '../../components/Config';
 import SearchPage from '../searchPage/SearchPage';
+import axios from '../../axios/Axios';
+async function search(searchKeyword) {
+  try {
+  
+  
+  
+    const result = await axios(
+      `${process.env.API_HOST}/search?keyword=${searchKeyword}`
+    ).then((res)=>res.data)
+
+    return result
+  } catch (error) {
+  return "error"
+  }
+};
 
 function Marketplace() {
   const navigate = useNavigate();
   const handleClick = () => navigate('/NFTDetailItemsHistory');
+  const [input, setInput] = useState('');
+  function onChangeAction (e) {
+  setInput(e.target.value);
+  }
 
   return (
     <div className="row_mp_out">
@@ -27,20 +46,19 @@ function Marketplace() {
         <Banner />
 
         <div style={{ height: '30px' }}></div>
-        <table className={'table'}>
-          <tr>
-            <td>
-              <input type="text" className={'input-sm'} placeholder={'작품을 입력하세요'} search />
-              <button>
-                검색
-                <NavLink to="/SearchPage" />
-              </button>
-
-              <Nav_Btn_1>
-                <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
-              </Nav_Btn_1>
-            </td>
-          </tr>
+        <table className={"table"}>
+                    <tr>
+                        <td>
+                        <input value={input} onChange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} search />
+                            
+                            <button id='searchBtn' onClick={async ()=> search(input)}>
+                                <NavLink to="/SearchPage">search</NavLink>
+                            </button>
+                           <Nav_Btn_1>
+                            <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
+                           </Nav_Btn_1>
+                       </td>
+                    </tr>
         </table>
 
         <Nav>
