@@ -1,10 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElements';
 import xletter_logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
 import user_profile_ from '../../assets/image/user_profile_.png';
+import axios from '../../axios/Axios';
+
+async function search(searchKeyword) {
+    try {
+    
+    
+    
+      const result = await axios(
+        `${process.env.API_HOST}/search?keyword=${searchKeyword}`
+      ).then((res)=>res.data)
+
+      return result
+    } catch (error) {
+    return "error"
+    }
+};
+
+
+
+
+
 
 const Navbar = () => {
+    
     return (
         <Nav>
             <NavLink to="/">
@@ -31,8 +53,9 @@ const Navbar = () => {
                 <table className={"table"}>
                     <tr>
                         <td>
-                            <input type="text" className={'input-sm'} placeholder={"Search!!"} search />
-                            <button id='searchBtn'>
+                        <input value={input} onchange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} search />
+                            
+                            <button id='searchBtn' onClick={async ()=> search(<input />)}>
                                 <NavLink to="/SearchPage">search</NavLink>
                             </button>
                         </td>
