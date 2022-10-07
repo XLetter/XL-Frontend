@@ -11,11 +11,10 @@ import {
 import Row from '../../row/Row';
 import requests from '../../requests/Requests';
 import Banner from '../../components/banner/Banner';
-
-import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
-import { API_URL, API_KEY } from '../../components/Config';
-import SearchPage from '../searchPage/SearchPage';
+
+import {IMAGE_BASE_URL} from '../../components/Config'
+
 import axios from '../../axios/Axios';
 async function search(searchKeyword) {
   try {
