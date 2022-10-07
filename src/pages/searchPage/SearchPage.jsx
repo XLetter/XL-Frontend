@@ -3,6 +3,7 @@ import React, {useState,useEffect} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../../grid/Grid.css';
+import './SearchPage.css';
 
 function Search({fetchUrl, isLargeRow}) {
   const [webnovels, setWebnovels] = useState([]);
@@ -27,9 +28,9 @@ function Search({fetchUrl, isLargeRow}) {
   return (
     
     <div className="search_out">
-      <div className="search">
-      <div className="search_in" > 
-      {keyword.map((keyword) => (
+      <div className="search" >
+       
+      
             <div style={{ display: 'flex', flexDirection: 'column' }} key={keyword.webnovelId}>
               <img
                 className={`${isLargeRow ? ' grid__posterLarge' : 'grid__poster'}`}
@@ -42,8 +43,8 @@ function Search({fetchUrl, isLargeRow}) {
 
               <button id="grid_contents">{keyword.title}</button>
             </div>
-          ))}
-          </div>
+          
+         
     </div>
    </div> 
     
