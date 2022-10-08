@@ -46,10 +46,9 @@ const IndividualNovelPageOriginal = () => {
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
         <div id="insideSquare">
-          <img id="thumbnail" src="" alt="example of thumbnail">
-            {/* {webnovel?.bannerUrl} */}
+          <img id="thumbnail" src={webnovel?.thumbnailUrl} alt="example of thumbnail">
+            {webnovel.thumbnailUrl}
           </img>
-
           <div className="XLOriginalButton">
             <div id="buttonText">XL Original</div>
             <div id="buttonBox"></div>
