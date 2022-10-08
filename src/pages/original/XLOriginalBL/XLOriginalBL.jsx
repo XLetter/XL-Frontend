@@ -17,11 +17,7 @@ function XloriginalBl() {
       </Nav>
       <div className="gr_or_bl_out">
         <div className="gr_or_bl">
-          <Grid
-            title="XL Original BL"
-            fetchUrl={requests.fetchNetflixOriginals}
-            isLargeRow={true}
-          />
+          <Grid title="XL Original BL" fetchUrl={requests.fetchOriginalBL} isLargeRow={true} />
         </div>
       </div>
     </div>

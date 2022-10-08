@@ -32,7 +32,7 @@ export const NavLink = styled(Link)`
     font-family: w95fa;
 
     &.active {
-        color: #15cdfc;
+        color: #ED497B;
     }
 `
 

@@ -17,7 +17,7 @@ function XloriginalHl() {
       </Nav>
       <div className="gr_or_hl_out">
         <div className="gr_or_hl">
-          <Grid title="XL Original HL" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true} />
+          <Grid title="XL Original HL" fetchUrl={requests.fetchOriginalHL} isLargeRow={true} />
         </div>
       </div>
     </div>

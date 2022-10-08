@@ -1,49 +1,50 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
+import axios from '../../axios/Axios';
 import Popup from './sections/Popup';
-import axios from 'axios';
+import RowNft from './components/RowNft';
+import requests from '../../requests/Requests';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
-const IndividualNovelPageOriginal = (webnovel_id) => {
-  const [Movie, setMovie] = useState(webnovel_id);
+const IndividualNovelPageOriginal = () => {
+  const [webnovel, setWebnovel] = useState([]);
   const [buttonPopup, setButtonPopup] = useState(false);
-
-  const api = `http://43.200.24.50:8080/apis/webnovel/{$webnovel_id}`;
 
   const navigate = useNavigate();
   const handleClickOne = () => navigate('/SampleChapterOriginalOne');
   const handleClickTwo = () => navigate('/SampleChapterOriginalTwo');
   const handleClickThree = () => navigate('/SampleChapterOriginalThree');
 
-  async function getMovie() {
-    const response = await fetch('http://43.200.24.50:8080/apis/webnovel/1')
-      .then((response) => response.json())
-      .then((response) => {
-        document.getElementById('summary').textContent = response.summary;
-        document.getElementById('illustrationWrtier').textContent = response.illustrationWrtier;
-      });
-  }
-  getMovie();
+  const location = useLocation();
+
+  useEffect(() => {
+    async function fetchData() {
+      const webnovel = await axios.get(`apis/webnovel/${location.state.webnovelId}`);
+      setWebnovel(webnovel.data);
+      console.log(webnovel);
+      return webnovel;
+    }
+    fetchData();
+  }, []);
 
   return (
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
         <div id="insideSquare">
-          <img id="thumbnail" src="" alt="example of thumbnail"></img>
-
+          <img id="thumbnail" src={location.state.thumbnailUrl} alt="example of thumbnail"></img>
           <div className="XLOriginalButton">
             <div id="buttonText">XL Original</div>
             <div id="buttonBox"></div>
           </div>
 
-          <div id="workName">작품 제목</div>
-          <div id="illustrationWrtier"> {''}</div>
-          <p id="summary">{''}</p>
+          <div id="workName">{location.state.title}</div>
+          <div id="illustrationWrtier"> {location.state.writerName}</div>
+          <p id="summary">{webnovel.summary ? webnovel.summary : ''}</p>
 
           <button id="readFirst" onClick={handleClickOne}>
             Read First Episode
@@ -68,6 +69,9 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
         <div id="innerSquareStoryList">
           <div id="vectorForNFT"></div>
           <div id="myNftsTitle">My NFTs</div>
+          <div id="myNFTsView">
+            <RowNft title="My NFTs" fetchUrl={requests.fetchAll} isLargeRow={true} />
+          </div>
           <div id="nft"></div>
 
           <div id="vectorForStoryList"></div>
@@ -84,7 +88,7 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
           </div>
 
           <div className="readChapterTwo">
-            <div id="episodeTitleTwo">episode title and number = 2{''}</div>
+            <div id="episodeTitleTwo1">episode title and number = 2{''}</div>
             <div id="dateTwo">{''}</div>
             <button id="readTwo" onClick={handleClickTwo}>
               Read
@@ -92,7 +96,7 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
           </div>
 
           <div className="readChapterThree">
-            <div id="episodeTitleThree">episode title and number = 3{''}</div>
+            <div id="episodeTitleThree1">episode title and number = 3{''}</div>
             <div id="date ">{''}</div>
             <button id="readThree" onClick={() => setButtonPopup(true)}>
               Read

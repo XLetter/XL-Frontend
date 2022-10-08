@@ -18,25 +18,17 @@ function Series() {
       <div className="row_sr_out">
         <div className="row_sr">
           <div className="row_sr_in">
-            <Row
-              title="New XL Series"
-              fetchUrl={requests.fetchNetflixOriginals}
-              isLargeRow={true}
-            />
+            <Row title="New XL Series" fetchUrl={requests.fetchSeries} isLargeRow={true} />
           </div>
         </div>
         <div className="row_sr">
           <div className="row_sr_in">
-            <Row title="Book Mark:Series" fetchUrl={requests.fetchTrending} isLargeRow={true} />
+            <Row title="Book Mark:Series" fetchUrl={requests.fetchSeries} isLargeRow={true} />
           </div>
         </div>
         <div className="row_sr">
           <div className="row_sr_in">
-            <Row
-              title="Recommendation"
-              fetchUrl={requests.fetchNetflixOriginals}
-              isLargeRow={true}
-            />
+            <Row title="Recommendation" fetchUrl={requests.fetchSeries} isLargeRow={true} />
           </div>
         </div>
       </div>

@@ -37,15 +37,14 @@ import { Row, Switch } from 'antd';
 
 function App() {
   return (
-    <div className='default'>
-
+    <div className="default">
       <br />
 
       <Router>
-        <div className='nav'>
+        <div className="nav">
           <Navbar />
         </div>
-      
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/original" element={<Original />} />
@@ -74,12 +73,13 @@ function App() {
           <Route path="/NFTDetailOffers" element={<NFTDetailOffers />} />
           <Route path="/NFTDetailDetails" element={<NFTDetailDetails />} />
 
-          <Route exact path='/IndividualNovelPageOriginal/:poster_id' element={<IndividualNovelPageOriginal/>}/>
+          <Route
+            exact
+            path="/IndividualNovelPageOriginal/:poster_id"
+            element={<IndividualNovelPageOriginal />}
+          />
         </Routes>
       </Router>
-      
-         
-        
     </div>
   );
 }

@@ -3,10 +3,10 @@
   flex-direction: row;
 }
 
-.wholestory {
+.wholestoryThree {
   width: 1119px;
-  height: 1245px;
-  top: 650px;
+  height: 2300px;
+  top: 1180px;
 
   position: relative;
   right: 50%;
@@ -17,10 +17,10 @@
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 }
 
-#innerSquare {
+#innerSquareThree {
   position: absolute;
   width: 1104px;
-  height: 1199px;
+  height: 2254px;
   left: 7px;
   top: 23px;
 
@@ -28,7 +28,7 @@
   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-#episodeTitle {
+#episodeTitleThree {
   position: absolute;
   width: 250px;
   height: 52px;
@@ -46,7 +46,7 @@
   color: #ed497b;
 }
 
-#storyContent {
+#storyContentThree {
   position: absolute;
   text-align: center;
 
@@ -64,12 +64,22 @@
   color: #000000;
 }
 
-#optionA {
+#questionThree {
+  position: absolute;
+  text-align: center;
+  left: 42%;
+  font-weight: bold;
+  font-family: 'W95FA';
+  font-size: 22px;
+  top: 1930px;
+}
+
+#optionAThree {
   position: relative;
   width: 158px;
   height: 52px;
   left: 383px;
-  top: 50px;
+  top: 2000px;
 
   background: #bfbfbf;
   /* Button Framing */
@@ -83,11 +93,11 @@
   line-height: 21px;
 }
 
-#optionB {
+#optionBThree {
   position: relative;
   width: 158px;
   height: 52px;
-  top: 1150px;
+  top: 2000px;
   left: 410px;
 
   background: #bfbfbf;
@@ -102,12 +112,12 @@
   line-height: 21px;
 }
 
-#previousButton {
+#previousButtonThree {
   position: absolute;
   width: 150px;
   height: 40px;
   left: 761px;
-  top: 1125px;
+  top: 2180px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -122,12 +132,12 @@
     inset -3.12px -3.12px 0px #808080, inset 3.12px 3.12px 0px #dbdbdb;
 }
 
-#nextButton {
+#nextButtonThree {
   position: absolute;
   width: 150px;
   height: 40px;
   left: 922px;
-  top: 1125px;
+  top: 2180px;
 
   font-family: 'W95FA';
   font-style: normal;
