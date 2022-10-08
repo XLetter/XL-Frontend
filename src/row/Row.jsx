@@ -18,7 +18,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       setWebnovels(response.data);
     }
     fetchData();
-  },[]);
+  }, []);
 
   const navigate = useNavigate();
   return (
@@ -34,7 +34,14 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
                 alt={webnovel.title}
                 onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
+                  navigate(`/IndividualNovelPageOriginal`, {
+                    state: {
+                      webnovelId: webnovel.webnovelId,
+                      title: webnovel.title,
+                      thumbnailUrl: webnovel.thumbnailUrl,
+                      writerName: webnovel.writerName,
+                    },
+                  });
                 }}
               />
 
@@ -44,6 +51,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
       </div>
     </div>
   );
-};
+}
 
 export default Row;

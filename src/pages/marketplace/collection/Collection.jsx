@@ -41,7 +41,7 @@ function Collection() {
         </Nav_Btn_1>
       </Nav>
       <div className="gr_mk_cl">
-        <Grid title="XL 시리즈 NFT" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+        <Grid title="XL 시리즈 NFT" fetchUrl={requests.fetchSeries} isLargeRow={true} />
       </div>
     </div>
   );

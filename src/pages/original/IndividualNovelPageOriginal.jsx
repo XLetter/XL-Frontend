@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
 import axios from '../../axios/Axios';
@@ -15,29 +15,19 @@ const IndividualNovelPageOriginal = () => {
   const [webnovel, setWebnovel] = useState([]);
   const [buttonPopup, setButtonPopup] = useState(false);
 
-  const api = `http://43.200.24.50:8080/apis/webnovel/{$webnovel_id}`;
-
   const navigate = useNavigate();
   const handleClickOne = () => navigate('/SampleChapterOriginalOne');
   const handleClickTwo = () => navigate('/SampleChapterOriginalTwo');
   const handleClickThree = () => navigate('/SampleChapterOriginalThree');
 
-  async function getMovie() {
-    const response = await fetch('http://43.200.24.50:8080/apis/webnovel/1')
-      .then((response) => response.json())
-      .then((response) => {
-        document.getElementById('summary').textContent = response.summary;
-        document.getElementById('illustrationWrtier').textContent = response.illustrationWrtier;
-      });
-  }
-  getMovie();
+  const location = useLocation();
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchBannerInfo);
-      setWebnovel(request.data[Math.floor(Math.random() * (request.data.length - 1))]);
-
-      return request;
+      const webnovel = await axios.get(`apis/webnovel/${location.state.webnovelId}`);
+      setWebnovel(webnovel.data);
+      console.log(webnovel);
+      return webnovel;
     }
     fetchData();
   }, []);
@@ -46,17 +36,15 @@ const IndividualNovelPageOriginal = () => {
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
         <div id="insideSquare">
-          <img id="thumbnail" src={webnovel?.thumbnailUrl} alt="example of thumbnail">
-            {webnovel.thumbnailUrl}
-          </img>
+          <img id="thumbnail" src={location.state.thumbnailUrl} alt="example of thumbnail"></img>
           <div className="XLOriginalButton">
             <div id="buttonText">XL Original</div>
             <div id="buttonBox"></div>
           </div>
 
-          <div id="workName">{webnovel?.title}</div>
-          <div id="illustrationWrtier"> {''}</div>
-          <p id="summary">{''}</p>
+          <div id="workName">{location.state.title}</div>
+          <div id="illustrationWrtier"> {location.state.writerName}</div>
+          <p id="summary">{webnovel.summary ? webnovel.summary : ''}</p>
 
           <button id="readFirst" onClick={handleClickOne}>
             Read First Episode
@@ -82,7 +70,7 @@ const IndividualNovelPageOriginal = () => {
           <div id="vectorForNFT"></div>
           <div id="myNftsTitle">My NFTs</div>
           <div id="myNFTsView">
-            <RowNft title="My NFTs" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
+            <RowNft title="My NFTs" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
           <div id="nft"></div>
 

@@ -17,7 +17,7 @@ function XlseriesGl() {
       </Nav>
       <div className="gr_sr_gl_out">
         <div className=" .gr_sr_gl">
-          <Grid title="XL Series GL" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true} />
+          <Grid title="XL Series GL" fetchUrl={requests.fetchSerieseGL} isLargeRow={true} />
         </div>
       </div>
     </div>
