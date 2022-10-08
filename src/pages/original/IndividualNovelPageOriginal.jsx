@@ -82,7 +82,7 @@ const IndividualNovelPageOriginal = () => {
           <div id="vectorForNFT"></div>
           <div id="myNftsTitle">My NFTs</div>
           <div id="myNFTsView">
-            <RowNft title="My NFTs" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
+            <RowNft title="My NFTs" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
           <div id="nft"></div>
 

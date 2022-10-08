@@ -12,22 +12,22 @@ function Home() {
 
         <div className="row_hm">
           <div className="row_hm_in">
-            <Row title="XL Original" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+            <Row title="XL Original" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
         <div className="row_hm">
           <div className="row_hm_in">
-            <Row title="XL Series" fetchUrl={requests.fetchTrending} isLargeRow={true} />
+            <Row title="XL Series" fetchUrl={requests.fetchSeries} isLargeRow={true} />
           </div>
         </div>
         <div className="row_hm">
           <div className="row_hm_in">
-            <Row title="Now Voting" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+            <Row title="Now Voting" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
         <div className="row_hm">
           <div className="row_hm_in">
-            <Row title="Trending" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+            <Row title="Trending" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
         </div>
       </div>

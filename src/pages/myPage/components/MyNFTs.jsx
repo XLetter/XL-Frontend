@@ -7,9 +7,9 @@ import './MyNFTs.css';
 const MyNFTs = () => {
   return (
     <div className="MyNFTs">
-      <Row title="Reading List" fetchUrl={requests.fetchTrending} isLargeRow={true} />
-      <Row title="My NFTs" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
-      <Row title="Favorites" fetchUrl={requests.fetchActionMovies} isLargeRow={true} />
+      <Row title="Reading List" fetchUrl={requests.fetchAll} isLargeRow={true} />
+      <Row title="My NFTs" fetchUrl={requests.fetchAll} isLargeRow={true} />
+      <Row title="Favorites" fetchUrl={requests.fetchAll} isLargeRow={true} />
     </div>
   );
 };

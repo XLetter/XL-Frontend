@@ -18,25 +18,17 @@ function Original() {
       <div className="row_or_out">
         <div className="row_or">
           <div className="row_or_in">
-            <Row
-              title="New XL Originals"
-              fetchUrl={requests.fetchNetflixOriginals}
-              isLargeRow={true}
-            />
+            <Row title="New XL Originals" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
         <div className="row_or">
           <div className="row_or_in">
-            <Row title="Book Mark:Original" fetchUrl={requests.fetchTrending} isLargeRow={true} />
+            <Row title="Book Mark:Original" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
         <div className="row_or">
           <div className="row_or_in">
-            <Row
-              title="Recommendation"
-              fetchUrl={requests.fetchNetflixOriginals}
-              isLargeRow={true}
-            />
+            <Row title="Recommendation" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
       </div>

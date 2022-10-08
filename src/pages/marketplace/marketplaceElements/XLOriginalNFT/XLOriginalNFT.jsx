@@ -40,7 +40,7 @@ function Xloriginalnft() {
         </Nav_Btn_1>
       </Nav>
       <div className="gr_mk_xn">
-        <Grid title="최신 트렌드" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+        <Grid title="최신 트렌드" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
   );
