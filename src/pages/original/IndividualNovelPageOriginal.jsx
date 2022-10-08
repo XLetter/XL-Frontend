@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Original.css';
 import Favorite from './sections/Favorite';
+import axios from '../../axios/Axios';
 import Popup from './sections/Popup';
 import RowNft from '/Users/yenas/Documents/GitHub/XL-Frontend/src/pages/original/components/RowNft';
 import requests from '/Users/yenas/Documents/GitHub/XL-Frontend/src/requests/Requests';
@@ -10,8 +11,8 @@ import requests from '/Users/yenas/Documents/GitHub/XL-Frontend/src/requests/Req
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
 
-const IndividualNovelPageOriginal = (webnovel_id) => {
-  const [Movie, setMovie] = useState(webnovel_id);
+const IndividualNovelPageOriginal = () => {
+  const [webnovel, setWebnovel] = useState([]);
   const [buttonPopup, setButtonPopup] = useState(false);
 
   const api = `http://43.200.24.50:8080/apis/webnovel/{$webnovel_id}`;
@@ -31,18 +32,30 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
   }
   getMovie();
 
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(requests.fetchBannerInfo);
+      setWebnovel(request.data[Math.floor(Math.random() * (request.data.length - 1))]);
+
+      return request;
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="IndividualNovelPageOriginal">
       <div className="infoOfNovel">
         <div id="insideSquare">
-          <img id="thumbnail" src="" alt="example of thumbnail"></img>
+          <img id="thumbnail" src="" alt="example of thumbnail">
+            {/* {webnovel?.bannerUrl} */}
+          </img>
 
           <div className="XLOriginalButton">
             <div id="buttonText">XL Original</div>
             <div id="buttonBox"></div>
           </div>
 
-          <div id="workName">작품 제목</div>
+          <div id="workName">{webnovel?.title}</div>
           <div id="illustrationWrtier"> {''}</div>
           <p id="summary">{''}</p>
 
@@ -88,7 +101,7 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
           </div>
 
           <div className="readChapterTwo">
-            <div id="episodeTitleTwo">episode title and number = 2{''}</div>
+            <div id="episodeTitleTwo1">episode title and number = 2{''}</div>
             <div id="dateTwo">{''}</div>
             <button id="readTwo" onClick={handleClickTwo}>
               Read
@@ -96,7 +109,7 @@ const IndividualNovelPageOriginal = (webnovel_id) => {
           </div>
 
           <div className="readChapterThree">
-            <div id="episodeTitleThree">episode title and number = 3{''}</div>
+            <div id="episodeTitleThree1">episode title and number = 3{''}</div>
             <div id="date ">{''}</div>
             <button id="readThree" onClick={() => setButtonPopup(true)}>
               Read

@@ -70,7 +70,7 @@
 
 #workName {
   position: absolute;
-  width: 95px;
+
   height: 29px;
   left: 262px;
   top: 73px;
@@ -448,7 +448,7 @@
     inset -4px -4px 0px #ed497b;
 }
 
-#episodeTitleTwo {
+#episodeTitleTwo1 {
   position: absolute;
   height: 24px;
   left: 18px;
@@ -460,7 +460,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  /* color: #000000; */
+  color: #000000;
 }
 
 #dateTwo {
@@ -507,7 +507,7 @@
     inset -4px -4px 0px #ed497b;
 }
 
-#episodeTitleThree {
+#episodeTitleThree1 {
   position: absolute;
 
   height: 24px;
