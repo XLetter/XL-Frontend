@@ -5,8 +5,8 @@
 
 .wholestoryThree {
   width: 1119px;
-  height: 1750px;
-  top: 900px;
+  height: 2300px;
+  top: 1180px;
 
   position: relative;
   right: 50%;
@@ -20,7 +20,7 @@
 #innerSquareThree {
   position: absolute;
   width: 1104px;
-  height: 1704px;
+  height: 2254px;
   left: 7px;
   top: 23px;
 
@@ -64,12 +64,22 @@
   color: #000000;
 }
 
+#questionThree {
+  position: absolute;
+  text-align: center;
+  left: 42%;
+  font-weight: bold;
+  font-family: 'W95FA';
+  font-size: 22px;
+  top: 1930px;
+}
+
 #optionAThree {
   position: relative;
   width: 158px;
   height: 52px;
   left: 383px;
-  top: 1500px;
+  top: 2000px;
 
   background: #bfbfbf;
   /* Button Framing */
@@ -87,7 +97,7 @@
   position: relative;
   width: 158px;
   height: 52px;
-  top: 1150px;
+  top: 2000px;
   left: 410px;
 
   background: #bfbfbf;
@@ -107,7 +117,7 @@
   width: 150px;
   height: 40px;
   left: 761px;
-  top: 1630px;
+  top: 2180px;
 
   font-family: 'W95FA';
   font-style: normal;
@@ -127,7 +137,7 @@
   width: 150px;
   height: 40px;
   left: 922px;
-  top: 1630px;
+  top: 2180px;
 
   font-family: 'W95FA';
   font-style: normal;

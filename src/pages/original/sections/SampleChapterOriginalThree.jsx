@@ -121,12 +121,12 @@ function SampleChapterOriginalThree() {
             With this regard their currents turn awry, And lose the name of action.--Soft you now!
             The fair Ophelia! Nymph, in thy orisons Be all my sins remember'd.
           </p>
-          <p className="questionThree">Question: {''}</p>
-          <button id="optionAThree">1번선택지</button>
-          <button id="optionBThree">2번선택지</button>
+          <p id="questionThree">Q. To Be or Not to Be?</p>
+          <button id="optionAThree">To Be</button>
+          <button id="optionBThree">Not To Be</button>
           <div className="bottomButtonsThree">
-            <button id="contentButtonThree">Content</button>
-            <button id="commentButtonThree">Comment</button>
+            {/* <button id="contentButtonThree">Content</button>
+            <button id="commentButtonThree">Comment</button> */}
             <button id="previousButtonThree" onClick={handleClickBefore}>
               Previous
             </button>
