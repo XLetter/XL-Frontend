@@ -1,57 +1,60 @@
-
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../../axios/Axios';
 import '../../grid/Grid.css';
 import './SearchPage.css';
 
-function Search({fetchUrl, isLargeRow}) {
+function SearchPage(fetchUrl, isLargeRow) {
   const [webnovels, setWebnovels] = useState([]);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log(isLargeRow);
 
   // A snippet of code which runs based on a specific condition/varaible
   useEffect(() => {
     // if [], run once when the row loads, and dont run again
 
     async function fetchData() {
-      const response = await axios.get(fetchUrl,isLargeRow);
+      console.log(location.state.keyword);
+      const response = await axios.get(`apis/webnovel/search?keyword=${location.state.keyword}`);
+      console.log('response', response);
       //home.js의 fetchUrl
       // ex) https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213
 
       setWebnovels(response.data);
     }
     fetchData();
-  },[]);
-  const navigate = useNavigate();
+  }, []);
+  console.log(webnovels);
 
-  const keyword=useLocation();;
-  
   return (
-    
     <div className="search_out">
-      <div className="search" >
-        {keyword.state.data.length>0?(
-          keyword.state.data.map((d,i)=>{
-            return(
-              <div style={{display:'flex', flexDirection:' column'}}key={d.webnovelId}>
+      <div className="search">
+        {webnovels.length > 0 ? (
+          webnovels.map((d, i) => {
+            return (
+              <div style={{ display: 'flex', flexDirection: ' column' }} key={d.webnovelId}>
                 <img
-                className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`} src={`${isLargeRow ? d.thumbnailUrl : d.thumbnailUrl}`}
-                alt={d.title}
-                onClick={()=>{
-                  navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
-                }}
+                  // className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`}
+                  className="grid__poster"
+                  src={`${d.thumbnailUrl}`}
+                  alt={d.title}
+                  onClick={() => {
+                    navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
+                  }}
                 />
                 <button id="grid_contents">{d.title}</button>
               </div>
             );
           })
         ) : (
-          <div style={{display:'flex',flexDirection: 'column'}}><button id="grid_contents">없는 제목입니다!</button></div>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <button id="grid_contents">없는 제목입니다!</button>
+          </div>
         )}
-       
       </div>
-   </div> 
-    
+    </div>
   );
-};
+}
 
-export default Search;
+export default SearchPage;
