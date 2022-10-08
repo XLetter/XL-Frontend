@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from '/Users/yenas/Documents/GitHub/XL-Frontend/src/axios/Axios';
+import axios from '../../../axios/Axios';
 import './RowNft.css';
 
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';

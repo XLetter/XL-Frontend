@@ -5,8 +5,8 @@ import './Original.css';
 import Favorite from './sections/Favorite';
 import axios from '../../axios/Axios';
 import Popup from './sections/Popup';
-import RowNft from '/Users/yenas/Documents/GitHub/XL-Frontend/src/pages/original/components/RowNft';
-import requests from '/Users/yenas/Documents/GitHub/XL-Frontend/src/requests/Requests';
+import RowNft from './components/RowNft';
+import requests from '../../requests/Requests';
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 <meta charset="UTF-8"></meta>;
