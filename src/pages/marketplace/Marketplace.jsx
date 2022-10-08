@@ -16,34 +16,16 @@ import { useNavigate } from 'react-router-dom';
 import { IMAGE_BASE_URL } from '../../components/Config';
 
 import axios from '../../axios/Axios';
-async function search(searchKeyword) {
-  try {
-    const result = await axios(
-      `${process.env.REACT_APP_API_HOST}/search?keyword=${searchKeyword}`,
-    ).then((res) => res.data);
-
-    return result;
-  } catch (error) {
-    return 'error';
-  }
-}
 
 function Marketplace() {
   const [input, setInput] = useState('');
   const navigate = useNavigate();
   async function search(searchKeyword) {
-    try {
-      const result = await axios(`${IMAGE_BASE_URL}/search?keyword=${searchKeyword}`).then(
-        (res) => res.data,
-      );
-      navigate('/SearchPage', {
-        state: {
-          data: result,
-        },
-      });
-    } catch (error) {
-      return 'error';
-    }
+    navigate('/SearchPage', {
+      state: {
+        keyword: searchKeyword,
+      },
+    });
   }
   const handleClick = (event) => {
     if (event.key === 'Enter') {
