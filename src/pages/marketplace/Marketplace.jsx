@@ -43,14 +43,6 @@ function Marketplace() {
         <Banner />
         <div className='mp_nav_srch_out'>
         <div className='mp_nav_srch_in'>
-        <Nav>
-          <Bars />
-          <NavMenu>
-            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
-            <NavLink to="/collection">XL Series NFT</NavLink>
-            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
-          </NavMenu>
-        </Nav>
 
         <div style={{ height: '30px' }}>
         <table className={'table'}>
@@ -77,11 +69,20 @@ function Marketplace() {
 
 
         </div>
-        <Nav_Btn_1>
-        <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link></Nav_Btn_1>
+        <Nav>
+          <Bars />
+
+        <NavMenu>
+            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
+            <NavLink to="/collection">XL Series NFT</NavLink>
+            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
+          </NavMenu>
+          <Nav_Btn_1>
+          <NavBtn_1Link to="/mypage/wallet">My Page</NavBtn_1Link></Nav_Btn_1>
+        </Nav>
+
         </div>
 
-        <button onClick={handleClick}>NFT detail page</button>
         <div className="row_mp_out_2">
         <div className="row_mp">
           <div className="row_mp_in">

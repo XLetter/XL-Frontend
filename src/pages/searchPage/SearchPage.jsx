@@ -43,7 +43,7 @@ function SearchPage(fetchUrl, isLargeRow) {
                     navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
                   }}
                 />
-                <button id="grid_contents">{d.title}</button>
+                <button id="grid_contents" >{d.title}</button>
               </div>
             );
           })

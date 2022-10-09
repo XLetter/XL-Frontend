@@ -39,9 +39,15 @@ function NowTrend() {
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1>
       </Nav>
-      <div className="gr_mk_nt">
+      <div className="gr_mp_nt_out_1">
+      <div className="gr_mp_nt_out_2">
+        <div className="gr_mp_nt">
+          <div className='gr_mp_nt_in'>
         <Grid title="최신 트렌드" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
+    </div>
+    </div>
+    </div>
     </div>
   );
 }

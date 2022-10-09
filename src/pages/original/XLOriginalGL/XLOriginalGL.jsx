@@ -15,11 +15,14 @@ function XloriginalGl() {
           <NavLink to="/xloriginalhl">HL</NavLink>
         </NavMenu>
       </Nav>
-      <div className="gr_or_gl_out">
+      <div className="gr_or_gl_out_1">
+      <div className="gr_or_gl_out_2">
         <div className="gr_or_gl">
+          <div className='gr_or_gl_in'>
           <Grid title="XL Original GL" fetchUrl={requests.fetchOriginalGL} isLargeRow={true} />
         </div>
       </div>
+      </div></div>
     </div>
   );
 }

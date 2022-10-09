@@ -15,11 +15,15 @@ function XlseriesGl() {
           <NavLink to="/xlserieshl">HL</NavLink>
         </NavMenu>
       </Nav>
-      <div className="gr_sr_gl_out">
-        <div className=" .gr_sr_gl">
+      <div className="gr_sr_gl_out_1">
+      <div className="gr_sr_gl_out_2">
+        <div className="gr_sr_gl">
+          <div className='gr_sr_gl_in'>
           <Grid title="XL Series GL" fetchUrl={requests.fetchSerieseGL} isLargeRow={true} />
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }
