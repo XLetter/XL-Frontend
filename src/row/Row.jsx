@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from '../axios/Axios';
 import './Row.css';
 import { useNavigate } from 'react-router-dom';
+import PopupHome from './PopupHome/PopupHome';
 
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';
 
 function Row({ title, fetchUrl, isLargeRow }) {
+  const [buttonPopup, setButtonPopup] = useState(false);
   const [webnovels, setWebnovels] = useState([]);
 
   // A snippet of code which runs based on a specific condition/varaible
@@ -33,19 +35,16 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 className={`${isLargeRow ? ' row__posterLarge' : 'row__poster'}`}
                 src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
                 alt={webnovel.title}
-                onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal`, {
-                    state: {
-                      webnovelId: webnovel.webnovelId,
-                      title: webnovel.title,
-                      thumbnailUrl: webnovel.thumbnailUrl,
-                      writerName: webnovel.writerName,
-                    },
-                  });
-                }}
+                onClick={() => setButtonPopup(true)}
+                // onClick={() => {
+                //   navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
+                // }}
               />
-
+              <PopupHome trigger={buttonPopup} setTrigger={setButtonPopup}>
+                {/* 구매하겠습니까? */}
+              </PopupHome>
               <button id="row_contents">{webnovel.title}</button>
+              <PopupHome trigger={buttonPopup} setTrigger={setButtonPopup}></PopupHome>
             </div>
           ))}
       </div>
