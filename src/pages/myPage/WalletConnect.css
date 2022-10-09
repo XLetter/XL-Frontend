@@ -1,4 +1,5 @@
 .KaikasPage {
+
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -14,12 +15,87 @@
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 }
 
+.welcome {
+  position: absolute;
+  left: 32%;
+  top: 16%;
+
+  font-family: w95fa;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.profile_info {
+  position: absolute;
+
+  left: 17%;
+  top: 18%;
+}
+
+.picture_area {
+  position: absolute;
+
+  left: 4%;
+  top: 17%;
+}
+
+.profile_picture {
+  width: 90px;
+  height: 90px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.token_info {
+  position: absolute;
+
+  left: 50%;
+  top: 20%;
+
+  font-family: w95fa;
+}
+
+.amount {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  font-family: msSansSerif;
+}
+
 #walletConnectBtn {
   position: absolute;
+  left: 39%;
+  top: 23%;
+
   width: 200px;
   height: 25px;
 
   margin-top: 10px;
+
+  background: #cccccc;
+  box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
+
+  font-family: w95fa;
+}
+
+#justBtn {
+  position: absolute;
+  left: 150%;
+  top: 23%;
+
+  width: 100px;
+  height: 25px;
 
   background: #cccccc;
   box-shadow: inset -1px -1px 1px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
