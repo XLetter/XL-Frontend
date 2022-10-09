@@ -41,12 +41,12 @@
   position: absolute;
 
   left: 4%;
-  top: 15%;
+  top: 17%;
 }
 
 .profile_picture {
-  width: 15px;
-  height: 15px;
+  width: 90px;
+  height: 90px;
   border-radius: 70%;
   overflow: hidden;
 }
