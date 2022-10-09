@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import caver from './kaikas/Caver';
 import './WalletConnect.css';
+import profile from '../../assets/image/user_profile.jpeg';
 
 import WalletInfo from './kaikas/WalletInfo';
 
@@ -69,15 +70,53 @@ class WalletConnect extends Component {
 
     return (
       <div className="KaikasPage">
-        <h2 id="network_info">network: {network}</h2>
-        <br />
-        <div className="KaikasPage_main">
-          <WalletInfo address={account} balance={balance} />
+
+        <div className='unconnected' style={{display: account ? 'none' : ''}}>
+          <div className='welcome'>
+            Welcome! <br /> Be our member for more contents!
+          </div>
+
+          <button id="walletConnectBtn" onClick={this.handleConnectBtnClick}>
+            Connect your Kaikas Wallet!
+          </button>
         </div>
-        <br />
-        <button id="walletConnectBtn" onClick={this.handleConnectBtnClick}>
-          Connect your Kaikas Wallet!
-        </button>
+
+        <div className='connected' style={{display: account ? '' : 'none'}}>
+
+          <div className='profile_content'>
+
+            <div className='picture_area'>
+              <div className='profile_picture'>
+                <img className='profile' src={profile} />
+              </div>
+            </div>
+
+            <div className='profile_info'>
+              <div className="KaikasPage_main">
+                <WalletInfo address={account} balance={balance} />
+              </div>
+            </div>
+
+            <div className='token_info'>
+              <div className='info'>
+                My Token:
+              </div>
+
+              <div className='amount'>
+                {balance}
+              </div>
+
+              <div className='unit'>
+                XLT {/* 실제로는 klay임 */}
+              </div> 
+
+              <button id="justBtn">
+                Button...
+              </button>
+            </div>
+
+          </div>
+        </div>  
       </div>
     );
   }
