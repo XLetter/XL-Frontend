@@ -30,6 +30,7 @@ function NowTrend() {
       <Nav>
         <Bars />
         <NavMenu>
+        
           <NavLink to="/nowtrend">실시간 거래NFT</NavLink>
           <NavLink to="/collection">XL Series NFT</NavLink>
           <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
