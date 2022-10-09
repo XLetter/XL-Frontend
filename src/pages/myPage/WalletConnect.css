@@ -1,5 +1,4 @@
 .KaikasPage {
-
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
@@ -17,8 +16,8 @@
 
 .welcome {
   position: absolute;
-  left: 32%;
-  top: 16%;
+  left: 40%;
+  top: 15%;
 
   font-family: w95fa;
   font-style: normal;
@@ -33,15 +32,15 @@
 .profile_info {
   position: absolute;
 
-  left: 17%;
-  top: 18%;
+  left: 29%;
+  top: 16%;
 }
 
 .picture_area {
   position: absolute;
 
-  left: 4%;
-  top: 17%;
+  left: 22.5%;
+  top: 15%;
 }
 
 .profile_picture {
@@ -60,8 +59,8 @@
 .token_info {
   position: absolute;
 
-  left: 50%;
-  top: 20%;
+  left: 55%;
+  top: 18%;
 
   font-family: w95fa;
 }
@@ -75,8 +74,8 @@
 
 #walletConnectBtn {
   position: absolute;
-  left: 39%;
-  top: 23%;
+  left: 44.5%;
+  top: 21%;
 
   width: 200px;
   height: 25px;

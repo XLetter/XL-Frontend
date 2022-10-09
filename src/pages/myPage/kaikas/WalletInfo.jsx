@@ -10,21 +10,10 @@ const WalletInfo = ({ address, balance }) => {
 
       <div className="WalletInfo_infoBox">
         <div className="WalletInfo_info">
-          {/*<span className="WalletInfo_label">Wallet Address </span>*/}
           {address}
         </div>
-
-        <br />
-
-        {/*
-        <div className="WalletInfo_info">
-          <span className="WalletInfo_label">Balance </span>
-          <span className="WalletInfo_balance">{balance || ' '} </span>
-          <span className="WalletInfo_unit">KLAY</span>
-        </div>
-        */}
-
       </div>
+      
     </div>
   );
 };
