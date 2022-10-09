@@ -18,6 +18,7 @@ class MyPage extends Component {
     super(props);
     this.state = {
       viewMyNFTs: true,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -28,6 +29,18 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: true,
+      viewMyDAOs: false,
+      viewBuyXLT: false,
+      viewPurchaseHistory: false,
+      viewProfileSetting: false,
+    });
+  };
+
+  handleDAOsBtnClick = () => {
+    this.setState({
+      default: false,
+      viewMyNFTs: false,
+      viewMyDAOs: true,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -38,6 +51,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: true,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -48,6 +62,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: true,
       viewProfileSetting: false,
@@ -58,6 +73,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: true,
@@ -65,7 +81,7 @@ class MyPage extends Component {
   };
 
   render() {
-    const { viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
+    const { viewMyNFTs, viewMyDAOs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
 
     return (
       <div className='cover'>
@@ -82,6 +98,15 @@ class MyPage extends Component {
                 style={{ color: viewMyNFTs ? '#ED497B' : 'black' }}
                 >
                 My NFTs
+              </button>
+
+              <button 
+                id='myDAOs' 
+                name='myDAOsBtn' 
+                onClick={this.handleDAOsBtnClick} 
+                style={{ color: viewMyDAOs ? '#ED497B' : 'black' }}
+                >
+                My DAOs
               </button>
 
               <button 
@@ -116,6 +141,9 @@ class MyPage extends Component {
           <div className='views'>
             <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
               <MyNFTs />
+            </div>
+            <div className='myDAOsView' style={{ display: viewMyDAOs ? 'block' : 'none' }}>
+              <MyNFTs /> {/*추후 수정 필요*/}
             </div>
             <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
               <BuyXLT />
