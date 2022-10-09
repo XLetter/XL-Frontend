@@ -12,7 +12,7 @@
   margin-top: 44px;
   margin-bottom: 44px;
 
-  width: 1100px;
+  width: 1120px;
   height: 1507px;
   left: 402px;
   top: 586px;
@@ -26,7 +26,8 @@
 }
 .gr_or_bl_out {
   width: 100vw;
-  background: linear-gradient(225deg, #69eacb 0%, #eaccf8 47.87%, #6654f1 100%);
-  justify-content: space-between;
-  padding-left: 263px;
+  background: #717171;
+  
+  padding:0.5rem calc((100vw - 1120px)/2);
+
 }

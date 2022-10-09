@@ -15,23 +15,25 @@ function Original() {
           <NavLink to="/xloriginalhl">HL</NavLink>
         </NavMenu>
       </Nav>
-      <div className="row_or_out">
+      <div className="row_or_out_1">
+      <div className="row_or_out_2">
         <div className="row_or">
           <div className="row_or_in">
             <Row title="New XL Originals" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
-        </div>
-        <div className="row_or">
+        
+       
           <div className="row_or_in">
             <Row title="Book Mark:Original" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
-        </div>
-        <div className="row_or">
+        
+        
           <div className="row_or_in">
             <Row title="Recommendation" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
