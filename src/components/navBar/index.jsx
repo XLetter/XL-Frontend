@@ -38,25 +38,27 @@ const Navbar = () => {
         <NavLink to="/marketplace">Marketplace</NavLink>
         <NavLink to="/mypage/wallet">My Page</NavLink>
       </NavMenu>
-      <table className={'table'}>
-        <tr>
-          <td>
-            <input
-              value={input}
-              onChange={onChangeAction}
-              type="text"
-              className={'input-sm'}
-              placeholder={'Search!!'}
-              onKeyPress={handleClick}
-              search
-            />
-
-            <button id="searchBtn" onClick={async () => search(input)}>
-              search
-            </button>
-          </td>
-        </tr>
-      </table>
+      
+      <div className='searchTable'>
+        <table>
+          <tr>
+            <td>
+              <input
+                value={input}
+                onChange={onChangeAction}
+                type="text"
+                className={'input-sm'}
+                placeholder={'Search!!'}
+                onKeyPress={handleClick}
+                search
+              />
+            </td>
+          </tr>
+        </table>
+        <button id="searchBtn" onClick={async () => search(input)}>
+          search
+        </button>
+      </div>
 
       <NavBtn>
         <NavBtnLink to="/mypage/wallet">

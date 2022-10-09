@@ -6,7 +6,7 @@
     padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 44px; 
+    margin-bottom: 100px; 
 
     width: 1120px;
     height: 500px;
@@ -21,8 +21,8 @@
 
 .setting_header {
   position: absolute;
-  left: 4%;
-  top: 54%;
+  left: 22.5%;
+  top: 49%;
 
   padding-bottom: 10px;
 
@@ -37,8 +37,8 @@
 
 .about_account {
   position: absolute;
-  left: 4%;
-  top: 60%;
+  left: 22.5%;
+  top: 55%;
 
   display: flex;
   flex-direction: column;
@@ -53,8 +53,8 @@
 
 .about_profile {
   position: absolute;
-  left: 4%;
-  top: 68%;
+  left: 22.5%;
+  top: 63%;
 
   display: flex;
   flex-direction: column;

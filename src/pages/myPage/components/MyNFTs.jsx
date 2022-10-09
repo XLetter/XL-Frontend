@@ -12,7 +12,7 @@ const MyNFTs = () => {
       </div>
 
       <div className='rows'>
-        <Row title="My NFTs" fetchUrl={requests.fetchAll} isLargeRow={true} />
+        <Row title="" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
 
     </div>
