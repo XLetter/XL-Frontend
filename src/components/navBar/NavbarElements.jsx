@@ -77,6 +77,9 @@ export const Nav_Btn_1 = styled.nav`
   margin-right: 418px @media screen and (max-width: 768px) {
     display: none;
   }
+  align-items: center;
+  margin-top: 1.8%;
+  
 `;
 export const NavBtn_1Link = styled(Link)`
   border-radius: 4px;
