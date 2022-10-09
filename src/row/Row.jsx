@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from '../axios/Axios';
 import './Row.css';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< Updated upstream
 import PopupMain from '../pages/home/sections/popupMain';
+=======
+import PopupHome from './PopupHome/PopupHome';
+>>>>>>> Stashed changes
 
 const base_url = 'http://43.200.24.50:8080/apis/webnovel/';
 
@@ -35,12 +39,21 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 className={`${isLargeRow ? ' row__posterLarge' : 'row__poster'}`}
                 src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
                 alt={webnovel.title}
+<<<<<<< Updated upstream
                 // onClick={() => {
                 //   navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
                 // }}
                 onClick={() => setButtonPopup(true)}
+=======
+                onClick={() => setButtonPopup(true)}
+                // onClick={() => {
+                //   navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
+                // }}
+>>>>>>> Stashed changes
               />
-
+              <PopupHome trigger={buttonPopup} setTrigger={setButtonPopup}>
+                {/* 구매하겠습니까? */}
+              </PopupHome>
               <button id="row_contents">{webnovel.title}</button>
               <PopupMain trigger={buttonPopup} setTrigger={setButtonPopup}></PopupMain>
             </div>
