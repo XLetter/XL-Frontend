@@ -26,8 +26,8 @@ function Grid({ title, fetchUrl, isLargeRow }) {
     <div className="grid">
       <h2>{title}</h2>
 
-    <div className="grid__posters">
-    {webnovels &&
+      <div className="grid__posters">
+        {webnovels &&
           webnovels.map((webnovel, i) => (
             <div style={{ display: 'flex', flexDirection: 'column' }} key={webnovel.webnovelId}>
               <img
@@ -35,7 +35,14 @@ function Grid({ title, fetchUrl, isLargeRow }) {
                 src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
                 alt={webnovel.title}
                 onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
+                  navigate(`/IndividualNovelPageOriginal`, {
+                    state: {
+                      webnovelId: webnovel.webnovelId,
+                      title: webnovel.title,
+                      thumbnailUrl: webnovel.thumbnailUrl,
+                      writerName: webnovel.writerName,
+                    },
+                  });
                 }}
               />
 

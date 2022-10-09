@@ -31,19 +31,26 @@ function SearchPage(fetchUrl, isLargeRow) {
     <div className="search_out">
       <div className="search">
         {webnovels.length > 0 ? (
-          webnovels.map((d, i) => {
+          webnovels.map((webnovel, i) => {
             return (
-              <div style={{ display: 'flex', flexDirection: ' column' }} key={d.webnovelId}>
+              <div style={{ display: 'flex', flexDirection: ' column' }} key={webnovel.webnovelId}>
                 <img
                   // className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`}
                   className="grid__poster"
-                  src={`${d.thumbnailUrl}`}
-                  alt={d.title}
+                  src={`${webnovel.thumbnailUrl}`}
+                  alt={webnovel.title}
                   onClick={() => {
-                    navigate(`/IndividualNovelPageOriginal/${d.webnovelId}`);
+                    navigate(`/IndividualNovelPageOriginal`, {
+                      state: {
+                        webnovelId: webnovel.webnovelId,
+                        title: webnovel.title,
+                        thumbnailUrl: webnovel.thumbnailUrl,
+                        writerName: webnovel.writerName,
+                      },
+                    });
                   }}
                 />
-                <button id="grid_contents">{d.title}</button>
+                <button id="grid_contents">{webnovel.title}</button>
               </div>
             );
           })
