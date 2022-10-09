@@ -10,7 +10,6 @@ div {
 
 .cover {
     width: 100vw;
-    background:linear-gradient(225deg, #69EACB 0%, #EACCF8 47.87%, #6654F1 100%);
     justify-content: space-between;
 }
 
