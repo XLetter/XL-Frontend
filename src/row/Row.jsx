@@ -44,7 +44,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
                 {/* 구매하겠습니까? */}
               </PopupHome>
               <button id="row_contents">{webnovel.title}</button>
-              <PopupMain trigger={buttonPopup} setTrigger={setButtonPopup}></PopupMain>
+              <PopupHome trigger={buttonPopup} setTrigger={setButtonPopup}></PopupHome>
             </div>
           ))}
       </div>
