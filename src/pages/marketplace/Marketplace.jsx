@@ -37,11 +37,22 @@ function Marketplace() {
   }
 
   return (
-    <div className="row_mp_out">
+    <div className="row_mp_out_1">
+    
       <div className="marketplace">
         <Banner />
+        <div className='mp_nav_srch_out'>
+        <div className='mp_nav_srch_in'>
+        <Nav>
+          <Bars />
+          <NavMenu>
+            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
+            <NavLink to="/collection">XL Series NFT</NavLink>
+            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
+          </NavMenu>
+        </Nav>
 
-        <div style={{ height: '30px' }}></div>
+        <div style={{ height: '30px' }}>
         <table className={'table'}>
           <tr>
             <td>
@@ -58,39 +69,35 @@ function Marketplace() {
               <button id="searchBtn" onClick={async () => search(input)}>
                 search
               </button>
-              <Nav_Btn_1>
-                <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
-              </Nav_Btn_1>
+
             </td>
           </tr>
         </table>
+        </div>
 
-        <Nav>
-          <Bars />
-          <NavMenu>
-            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
-            <NavLink to="/collection">XL Series NFT</NavLink>
-            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
-          </NavMenu>
-        </Nav>
+
+        </div>
+        <Nav_Btn_1>
+        <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link></Nav_Btn_1>
+        </div>
 
         <button onClick={handleClick}>NFT detail page</button>
+        <div className="row_mp_out_2">
         <div className="row_mp">
           <div className="row_mp_in">
             <Row title="Recent Selling" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
-        </div>
-        <div className="row_mp">
+        
           <div className="row_mp_in">
             <Row title="Novel Collection" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
-        </div>
-        <div className="row_mp">
+     
           <div className="row_mp_in">
             <Row title="New Nft" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
