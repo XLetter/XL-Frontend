@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: stretch;
   width: 100vw;
+  background: #717171;
+  height: 850px;
 }
 
 .containerOne {
