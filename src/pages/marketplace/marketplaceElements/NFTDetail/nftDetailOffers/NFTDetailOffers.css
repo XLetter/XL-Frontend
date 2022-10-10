@@ -44,14 +44,14 @@
   top: 27px;
 }
 
-#nameWork {
+#nameWork3 {
   position: absolute;
   width: 78px;
   height: 19px;
   left: 550px;
   top: 31px;
 
-  font-family: 'Inter';
+  font-family: 'W95FA';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -60,16 +60,16 @@
   color: #000000;
 }
 
-#nftName {
+#nftName3 {
   position: absolute;
   width: 321px;
   height: 34px;
   left: 550px;
   top: 61px;
 
-  font-family: 'ChicagoFLF';
+  font-family: 'W95FA';
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 28px;
   line-height: 36px;
   /* identical to box height */
@@ -85,7 +85,7 @@
   top: 144px;
 }
 
-#novelTitle {
+#novelTitle3 {
   position: absolute;
   width: 96px;
   height: 30px;
@@ -123,7 +123,7 @@
 
 #nftPriceContainer {
   position: absolute;
-  width: 96px;
+  width: 120px;
   height: 36px;
   left: 922px;
   top: 301px;

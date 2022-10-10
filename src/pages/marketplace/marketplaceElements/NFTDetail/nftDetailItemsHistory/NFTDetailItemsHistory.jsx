@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './NFTDetailItemsHistory.css';
+import nftSampleC from '../../../../../assets/image/nftSampleC.png';
 
 function NFTDetailItemsHistory() {
   const navigate = useNavigate();
@@ -11,14 +12,14 @@ function NFTDetailItemsHistory() {
     <div className="itemsHistory">
       <div className="containerOne">
         <div id="frame"></div>
-        <img id="nftImage"></img>
-        <p id="nameWork">Novel Title</p>
-        <h2 id="nftName">NFT Title #1288430</h2>
+        <img id="nftImage" src={nftSampleC}></img>
+        <p id="nameWork1">Hamlet</p>
+        <h2 id="nftName1">To Be or Not To Be</h2>
         <img id="novelThumbnail"></img>
         <p id="novelTitle">Novel Title Only 1 Level Up</p>
         <div id="readWork">Read Now</div>
-        <div id="nftPriceContainer"></div>
-        <p id="nftPrice">00XLT</p>
+        <div id="nftPriceContainer1"></div>
+        <p id="nftPrice">22XLT</p>
         <button id="buyNft">Buy Now</button>
         <button id="makeOffer">Make Offer</button>
       </div>
