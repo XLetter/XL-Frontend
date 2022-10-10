@@ -50,7 +50,7 @@ function SearchPage(fetchUrl, isLargeRow) {
                     });
                   }}
                 />
-                <button id="grid_contents">{webnovel.title}</button>
+                <button id="grid_contents" >{webnovel.title}</button>
               </div>
             );
           })

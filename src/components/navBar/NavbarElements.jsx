@@ -40,13 +40,13 @@ export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
 
-  @media screen and (max-widht: 768px) {
+  @media screen and (max-width: 1120px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
-    font-size: 1rem;
+    font-size: 0.7rem;
     cursor: pointer;
   }
 `;
@@ -65,18 +65,24 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 12px;
+  margin-right: 8px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1120px) {
     display: none;
   }
 `;
 export const Nav_Btn_1 = styled.nav`
   display: inline-block;
 
-  margin-right: 418px @media screen and (max-width: 768px) {
+  margin-right: 400px @media screen and (max-width: 1120px) {
     display: none;
   }
+  align-items: center;
+  margin-top: 2%;
+  font-size:15px;
+  height:20px;
+  
+  
 `;
 export const NavBtn_1Link = styled(Link)`
   border-radius: 4px;
@@ -84,7 +90,10 @@ export const NavBtn_1Link = styled(Link)`
   background: #cccccc;
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
     inset 2px 2px 0px #dbdbdb;
-  padding: 10px 22px;
+    padding-left:5px;
+    padding-right:5px;
+  padding-top:10px;
+  padding-bottom:10px;
   color: #000;
   border: none;
   outline: none;

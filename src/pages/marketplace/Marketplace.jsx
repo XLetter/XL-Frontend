@@ -41,47 +41,42 @@ function Marketplace() {
     
       <div className="marketplace">
         <Banner />
-        <div className='mp_nav_srch_out'>
-        <div className='mp_nav_srch_in'>
-        <Nav>
-          <Bars />
-          <NavMenu>
-            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
-            <NavLink to="/collection">XL Series NFT</NavLink>
-            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
-          </NavMenu>
-        </Nav>
+
 
         <div style={{ height: '30px' }}>
         <table className={'table'}>
           <tr>
             <td>
               <input
-                value={input}
-                onChange={onChangeAction}
                 type="text"
-                className={'input-sm'}
-                placeholder={'Search!!'}
+                onChange={onChangeAction}
                 onKeyPress={handleClick}
+                className={'input-sm'}
+                placeholder={'작품을 입력하세요'}
                 search
               />
-
-              <button id="searchBtn" onClick={async () => search(input)}>
-                search
-              </button>
-
+              <button onClick={async () => search(input)}>검색</button>
             </td>
           </tr>
         </table>
-        </div>
+     
 
 
         </div>
-        <Nav_Btn_1>
-        <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link></Nav_Btn_1>
-        </div>
+        <Nav>
+          <Bars />
 
-        <button onClick={handleClick}>NFT detail page</button>
+        <NavMenu>
+            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
+            <NavLink to="/collection">XL Series NFT</NavLink>
+            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
+          </NavMenu>
+          <Nav_Btn_1>
+          <NavBtn_1Link to="/mypage/wallet">My Page</NavBtn_1Link></Nav_Btn_1>
+        </Nav>
+
+        
+
         <div className="row_mp_out_2">
         <div className="row_mp">
           <div className="row_mp_in">
@@ -99,6 +94,7 @@ function Marketplace() {
       </div>
     </div>
     </div>
+    
   );
 }
 

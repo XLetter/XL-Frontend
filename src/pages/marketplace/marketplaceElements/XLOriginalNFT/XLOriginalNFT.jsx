@@ -53,6 +53,7 @@ function Xloriginalnft() {
       <Nav>
         <Bars />
         <NavMenu>
+          
           <NavLink to="/nowtrend">실시간 거래NFT</NavLink>
           <NavLink to="/collection">XL Series NFT</NavLink>
           <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
@@ -62,10 +63,14 @@ function Xloriginalnft() {
           <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
         </Nav_Btn_1>
       </Nav>
-      <div className="gr_mk_xn">
+      <div className="gr_mp_nt_out_1">
+      <div className="gr_mp_nt_out_2">
+        <div className="gr_mp_nt">
+          <div className='gr_mp_nt_in'>
         <Grid title="최신 트렌드" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
+    </div></div></div>
   );
 }
 
