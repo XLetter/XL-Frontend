@@ -15,9 +15,9 @@
 }
 
 .welcome {
-  position: absolute;
-  left: 30%;
-  top: 17%;
+  position: relative;
+  left: 40%;
+  top: 15%;
 
   font-family: w95fa;
   font-style: normal;
