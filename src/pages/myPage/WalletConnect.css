@@ -33,7 +33,7 @@
 .profile_info {
   position: absolute;
 
-  left: 20%;
+  left: 17%;
   top: 28%;
 }
 
@@ -60,7 +60,7 @@
 .token_info {
   position: absolute;
 
-  left: 55%;
+  left: 57%;
   top: 38%;
 
   font-family: w95fa;
@@ -91,7 +91,7 @@
 
 #justBtn {
   position: absolute;
-  left: 150%;
+  left: 170%;
   top: 23%;
 
   width: 100px;

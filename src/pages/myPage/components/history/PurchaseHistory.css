@@ -4,6 +4,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px; 
+    position: relative;
 
     width: 1120px;
     height: 500px;
@@ -19,8 +20,8 @@
 
 .purchaseHistory_header {
     position: absolute;
-    left: 22.5%;
-    top: 49%;
+    left: 4%;
+    top: 5%;
 
     padding-bottom: 10px;
 
@@ -35,6 +36,6 @@
 
   .historyList_wrapper {
     position: absolute;
-    left: 22.5%;
-    top: 60%;
+    left: 4%;
+    top: 20%;
   }

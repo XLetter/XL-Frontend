@@ -20,7 +20,7 @@
 .buyXLT_header {
   position: absolute;
   left: 4%;
-  top: 8%;
+  top: 5%;
 
   padding-bottom: 10px;
 
@@ -35,7 +35,7 @@
 
 .BuyXLTelments {
   position: absolute;
-  left: 10%;
+  left: 4%;
   top: 20%;
 
   display: flex;
