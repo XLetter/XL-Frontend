@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SampleChapterOriginalThree.css';
 import { useNavigate } from 'react-router-dom';
+import PopupVote from './PopupVote';
 
 function SampleChapterOriginalThree() {
   // const [Chapter, setChapter] = useState([]);
 
   const navigate = useNavigate();
   const handleClickBefore = () => navigate('/SampleChapterOriginalTwo');
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   // async function getChapter() {
   //   const response = await fetch(api_url);
@@ -122,8 +124,15 @@ function SampleChapterOriginalThree() {
             The fair Ophelia! Nymph, in thy orisons Be all my sins remember'd.
           </p>
           <p id="questionThree">Q. To Be or Not to Be?</p>
-          <button id="optionAThree">To Be</button>
-          <button id="optionBThree">Not To Be</button>
+          <button id="optionAThree" onClick={() => setButtonPopup(true)}>
+            To Be
+          </button>
+          <button id="optionBThree" onClick={() => setButtonPopup(true)}>
+            Not To Be
+          </button>
+          <PopupVote trigger={buttonPopup} setTrigger={setButtonPopup}>
+            {/* 구매하겠습니까? */}
+          </PopupVote>
           <div className="bottomButtonsThree">
             {/* <button id="contentButtonThree">Content</button>
             <button id="commentButtonThree">Comment</button> */}
