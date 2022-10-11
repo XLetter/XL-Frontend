@@ -89,9 +89,9 @@ export const NavBtn_1Link = styled(Link)`
 
   background: #cccccc;
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
-    inset 2px 2px 0px #dbdbdb;
-    padding-left:5px;
-    padding-right:5px;
+  inset 2px 2px 0px #dbdbdb;
+  padding-left:5px;
+  padding-right:5px;
   padding-top:10px;
   padding-bottom:10px;
   color: #000;

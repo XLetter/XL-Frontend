@@ -55,7 +55,7 @@ function Collection() {
         <Bars />
         <NavMenu>
       
-        <NavLink to="/">All</NavLink>
+        <NavLink to="/marketplace">All</NavLink>
         <NavLink to="/nowtrend">Now Trend NFT</NavLink>
         <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
         <NavLink to="/collection">Collection</NavLink>

@@ -3,9 +3,8 @@ import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElement
 import xletter_logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
 import user_profile_ from '../../assets/image/user_profile_.png';
-import axios from '../../axios/Axios';
 import { useNavigate } from 'react-router-dom';
-import { IMAGE_BASE_URL } from '../Config';
+
 
 const Navbar = () => {
   const [input, setInput] = useState('');
