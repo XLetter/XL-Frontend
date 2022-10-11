@@ -9,6 +9,7 @@ import WalletConnect from './WalletConnect';
 import './MyPage.css';
 
 import MyNFTs from './components/MyNFTs';
+import MyDAOs from './components/MyDAOs';
 import BuyXLT from './components/buyXLT/BuyXLT';
 import PurchaseHistory from './components/history/PurchaseHistory';
 import ProfileSetting from './components/profileSetting/ProfileSetting';
@@ -143,7 +144,7 @@ class MyPage extends Component {
               <MyNFTs />
             </div>
             <div className='myDAOsView' style={{ display: viewMyDAOs ? 'block' : 'none' }}>
-              <MyNFTs /> {/*추후 수정 필요*/}
+              <MyDAOs />
             </div>
             <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
               <BuyXLT />
