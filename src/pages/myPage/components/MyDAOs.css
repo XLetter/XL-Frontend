@@ -1,4 +1,4 @@
-.PurchaseHistory {
+.MyDAOs {
     padding-top: 15px;
     padding-left: 15px;
     margin-left: auto;
@@ -7,7 +7,7 @@
     position: relative;
 
     width: 1120px;
-    height: 500px;
+    height: 500px; 
     
     justify-content: space-between;
     
@@ -15,10 +15,9 @@
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
 
     font-family: msSansSerif;
-
 }
 
-.purchaseHistory_header {
+.myDAOs_header {
     position: absolute;
     left: 4%;
     top: 5%;
@@ -34,8 +33,8 @@
     color: #000000;
   }
 
-  .historyList_wrapper {
+  .rows {
     position: absolute;
-    left: 5%;
-    top: 20%;
+    left: 2%;
+    top: 17%;
   }
