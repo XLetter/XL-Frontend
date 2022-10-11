@@ -2,7 +2,7 @@
   width: 91.5px;
   height: auto;
 
-  margin-right: 30px;
+  margin-right: 150px;
 }
 
 .img {
@@ -42,4 +42,6 @@
   flex-direction: row;
 
   width: 150px;
+
+  margin-right: 40px;
 }
