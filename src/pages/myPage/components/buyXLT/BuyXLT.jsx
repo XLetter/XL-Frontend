@@ -11,9 +11,15 @@ const BuyXLT = () => {
       </div>
       
       <div className='BuyXLTelments'>
-        <Select />
-        <Tokens />
+        <div className='select_element'>
+          <Select />
+        </div>
+        
+        <div className='tokens_element'>
+          <Tokens />
+        </div> 
       </div>
+      
     </div>
   );
 };
