@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Marketplace.css';
 import {
   Bars,
@@ -13,9 +13,6 @@ import requests from '../../requests/Requests';
 import Banner from '../../components/banner/Banner';
 import { useNavigate } from 'react-router-dom';
 
-import { IMAGE_BASE_URL } from '../../components/Config';
-
-import axios from '../../axios/Axios';
 
 function Marketplace() {
   const [input, setInput] = useState('');
@@ -67,7 +64,7 @@ function Marketplace() {
           <Bars />
 
         <NavMenu>
-        <NavLink to="/">All</NavLink>
+        <NavLink to="/marketplace">All</NavLink>
         <NavLink to="/nowtrend">Now Trend NFT</NavLink>
         <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
         <NavLink to="/collection">Collection</NavLink>
@@ -82,7 +79,7 @@ function Marketplace() {
         <div className="row_mp_out_2">
         <div className="row_mp">
           <div className="row_mp_in">
-            <Row title="Recent Selling" fetchUrl={requests.fetchAll} isLargeRow={true} />
+            <Row title="DAOs:Recent Selling" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
         
           <div className="row_mp_in">
@@ -90,7 +87,7 @@ function Marketplace() {
           </div>
      
           <div className="row_mp_in">
-            <Row title="New Nft" fetchUrl={requests.fetchAll} isLargeRow={true} />
+            <Row title="New DAO" fetchUrl={requests.fetchAll} isLargeRow={true} />
           </div>
         </div>
       </div>

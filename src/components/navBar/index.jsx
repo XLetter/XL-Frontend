@@ -3,9 +3,8 @@ import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavbarElement
 import xletter_logo from '../../assets/image/xletter_logo.svg';
 import './NavbarElements.css';
 import user_profile_ from '../../assets/image/user_profile_.png';
-import axios from '../../axios/Axios';
 import { useNavigate } from 'react-router-dom';
-import { IMAGE_BASE_URL } from '../Config';
+
 
 const Navbar = () => {
   const [input, setInput] = useState('');
@@ -33,9 +32,9 @@ const Navbar = () => {
       <Bars />
       <NavMenu>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/original">XL Original</NavLink>
-        <NavLink to="/series">XL Series</NavLink>
-        <NavLink to="/marketplace">XL Market</NavLink>
+        <NavLink to="/original">XL Novels</NavLink>
+        
+        <NavLink to="/marketplace">XL Explorer</NavLink>
         <NavLink to="/mypage/wallet">My Page</NavLink>
       </NavMenu>
       

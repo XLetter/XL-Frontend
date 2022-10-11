@@ -55,7 +55,7 @@ function NowTrend() {
         <Bars />
         <NavMenu>
       
-        <NavLink to="/">All</NavLink>
+        <NavLink to="/marketplace">All</NavLink>
         <NavLink to="/nowtrend">Now Trend NFT</NavLink>
         <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
         <NavLink to="/collection">Collection</NavLink>
@@ -68,7 +68,7 @@ function NowTrend() {
       <div className="gr_mp_nt_out_2">
         <div className="gr_mp_nt">
           <div className='gr_mp_nt_in'>
-        <Grid title="Now Trend" fetchUrl={requests.fetchAll} isLargeRow={true} />
+        <Grid title="Now Trend NFT" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
     </div>
