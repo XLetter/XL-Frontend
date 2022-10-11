@@ -4,14 +4,17 @@ import "./Tokens.css";
 const Tokens = () => {
     return (
         <div className='Tokens'>
-            <h4>My XLT:</h4>
-            <br />
-            <div className='Amount'>8613</div> XLT
-            <br />
-            <br />
-            <h4>My KLAY:</h4>
-            <br />
-            <div className='Amount'>15434</div> KLAY
+            <div className='token_info2'>
+                Current Balance
+            </div>
+
+            <div className='xlt'>
+                My XLT: <span id='xlt_amount'>8613</span>
+            </div>
+            
+            <div className='klay'>
+                My KLAY: <span id='klay_amount'>150</span>
+            </div>
         </div>
     );
 };
