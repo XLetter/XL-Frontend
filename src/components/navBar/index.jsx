@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <Nav>
       <NavLink to="/">
-        <img src={xletter_logo} classname="img" alt="xletter_logo" />
+        <img src={xletter_logo} id="main_logo" alt="xletter_logo" />
       </NavLink>
       <Bars />
       <NavMenu>
@@ -61,7 +61,7 @@ const Navbar = () => {
 
       <NavBtn>
         <NavBtnLink to="/mypage/wallet">
-          <img src={user_profile_} classname="img_2" alt="profile" />
+          <img src={user_profile_} id="main_profile_image" alt="profile" />
         </NavBtnLink>
       </NavBtn>
     </Nav>

@@ -12,17 +12,13 @@ const Select = () => {
                 <div className='select_info_main'>
                     Select Amount
                 </div>
-
-                <div className='select_info_detail'>
-                    How much XLT you want to buy?
-                </div>
             </div>
 
             <div className='SelectRadioBtnWrapper'>
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
-                        alert(`${e.target.token.value} XLT :)`);
+                        alert(` Purchase Completed: ${e.target.token.value} XLT`);
                     }}
                 >
                     <RadioGroup>
