@@ -67,12 +67,14 @@ function Marketplace() {
           <Bars />
 
         <NavMenu>
+        <NavLink to="/">All</NavLink>
         <NavLink to="/nowtrend">Now Trend NFT</NavLink>
-          <NavLink to="/collection">XL Series NFT</NavLink>
-          <NavLink to="/xloriginalnft">XL Original Ending NFT</NavLink>
+        <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
+        <NavLink to="/collection">Collection</NavLink>
+         
         </NavMenu>
           <Nav_Btn_1>
-          <NavBtn_1Link to="/mypage/wallet">My Page</NavBtn_1Link></Nav_Btn_1>
+          <NavBtn_1Link to="/mypage/wallet">My NFTs</NavBtn_1Link></Nav_Btn_1>
         </Nav>
 
         

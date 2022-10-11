@@ -35,7 +35,7 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/original">XL Original</NavLink>
         <NavLink to="/series">XL Series</NavLink>
-        <NavLink to="/marketplace">Marketplace</NavLink>
+        <NavLink to="/marketplace">XL Market</NavLink>
         <NavLink to="/mypage/wallet">My Page</NavLink>
       </NavMenu>
       
