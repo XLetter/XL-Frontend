@@ -32,9 +32,9 @@ const Navbar = () => {
       <Bars />
       <NavMenu>
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/original">XL Original</NavLink>
-        <NavLink to="/series">XL Series</NavLink>
-        <NavLink to="/marketplace">XL Market</NavLink>
+        <NavLink to="/original">XL Novels</NavLink>
+        
+        <NavLink to="/marketplace">XL Explorer</NavLink>
         <NavLink to="/mypage/wallet">My Page</NavLink>
       </NavMenu>
       

@@ -68,7 +68,7 @@ function NowTrend() {
       <div className="gr_mp_nt_out_2">
         <div className="gr_mp_nt">
           <div className='gr_mp_nt_in'>
-        <Grid title="Now Trend" fetchUrl={requests.fetchAll} isLargeRow={true} />
+        <Grid title="Now Trend NFT" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
     </div>

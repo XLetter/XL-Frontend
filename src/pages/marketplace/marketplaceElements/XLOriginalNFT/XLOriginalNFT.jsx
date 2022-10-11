@@ -68,7 +68,7 @@ function Xloriginalnft() {
       <div className="gr_mp_on_out_2">
         <div className="gr_mp_on">
           <div className='gr_mp_on_in'>
-        <Grid title="XL Original Ending NFT" fetchUrl={requests.fetchAll} isLargeRow={true} />
+        <Grid title="Dao:Recently Created" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
     </div></div></div>
