@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 import './NowTrend.css';
 import Grid from '../../../grid/Grid';
 import requests from '../../../requests/Requests';
@@ -12,39 +13,62 @@ import {
 } from '../../../components/navBar/NavbarElements';
 
 function NowTrend() {
+  const [input, setInput] = useState('');
+  const navigate = useNavigate();
+  async function search(searchKeyword) {
+    navigate('/SearchPage', {
+      state: {
+        keyword: searchKeyword,
+      },
+    });
+  }
+  const handleClick = (event) => {
+    if (event.key === 'Enter') {
+      search(input);
+    }
+  };
+  function onChangeAction(e) {
+    setInput(e.target.value);
+  }
+
   return (
     <div className="nowtrend">
-      <div style={{ height: '30px' }}></div>
-      <table className={'table'}>
-        <tr>
-          <td>
-            <input type="text" className={'input-sm'} placeholder={'작품을 입력하세요'} search />
-            <button>
-              검색
-              <NavLink to="/SearchPage" />
-            </button>
-          </td>
-        </tr>
-      </table>
+   <div style={{ height: '30px' }}>
+        <table className={'table'}>
+          <tr>
+            <td>
+              <input
+                type="text"
+                onChange={onChangeAction}
+                onKeyPress={handleClick}
+                className={'input-sm'}
+                placeholder={'Search!!'}
+                search
+              />
+              <button onClick={async () => search(input)}>Search</button>
+            </td>
+          </tr>
+        </table>
+      </div>
 
       <Nav>
         <Bars />
         <NavMenu>
-        
-          <NavLink to="/nowtrend">실시간 거래NFT</NavLink>
-          <NavLink to="/collection">XL Series NFT</NavLink>
-          <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
+      
+        <NavLink to="/">All</NavLink>
+        <NavLink to="/nowtrend">Now Trend NFT</NavLink>
+        <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
+        <NavLink to="/collection">Collection</NavLink>
+         
         </NavMenu>
-
-        <Nav_Btn_1>
-          <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
-        </Nav_Btn_1>
+          <Nav_Btn_1>
+          <NavBtn_1Link to="/mypage/wallet">My NFTs</NavBtn_1Link></Nav_Btn_1>
       </Nav>
       <div className="gr_mp_nt_out_1">
       <div className="gr_mp_nt_out_2">
         <div className="gr_mp_nt">
           <div className='gr_mp_nt_in'>
-        <Grid title="최신 트렌드" fetchUrl={requests.fetchAll} isLargeRow={true} />
+        <Grid title="Now Trend" fetchUrl={requests.fetchAll} isLargeRow={true} />
       </div>
     </div>
     </div>

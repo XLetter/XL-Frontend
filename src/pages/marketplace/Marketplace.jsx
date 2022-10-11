@@ -52,10 +52,10 @@ function Marketplace() {
                 onChange={onChangeAction}
                 onKeyPress={handleClick}
                 className={'input-sm'}
-                placeholder={'작품을 입력하세요'}
+                placeholder={'Search'}
                 search
               />
-              <button onClick={async () => search(input)}>검색</button>
+              <button onClick={async () => search(input)}>search</button>
             </td>
           </tr>
         </table>
@@ -67,12 +67,14 @@ function Marketplace() {
           <Bars />
 
         <NavMenu>
-            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
-            <NavLink to="/collection">XL Series NFT</NavLink>
-            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
-          </NavMenu>
+        <NavLink to="/">All</NavLink>
+        <NavLink to="/nowtrend">Now Trend NFT</NavLink>
+        <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
+        <NavLink to="/collection">Collection</NavLink>
+         
+        </NavMenu>
           <Nav_Btn_1>
-          <NavBtn_1Link to="/mypage/wallet">My Page</NavBtn_1Link></Nav_Btn_1>
+          <NavBtn_1Link to="/mypage/wallet">My NFTs</NavBtn_1Link></Nav_Btn_1>
         </Nav>
 
         

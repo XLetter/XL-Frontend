@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import axios from '../../axios/Axios';
-import '../../grid/Grid.css';
+import '../../row/Row.css';
 import './SearchPage.css';
 
 function SearchPage(fetchUrl, isLargeRow) {
@@ -36,7 +36,7 @@ function SearchPage(fetchUrl, isLargeRow) {
               <div style={{ display: 'flex', flexDirection: ' column' }} key={webnovel.webnovelId}>
                 <img
                   // className={`${isLargeRow ? 'grid__posterLarge' : 'grid__poster'}`}
-                  className="grid__poster"
+                  className="row__poster"
                   src={`${webnovel.thumbnailUrl}`}
                   alt={webnovel.title}
                   onClick={() => {
@@ -50,13 +50,13 @@ function SearchPage(fetchUrl, isLargeRow) {
                     });
                   }}
                 />
-                <button id="grid_contents" >{webnovel.title}</button>
+                <button id="row_contents" >{webnovel.title}</button>
               </div>
             );
           })
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <button id="grid_contents">없는 제목입니다!</button>
+            <button id="row_contents">없는 제목입니다!</button>
           </div>
         )}
       </div>
