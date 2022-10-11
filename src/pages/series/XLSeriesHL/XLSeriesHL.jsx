@@ -19,7 +19,7 @@ function XlseriesHl() {
       <div className="gr_sr_hl_out_2">
         <div className="gr_sr_hl">
           <div className='gr_sr_hl_in'>
-          <Grid title="XLSeries HL" fetchUrl={requests.fetchSerieseHL} isLargeRow={true} />
+          <Grid title="XLSeries HL" fetchUrl={[requests.fetchSeries]} isLargeRow={true} />
         </div>
       </div>
     </div>
