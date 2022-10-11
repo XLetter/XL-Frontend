@@ -13,12 +13,12 @@ function Home() {
         <div className="row_hm_out_2">
         <div className="row_hm">
           <div className="row_hm_in">
-            <Row title="XL Original" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
+            <Row title="XL Novels" fetchUrl={requests.fetchOriginal} isLargeRow={true} />
           </div>
         
         
           <div className="row_hm_in">
-            <Row title="XL Series" fetchUrl={requests.fetchSeries} isLargeRow={true} />
+            <Row title="Collection:XL DAOs" fetchUrl={requests.fetchSeries} isLargeRow={true} />
           </div>
        
         

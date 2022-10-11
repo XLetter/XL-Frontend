@@ -68,7 +68,7 @@ function Collection() {
       <div className="gr_mp_cl_out_2">
         <div className="gr_mp_cl">
           <div className='gr_mp_cl_in'>
-        <Grid title="XL Series NFT" fetchUrl={requests.fetchSeries} isLargeRow={true} />
+        <Grid title="Collection" fetchUrl={requests.fetchSeries} isLargeRow={true} />
       </div>
     </div>
     </div></div></div>
