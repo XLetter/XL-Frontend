@@ -38,7 +38,7 @@ const IndividualNovelPageOriginal = () => {
         <div id="insideSquare">
           <img id="thumbnail" src={location.state.thumbnailUrl} alt="example of thumbnail"></img>
           <div className="XLOriginalButton">
-            <div id="buttonText">XL Original</div>
+            <div id="buttonText">XL Series</div>
             <div id="buttonBox"></div>
           </div>
 

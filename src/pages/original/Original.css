@@ -1,12 +1,25 @@
-.original {
+/* .original {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  background: #dadada;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.default {
+  background: #717171;
 }
 
 .IndividualNovelPageOriginal {
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
+  background: #717171;
+  height: 2050px;
 }
 
 .infoOfNovel {
@@ -554,50 +567,41 @@
   box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
     inset 2px 2px 0px #dbdbdb;
 }
-.row_or{
+.row_or {
   padding-left: 8px;
-  
- 
-  
 
   width: 1104px;
   height: 1392px;
 
-  
-  background: #DADADA;
-/* block_inside */
+  background: #dadada;
+  /* block_inside */
 
-box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
-
-  
+  box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0, 0, 0.6);
 
   font-family: msSansSerif;
 }
 
-.row_or_in{
-  
-  border: 1px solid #BCBCBC;
-  margin-top:32px;
-  margin-bottom:17px;     
+.row_or_in {
+  border: 1px solid #bcbcbc;
+  margin-top: 32px;
+  margin-bottom: 17px;
   width: 1063px;
   height: 286px;
   top: 32px;
-  border: 1px solid #BCBCBC;
+  border: 1px solid #bcbcbc;
 }
-.row_or_out_1{
+.row_or_out_1 {
   width: 100vw;
   background: #717171;
-  
-  padding:0.5rem calc((100vw - 1120px)/2);
 
- }
- .row_or_out_2{
-  
-  margin-left:auto;
+  padding: 0.5rem calc((100vw - 1120px) / 2);
+}
+.row_or_out_2 {
+  margin-left: auto;
   margin-top: 30px;
   margin-bottom: 44px;
-  padding-left:7.5px;
-  padding-top:32px;
+  padding-left: 7.5px;
+  padding-top: 32px;
   padding-bottom: 8px;
 
   width: 1120px;
@@ -607,25 +611,22 @@ box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.25), inset 2px 2px 2px rgba(0, 0
 
   /* background gray */
 
-  background: #CCCCCC;
-/* block_outside */
+  background: #cccccc;
+  /* block_outside */
 
-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
+}
 
- }
-
-.row_or_in{
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:32px;
-  margin-bottom:17px;     
+.row_or_in {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 17px;
   width: 1088px;
   height: 286px;
   left: 16px;
   top: 32px;
   justify-content: space-between;
 
-  border: 1px solid #BCBCBC;;
-
+  border: 1px solid #bcbcbc;
 }
-
