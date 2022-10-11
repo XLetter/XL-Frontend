@@ -149,8 +149,9 @@
   font-size: 14px;
   line-height: 17px;
 
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #cccccc;
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
 }
 
 #xltCharge {
@@ -169,8 +170,9 @@
   font-size: 14px;
   line-height: 17px;
 
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #cccccc;
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
 }
 
 #favFigure {
