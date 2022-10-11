@@ -149,8 +149,10 @@
   font-size: 14px;
   line-height: 17px;
 
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #cccccc;
+  /* button_big_default */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
 }
 
 #xltCharge {
@@ -169,8 +171,32 @@
   font-size: 14px;
   line-height: 17px;
 
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #cccccc;
+  /* button_big_default */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
+}
+
+#joinDao {
+  box-sizing: border-box;
+  text-align: center;
+
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 620px;
+  top: 265px;
+
+  font-family: 'W95FA';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  background: #cccccc;
+  /* button_big_default */
+  box-shadow: inset -1px -1px 0px #000000, inset 1px 1px 0px #ffffff, inset -2px -2px 0px #808080,
+    inset 2px 2px 0px #dbdbdb;
 }
 
 #favFigure {

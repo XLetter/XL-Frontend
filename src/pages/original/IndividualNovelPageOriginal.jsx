@@ -50,7 +50,9 @@ const IndividualNovelPageOriginal = () => {
             Read First Episode
           </button>
           <button id="xltCharge">Charge XLT</button>
-
+          <a href="https://testnets.opensea.io/collection/xletter-hamelt-nft-a-class">
+            <button id="joinDao">Join DAO</button>{' '}
+          </a>
           <div className="favAndRanking">
             <div className="fav">
               <div id="favFigure">{/* <Favorite /> */}</div>
