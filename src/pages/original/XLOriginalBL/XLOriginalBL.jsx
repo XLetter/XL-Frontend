@@ -20,7 +20,7 @@ function XloriginalBl() {
       <div className="gr_or_bl_out_2">
         <div className="gr_or_bl">
           <div className='gr_or_bl_in'>
-          <Grid title="XL Novels BL" fetchUrl={requests.fetchOriginalBL}  isLargeRow={true} />
+          <Grid title="XL Novels BL" fetchUrl={[requests.fetchOriginalBL, requests.fetchSerieseBL]}  isLargeRow={true} />
          
           
 

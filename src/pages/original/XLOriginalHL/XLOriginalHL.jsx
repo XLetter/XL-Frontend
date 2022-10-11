@@ -19,7 +19,7 @@ function XloriginalHl() {
       <div className="gr_or_hl_out_2">
         <div className="gr_or_hl">
           <div className='gr_or_hl_in'>
-          <Grid title="XL Novels HL" fetchUrl={requests.fetchOriginalHL} isLargeRow={true} />
+          <Grid title="XL Novels HL" fetchUrl={[requests.fetchOriginalHL, requests.fetchSerieseHL]} isLargeRow={true} />
         </div>
       </div>
     </div>

@@ -19,7 +19,7 @@ function XloriginalGl() {
       <div className="gr_or_gl_out_2">
         <div className="gr_or_gl">
           <div className='gr_or_gl_in'>
-          <Grid title="XL Novels GL" fetchUrl={requests.fetchOriginalGL} isLargeRow={true} />
+          <Grid title="XL Novels GL" fetchUrl={[requests.fetchOriginalGL, requests.fetchSerieseGL]} isLargeRow={true} />
         </div>
       </div>
       </div></div>
