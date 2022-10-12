@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     height: 60px;
 
     margin: auto;
-    padding: 0.5rem calc((100vw - 1120px)/2);
+    
 
     background:  #D9D9D9;;
     
@@ -24,10 +24,11 @@ export const NavLink = styled(Link)`
     display: flex;
     align-items: center;
     
-    padding: 0;
-    width: 110px;
+    width: 80px;
     height: 100%;
     cursor: pointer;
+
+    margin-left: 20px;
 
     text-decoration: none;
     font-family: w95fa;
