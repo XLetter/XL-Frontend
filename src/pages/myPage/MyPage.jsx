@@ -82,81 +82,86 @@ class MyPage extends Component {
   };
 
   render() {
-    const { viewMyNFTs, viewMyDAOs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
+    const { viewMyNFTs, viewMyDAOs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } =
+      this.state;
 
     return (
-      <div className='cover'>
-        <div className='MyPage'>
-
+      <div className="cover">
+        <div className="MyPage">
           <WalletConnect />
 
-          <div className='componentChangeBtnWrapper'>
-            <div className='buttons'>
-              <button 
-                id='myNFTs' 
-                name='myNFTsBtn' 
-                onClick={this.handleNFTsBtnClick} 
+          <div className="componentChangeBtnWrapper">
+            <div className="buttons">
+              <button
+                id="myNFTs"
+                name="myNFTsBtn"
+                onClick={this.handleNFTsBtnClick}
                 style={{ color: viewMyNFTs ? '#ED497B' : 'black' }}
-                >
+              >
                 My NFTs
               </button>
 
-              <button 
-                id='myDAOs' 
-                name='myDAOsBtn' 
-                onClick={this.handleDAOsBtnClick} 
+              <button
+                id="myDAOs"
+                name="myDAOsBtn"
+                onClick={this.handleDAOsBtnClick}
                 style={{ color: viewMyDAOs ? '#ED497B' : 'black' }}
-                >
+              >
                 My DAOs
               </button>
 
-              <button 
-                id='buyXLT' 
-                name='buyXLTBtn' 
+              <button
+                id="buyXLT"
+                name="buyXLTBtn"
                 onClick={this.handleXLTBtnClick}
                 style={{ color: viewBuyXLT ? '#ED497B' : 'black' }}
-                >
-                buy XLT
+              >
+                Buy XLT
               </button>
 
-              <button 
-                id='history' 
-                name='historyBtn' 
+              <button
+                id="history"
+                name="historyBtn"
                 onClick={this.handleHistoryBtnClick}
                 style={{ color: viewPurchaseHistory ? '#ED497B' : 'black' }}
-                >
+              >
                 Purchase History
               </button>
 
-              <button 
-                id='profile' 
-                name='profileBtn' 
+              <button
+                id="profile"
+                name="profileBtn"
                 onClick={this.handleProfileBtnClick}
                 style={{ color: viewProfileSetting ? '#ED497B' : 'black' }}
-                >
+              >
                 Setting
               </button>
             </div>
           </div>
 
-          <div className='views'>
-            <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
+          <div className="views">
+            <div className="myNFTsView" style={{ display: viewMyNFTs ? 'block' : 'none' }}>
               <MyNFTs />
             </div>
-            <div className='myDAOsView' style={{ display: viewMyDAOs ? 'block' : 'none' }}>
+            <div className="myDAOsView" style={{ display: viewMyDAOs ? 'block' : 'none' }}>
               <MyDAOs />
             </div>
-            <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
+            <div className="buyXLTView" style={{ display: viewBuyXLT ? 'block' : 'none' }}>
               <BuyXLT />
             </div>
-            <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
+            <div
+              className="purchaseHistoryView"
+              style={{ display: viewPurchaseHistory ? 'block' : 'none' }}
+            >
               <PurchaseHistory />
             </div>
-            <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
+            <div
+              className="profileSettingView"
+              style={{ display: viewProfileSetting ? 'block' : 'none' }}
+            >
               <ProfileSetting />
             </div>
           </div>
-
         </div>
       </div>
     );
