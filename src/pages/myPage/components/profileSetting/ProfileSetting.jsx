@@ -15,7 +15,7 @@ const ProfileSetting = () => {
       <div className='about_account'>
         Account Info
         <div className='account_infotext'>
-          Kaikas Wallet Account: 0xa93e55562bd73827a32eff1291f88e09ff317075
+          Kaikas Wallet Account: 0x396eC1747A6BC98A7E45fC707F3CBa187a1447F7
         </div>
       </div>
 

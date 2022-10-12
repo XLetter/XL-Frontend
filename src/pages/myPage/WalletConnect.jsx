@@ -111,7 +111,7 @@ class WalletConnect extends Component {
               </div> 
 
               <button id="justBtn">
-                Button...
+                More...
               </button>
             </div>
 
