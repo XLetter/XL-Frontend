@@ -60,7 +60,7 @@ function Marketplace() {
           <NavMenu>
             <NavLink to="/marketplace">All</NavLink>
             <NavLink to="/nowtrend">Now Trend NFT</NavLink>
-            <NavLink to="/xloriginalnft">Dao:Recently Created</NavLink>
+            <NavLink to="/xloriginalnft">DAO: Recently Created</NavLink>
             <NavLink to="/collection">Collection</NavLink>
           </NavMenu>
           <Nav_Btn_1>

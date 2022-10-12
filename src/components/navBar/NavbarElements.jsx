@@ -24,13 +24,14 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
 
-  width: 80px;
+  width: 100px;
   height: 100%;
   cursor: pointer;
 
   margin-left: 20px;
 
   text-decoration: none;
+  text-align: center;
   font-family: w95fa;
 
   &.active {
