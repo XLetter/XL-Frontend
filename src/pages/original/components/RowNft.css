@@ -1,6 +1,5 @@
 .row {
   width: 100%;
-  
 }
 
 #row_title {
@@ -8,18 +7,17 @@
 }
 
 #row_content {
-    font-family: w95fa;
-    justify-content:center;
-
+  font-family: w95fa;
+  justify-content: center;
 }
 
 .row__posters {
-    display: flex;
-    width: 1080px;
-    height: 240px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    
+  display: flex;
+  width: 1080px;
+  height: 240px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: left;
 }
 
 .row__posters::-webkit-scrollbar {
@@ -39,13 +37,13 @@
 }
 
 .row__poster {
-    object-fit: contain;
-    width: 180px;
-    max-height: 170px;
-    margin-left: auto;
-    margin-right:auto;
-    transition: transform 450ms;
-    
+  object-fit: contain;
+  width: 180px;
+  height: 270px;
+  max-height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 450ms;
 }
 
 .row__poster:hover {
@@ -59,4 +57,3 @@
 .row__posterLarge:hover {
   transform: scale(1.09);
 }
-

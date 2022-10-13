@@ -1,3 +1,13 @@
+.Tokens {
+  position: relative;
+}
+
+.tokens_contents {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+}
+
 .Amount {
   font-family: w95fa;
 }

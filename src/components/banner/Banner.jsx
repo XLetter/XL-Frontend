@@ -4,7 +4,6 @@ import requests from '../../requests/Requests';
 import './Banner.css';
 import { useNavigate } from 'react-router-dom';
 
-
 function Banner() {
   const [webnovel, setWebnovel] = useState([]); //새로고침 할때마다 NetflixOriginals 랜덤 콘텐츠 추천
 
@@ -20,37 +19,34 @@ function Banner() {
     fetchData();
   }, []);
 
-  //function truncate(str, n) {
-  // return str?.length > n ? str.substr(0, n - 1) + "..." : str;
-  //}
-  //description이 길어졌을 때 말줄임표(...) 생성
-
-  /*
-    header를 따로 banner로 설정한 이유는 banner의 이미지와 banner의 콘텐츠(내용)에 
-    다른 효과를 주기 위함. (서로 영향을 끼치지 않게 하기 위해) 
-    */
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <div className="banner_bg">
-       
-        <header className="banner"
-          style={{
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
-            backgroundImage: `url("${webnovel?.bannerUrl}")`,
-          }}
-          onClick={() => {
-            navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`) }}>
-    
-          <div className="banner__contents">
-            <h1 className="banner__title">{webnovel?.title}</h1>
-            <h3 className='banner_summary'>{webnovel?.summary}</h3>
-          </div>
+      <header
+        className="banner"
+        style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundImage: `url("${webnovel?.bannerUrl}")`,
+        }}
+        onClick={() => {
+          navigate(`/IndividualNovelPageOriginal`, {
+            state: {
+              webnovelId: webnovel.webnovelId,
+              title: webnovel.title,
+              thumbnailUrl: webnovel.thumbnailUrl,
+              writerName: webnovel.writerName,
+            },
+          });
+        }}
+      >
+        <div className="banner__contents">
+          <h1 className="banner__title">{webnovel?.title}</h1>
+          <h3 className="banner_summary">{webnovel?.summary}</h3>
+        </div>
 
-          <div className="banner--fadeBottom" />
-        
-       
-        </header>
+        <div className="banner--fadeBottom" />
+      </header>
     </div>
   );
 }

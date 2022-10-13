@@ -1,12 +1,38 @@
 .Select {
-    margin: 10px;
+    position: relative;
+    left: 5%;
+    top: 2%;
 }
 
-#info {
-    font-family: w95fa;
+.select_info {
+    position: relative;
+    left: 0%;
+    top: 0%;
+
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.select_info_main {
+    position: relative;
+    left: -30%;
+    top: 2%;
+
+    font-family: msSansSerif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #000000;
 }
 
 .SelectRadioBtnWrapper {
+    position: absolute;
+    left: 2%;
+    top: 170%;
+
     display: flex;
     flex-direction: column;
 

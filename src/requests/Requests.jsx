@@ -1,14 +1,18 @@
 const requests = {
-  fetchTrending: `apis/webnovel?type=0`,
-  fetchNetflixOriginals: `apis/webnovel`,
-  fetchTopRated: `apis/webnovel?type=1`,
-  fetchActionMovies: `apis/webnovel?type=0&genre=bl`,
-  fetchComedyMovies: `apis/webnovel/bookmark?uesrId={userId}&type={type}&genre={genre}`,
-  fetchHorrorMovies: `apis/webnovel?type=0&genre=gl`,
-  fetchRomanceMovies: `apis/webnovel?type=0&genre=hl`,
-  fetchDocumentaries: `apis/webnovel?type=1&genre=bl`,
-  fetchNovelInfo: `apis/webnovel/{webnovel_id}`,
+  // fetchTrending: `apis/webnovel?type=0`,
+  // fetchNetflixOriginals: `apis/webnovel`,
+  // fetchTopRated: `apis/webnovel?type=1`,
+  // fetchActionMovies: `apis/webnovel?type=0&genre=bl`,
   fetchBannerInfo: `apis/webnovel/banner`,
+  fetchAll: `apis/webnovel`,
+  fetchOriginal: `apis/webnovel?type=0`,
+  fetchOriginalBL: `apis/webnovel?type=0&genre=bl`,
+  fetchOriginalGL: `apis/webnovel?type=0&genre=gl`,
+  fetchOriginalHL: `apis/webnovel?type=0&genre=hl`,
+  fetchSeries: `apis/webnovel?type=1`,
+  fetchSerieseBL: `apis/webnovel?type=1&genre=bl`,
+  fetchSerieseGL: `apis/webnovel?type=1&genre=gl`,
+  fetchSerieseHL: `apis/webnovel?type=1&genre=hl`,
 };
 
 export default requests;

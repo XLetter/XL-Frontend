@@ -13,7 +13,7 @@ function Popup(props) {
         <div id="title"> ;XLetter</div>
         <div className="popup-inner">
           <div id="question">Would you like to purchase Episode 3?</div>
-          <div id="remaining">Retained Token: nn Token</div>
+          <div id="remaining">Retained Token: 3 Token</div>
           <div id="buttons">
             <button className="buyButton" onClick={handleClick}>
               Buy with 3 XLT
