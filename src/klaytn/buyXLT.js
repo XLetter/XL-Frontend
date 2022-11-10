@@ -1,7 +1,7 @@
 const ethers = require('ethers');
 // const BigNumber = require('bignumber.js');
-// const Caver = require('caver-js');
-// const caver = new Caver('https://public-node-api.klaytnapi.com/v1/baobab');
+const Caver = require('caver-js');
+const caver = new Caver('https://public-node-api.klaytnapi.com/v1/baobab');
 const XLTAbi = require("./XLTAbi.json");
 
 const provider = new ethers.providers.JsonRpcProvider('https://public-node-api.klaytnapi.com/v1/baobab');
@@ -15,15 +15,15 @@ const getKlayBalance = () => {
     return provider.getBalance(wallet.address)
     .then((balance)=>{
         let klayBalance = parseInt(balance.toHexString());
-        return caver.utils.fromPeb(klayBalance);
+        return caver.utils.fromPeb(klayBalance, "KLAY");
     })
 }
 
 const getXLTBalance = () => {
     return XLTContract.balanceOf(wallet.address)
-    .then((res)=>{
+    .then((balance)=>{
         let XLTBalance = parseInt(balance.toHexString());
-        return caver.utils.fromPeb(XLTBalance);
+        return caver.utils.fromPeb(XLTBalance, "KLAY");
     })
     .catch(console.log);
 }
@@ -50,4 +50,10 @@ const swapToXLT = () => {
         console.log(res);
     })
     .catch(console.log);
+}
+
+module.exports = {
+    getKlayBalance: getKlayBalance,
+    getXLTBalance: getXLTBalance,
+    swapToXLT: swapToXLT
 }
