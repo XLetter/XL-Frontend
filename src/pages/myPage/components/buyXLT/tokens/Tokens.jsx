@@ -18,7 +18,7 @@ const Tokens = () => {
 
     useEffect(()=>{
         async function XLTAmount() {
-            let XltAmount = await getXLTBalance();
+            const XltAmount = await getXLTBalance();
             setXltAmount(XltAmount);
             return XltAmount;
         }

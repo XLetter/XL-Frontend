@@ -22,7 +22,7 @@ const Select = () => {
                         e.preventDefault();
                         //alert(` Purchase Completed: ${e.target.token.value} XLT`);
                         // TODO: 창이 열리진 않음
-                        let targetXlt = e.target.token.value * 4.885023;
+                        const targetXlt = String(e.target.token.value * 4.8850229);
                         swapToXLT(targetXlt);
                     }}
                 >
