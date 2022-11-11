@@ -20,29 +20,29 @@ const Select = () => {
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
-                        //alert(` Purchase Completed: ${e.target.token.value} XLT`);
+                        alert(` Purchase Completed: ${e.target.token.value} XLT`);
                         // TODO: 창이 열리진 않음
                         swapToXLT(e.target.token.value);
                     }}
                 >
                     <RadioGroup>
                         <Radio name="token" value="10" defaultChecked>
+                            10 XLT
+                        </Radio>
+                        <br />
+                        <br />
+                        <Radio name="token" value="50">
+                            50 XLT
+                        </Radio>
+                        <br />
+                        <br />
+                        <Radio name="token" value="100">
                             100 XLT
                         </Radio>
                         <br />
                         <br />
                         <Radio name="token" value="500">
                             500 XLT
-                        </Radio>
-                        <br />
-                        <br />
-                        <Radio name="token" value="1000">
-                            1000 XLT
-                        </Radio>
-                        <br />
-                        <br />
-                        <Radio name="token" value="10000">
-                            10000 XLT
                         </Radio>
                     </RadioGroup>
                     <br />
