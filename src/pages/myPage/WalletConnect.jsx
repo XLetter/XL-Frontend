@@ -5,6 +5,8 @@ import profile from '../../assets/image/user_profile.jpeg';
 
 import WalletInfo from './kaikas/WalletInfo';
 
+import { getXLTBalance } from '../../klaytn/buyXLT';
+
 class WalletConnect extends Component {
   constructor(props) {
     super(props);
@@ -41,10 +43,10 @@ class WalletConnect extends Component {
     if (klaytn === undefined) return;
 
     const account = klaytn.selectedAddress;
-    const balance = await caver.klay.getBalance(account);
+    const balance = await getXLTBalance();
     this.setState({
       account,
-      balance: caver.utils.fromPeb(balance, 'KLAY'),
+      balance: balance,
     });
   };
 
