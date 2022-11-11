@@ -15,11 +15,14 @@ function XloriginalGl() {
           <NavLink to="/xloriginalhl">HL</NavLink>
         </NavMenu>
       </Nav>
-      <div className="gr_or_gl_out">
+      <div className="gr_or_gl_out_1">
+      <div className="gr_or_gl_out_2">
         <div className="gr_or_gl">
-          <Grid title="XL Original GL" fetchUrl={requests.fetchHorrorMovies} isLargeRow={true} />
+          <div className='gr_or_gl_in'>
+          <Grid title="XL Novels GL" fetchUrl={[requests.fetchOriginalGL, requests.fetchSerieseGL]} isLargeRow={true} />
         </div>
       </div>
+      </div></div>
     </div>
   );
 }

@@ -13,21 +13,25 @@ function Grid({ title, fetchUrl, isLargeRow }) {
     // if [], run once when the row loads, and dont run again
 
     async function fetchData() {
-      const response = await axios.get(fetchUrl);
-      //home.js의 fetchUrl
-      // ex) https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213
+      let webnovels = [];
+      console.log(fetchUrl);
+      for (let url in fetchUrl) {
+        const response = await axios.get(fetchUrl[url]);
+        webnovels.push(...response.data);
+      }
+      // const response = await axios.get(fetchUrl);
 
-      setWebnovels(response.data);
+      setWebnovels(webnovels);
     }
     fetchData();
-  });
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="grid">
       <h2>{title}</h2>
 
-    <div className="grid__posters">
-    {webnovels &&
+      <div className="grid__posters">
+        {webnovels &&
           webnovels.map((webnovel, i) => (
             <div style={{ display: 'flex', flexDirection: 'column' }} key={webnovel.webnovelId}>
               <img
@@ -35,7 +39,14 @@ function Grid({ title, fetchUrl, isLargeRow }) {
                 src={`${isLargeRow ? webnovel.thumbnailUrl : webnovel.thumbnailUrl}`}
                 alt={webnovel.title}
                 onClick={() => {
-                  navigate(`/IndividualNovelPageOriginal/${webnovel.webnovelId}`);
+                  navigate(`/IndividualNovelPageOriginal`, {
+                    state: {
+                      webnovelId: webnovel.webnovelId,
+                      title: webnovel.title,
+                      thumbnailUrl: webnovel.thumbnailUrl,
+                      writerName: webnovel.writerName,
+                    },
+                  });
                 }}
               />
 

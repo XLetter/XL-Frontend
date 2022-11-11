@@ -6,11 +6,20 @@ import Tokens from './tokens/Tokens';
 const BuyXLT = () => {
   return (
     <div className='BuyXLT'>
-      <h1>Buy XLT</h1>
-      <div className='BuyXLTelments'>
-        <Select />
-        <Tokens />
+      <div className='buyXLT_header' style={{width: 1030}}>
+        Buy XLT
       </div>
+      
+      <div className='BuyXLTelments'>
+        <div className='select_element'>
+          <Select />
+        </div>
+        
+        <div className='tokens_element'>
+          <Tokens />
+        </div> 
+      </div>
+      
     </div>
   );
 };

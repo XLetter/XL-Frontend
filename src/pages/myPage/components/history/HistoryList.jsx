@@ -17,7 +17,7 @@ const HistoryList = (props) => {
 
   return (
     <div className="history_table">
-      <CommonTable headerName={['Date', 'Amount[XLT]', 'Amount[KLAY]']}>
+      <CommonTable headerName={['Date', 'Amount[XLT]', 'Amount[KLAY]', 'TX hash', 'At']}>
         {dataList
           ? dataList.map((item, index) => {
               return (
@@ -25,6 +25,8 @@ const HistoryList = (props) => {
                   <CommonTableColumn>{item.date}</CommonTableColumn>
                   <CommonTableColumn>{item.xlt}</CommonTableColumn>
                   <CommonTableColumn>{item.klay}</CommonTableColumn>
+                  <CommonTableColumn>{item.hash}</CommonTableColumn>
+                  <CommonTableColumn>{item.time}</CommonTableColumn>
                 </CommonTableRow>
               );
             })

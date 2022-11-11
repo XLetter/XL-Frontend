@@ -2,13 +2,13 @@ import React from 'react';
 import Row from '../../../row/Row';
 import requests from '../../../requests/Requests';
 
-import './MyNFTs.css';
+import './MyDAOs.css';
 
-const MyNFTs = () => {
+const MyDAOs = () => {
   return (
-    <div className="MyNFTs">
-      <div className='myNFTs_header' style={{width: 1030}}>
-        myNFTs
+    <div className="MyDAOs">
+      <div className='myDAOs_header' style={{width: 1030}}>
+        myDAOs
       </div>
 
       <div className='rows'>
@@ -19,4 +19,4 @@ const MyNFTs = () => {
   );
 };
 
-export default MyNFTs;
+export default MyDAOs;

@@ -5,8 +5,14 @@ import HistoryList from './HistoryList';
 const PurchaseHistory = () => {
   return (
     <div className="PurchaseHistory">
-      <h2>purchase history</h2>
-      <HistoryList />
+      <div className='purchaseHistory_header' style={{width: 1030}}>
+        purchase history
+      </div>
+      
+      <div className='historyList_wrapper'>
+        <HistoryList />
+      </div>
+      
     </div>
   );
 };

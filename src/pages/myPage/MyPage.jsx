@@ -9,6 +9,7 @@ import WalletConnect from './WalletConnect';
 import './MyPage.css';
 
 import MyNFTs from './components/MyNFTs';
+import MyDAOs from './components/MyDAOs';
 import BuyXLT from './components/buyXLT/BuyXLT';
 import PurchaseHistory from './components/history/PurchaseHistory';
 import ProfileSetting from './components/profileSetting/ProfileSetting';
@@ -18,6 +19,7 @@ class MyPage extends Component {
     super(props);
     this.state = {
       viewMyNFTs: true,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -28,6 +30,18 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: true,
+      viewMyDAOs: false,
+      viewBuyXLT: false,
+      viewPurchaseHistory: false,
+      viewProfileSetting: false,
+    });
+  };
+
+  handleDAOsBtnClick = () => {
+    this.setState({
+      default: false,
+      viewMyNFTs: false,
+      viewMyDAOs: true,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -38,6 +52,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: true,
       viewPurchaseHistory: false,
       viewProfileSetting: false,
@@ -48,6 +63,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: true,
       viewProfileSetting: false,
@@ -58,6 +74,7 @@ class MyPage extends Component {
     this.setState({
       default: false,
       viewMyNFTs: false,
+      viewMyDAOs: false,
       viewBuyXLT: false,
       viewPurchaseHistory: false,
       viewProfileSetting: true,
@@ -65,47 +82,86 @@ class MyPage extends Component {
   };
 
   render() {
-    const { viewMyNFTs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } = this.state;
+    const { viewMyNFTs, viewMyDAOs, viewBuyXLT, viewPurchaseHistory, viewProfileSetting } =
+      this.state;
 
     return (
-      <div className='cover'>
-        <div className='MyPage'>
-
+      <div className="cover">
+        <div className="MyPage">
           <WalletConnect />
 
-          <div className='componentChangeBtnWrapper'>
-            <div className='buttons'>
-              <button id='myNFTs' name='myNFTsBtn' onClick={this.handleNFTsBtnClick}>
+          <div className="componentChangeBtnWrapper">
+            <div className="buttons">
+              <button
+                id="myNFTs"
+                name="myNFTsBtn"
+                onClick={this.handleNFTsBtnClick}
+                style={{ color: viewMyNFTs ? '#ED497B' : 'black' }}
+              >
                 My NFTs
               </button>
 
-              <button id='buyXLT' name='buyXLTBtn' onClick={this.handleXLTBtnClick}>
-                buy XLT
+              <button
+                id="myDAOs"
+                name="myDAOsBtn"
+                onClick={this.handleDAOsBtnClick}
+                style={{ color: viewMyDAOs ? '#ED497B' : 'black' }}
+              >
+                My DAOs
               </button>
-              <button id='history' name='historyBtn' onClick={this.handleHistoryBtnClick}>
+
+              <button
+                id="buyXLT"
+                name="buyXLTBtn"
+                onClick={this.handleXLTBtnClick}
+                style={{ color: viewBuyXLT ? '#ED497B' : 'black' }}
+              >
+                Buy XLT
+              </button>
+
+              <button
+                id="history"
+                name="historyBtn"
+                onClick={this.handleHistoryBtnClick}
+                style={{ color: viewPurchaseHistory ? '#ED497B' : 'black' }}
+              >
                 Purchase History
               </button>
-              <button id='profile' name='profileBtn' onClick={this.handleProfileBtnClick}>
+
+              <button
+                id="profile"
+                name="profileBtn"
+                onClick={this.handleProfileBtnClick}
+                style={{ color: viewProfileSetting ? '#ED497B' : 'black' }}
+              >
                 Setting
               </button>
             </div>
           </div>
 
-          <div className='views'>
-            <div className='myNFTsView' style={{ display: viewMyNFTs ? 'block' : 'none' }}>
+          <div className="views">
+            <div className="myNFTsView" style={{ display: viewMyNFTs ? 'block' : 'none' }}>
               <MyNFTs />
             </div>
-            <div className='buyXLTView' style={{ display: viewBuyXLT ? 'block' : 'none' }}>
+            <div className="myDAOsView" style={{ display: viewMyDAOs ? 'block' : 'none' }}>
+              <MyDAOs />
+            </div>
+            <div className="buyXLTView" style={{ display: viewBuyXLT ? 'block' : 'none' }}>
               <BuyXLT />
             </div>
-            <div className='purchaseHistoryView' style={{ display: viewPurchaseHistory ? 'block' : 'none' }}>
+            <div
+              className="purchaseHistoryView"
+              style={{ display: viewPurchaseHistory ? 'block' : 'none' }}
+            >
               <PurchaseHistory />
             </div>
-            <div className='profileSettingView' style={{ display: viewProfileSetting ? 'block' : 'none' }}>
+            <div
+              className="profileSettingView"
+              style={{ display: viewProfileSetting ? 'block' : 'none' }}
+            >
               <ProfileSetting />
             </div>
           </div>
-
         </div>
       </div>
     );

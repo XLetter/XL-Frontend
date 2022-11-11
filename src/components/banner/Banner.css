@@ -1,24 +1,30 @@
 .banner {
     color: white;
     object-fit:scale-down;
-    height: 448px;
+    height: 360px;
     justify-content: space-between;
     width: 1120px;
+    overflow: hidden;
+    display:flex;
+    padding-left:((100vw-1120px/2)/100vw)*100%;
 
 }
 
 
 .banner__contents {
   width: 1120px;
-  padding-top: 140px;
+  padding-top: 17%;
+  padding-left:3%;
   height: 190px;
   justify-content: space-between;
+  font-family: msSansSerif;
 }
 
 .banner__title {
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  font-family: msSansSerif;
 }
 
 .banner__description {
@@ -28,6 +34,7 @@
   font-size: 0.8rem;
   max-width: 360px;
   height: 80px;
+  font-family: msSansSerif;
 }
 
 .banner__button {

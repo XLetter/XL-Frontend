@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import caver from './kaikas/Caver';
 import './WalletConnect.css';
+import profile from '../../assets/image/user_profile.jpeg';
 
 import WalletInfo from './kaikas/WalletInfo';
+
+import { getXLTBalance } from '../../klaytn/buyXLT';
 
 class WalletConnect extends Component {
   constructor(props) {
@@ -14,9 +17,13 @@ class WalletConnect extends Component {
     };
   }
 
-  handleConnectBtnClick = () => {
-    this.loadAccountInfo();
-    this.setNetworkInfo();
+  handleConnectBtnClick = async() => {
+    if (window.klaytn) {
+      await this.loadAccountInfo();
+      await this.setNetworkInfo();
+    } else {
+      alert('Install Kaikas!');
+    }
   };
 
   loadAccountInfo = async () => {
@@ -25,8 +32,8 @@ class WalletConnect extends Component {
     if (klaytn) {
       try {
         await klaytn.enable();
-        this.setAccountInfo(klaytn);
-        klaytn.on('accountsChanged', () => this.setAccountInfo(klaytn));
+        await this.setAccountInfo(klaytn);
+        klaytn.on('accountsChanged', async() => await this.setAccountInfo(klaytn));
       } catch (error) {
         console.log('User denied account access');
       }
@@ -39,11 +46,11 @@ class WalletConnect extends Component {
     const { klaytn } = window;
     if (klaytn === undefined) return;
 
-    const account = klaytn.selectedAddress;
-    const balance = await caver.klay.getBalance(account);
+    const account = await klaytn.selectedAddress;
+    const balance = await getXLTBalance(account);
     this.setState({
       account,
-      balance: caver.utils.fromPeb(balance, 'KLAY'),
+      balance: balance,
     });
   };
 
@@ -69,15 +76,53 @@ class WalletConnect extends Component {
 
     return (
       <div className="KaikasPage">
-        <h2 id="network_info">network: {network}</h2>
-        <br />
-        <div className="KaikasPage_main">
-          <WalletInfo address={account} balance={balance} />
+
+        <div className='unconnected' style={{display: account ? 'none' : ''}}>
+          <div className='welcome'>
+            Welcome! <br /> Be our member for more contents!
+          </div>
+
+          <button id="walletConnectBtn" onClick={this.handleConnectBtnClick}>
+            Connect your Kaikas Wallet!
+          </button>
         </div>
-        <br />
-        <button id="walletConnectBtn" onClick={this.handleConnectBtnClick}>
-          Connect your Kaikas Wallet!
-        </button>
+
+        <div className='connected' style={{display: account ? '' : 'none'}}>
+
+          <div className='profile_content'>
+
+            <div className='picture_area'>
+              <div className='profile_picture'>
+                <img className='profile' src={profile} />
+              </div>
+            </div>
+
+            <div className='profile_info'>
+              <div className="KaikasPage_main">
+                <WalletInfo address={account} balance={balance} />
+              </div>
+            </div>
+
+            <div className='token_info'>
+              <div className='info'>
+                My Token:
+              </div>
+
+              <div className='amount'>
+                {balance}
+              </div>
+
+              <div className='unit'>
+                XLT {/* 실제로는 klay임 */}
+              </div> 
+
+              <button id="justBtn">
+                More...
+              </button>
+            </div>
+
+          </div>
+        </div>  
       </div>
     );
   }

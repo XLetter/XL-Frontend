@@ -3,6 +3,7 @@ import './XLOriginalBL.css';
 import requests from '../../../requests/Requests';
 import Grid from '../../../grid/Grid';
 import { Nav, NavMenu, NavLink } from '../../../components/navBar/NavbarElements';
+import { Row } from 'antd';
 
 function XloriginalBl() {
   return (
@@ -15,15 +16,18 @@ function XloriginalBl() {
           <NavLink to="/xloriginalhl">HL</NavLink>
         </NavMenu>
       </Nav>
-      <div className="gr_or_bl_out">
+      <div className="gr_or_bl_out_1">
+      <div className="gr_or_bl_out_2">
         <div className="gr_or_bl">
-          <Grid
-            title="XL Original BL"
-            fetchUrl={requests.fetchNetflixOriginals}
-            isLargeRow={true}
-          />
+          <div className='gr_or_bl_in'>
+          <Grid title="XL Novels BL" fetchUrl={[requests.fetchOriginalBL, requests.fetchSerieseBL]}  isLargeRow={true} />
+         
+          
+
+        </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

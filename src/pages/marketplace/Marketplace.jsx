@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Marketplace.css';
 import {
   Bars,
@@ -11,83 +11,76 @@ import {
 import Row from '../../row/Row';
 import requests from '../../requests/Requests';
 import Banner from '../../components/banner/Banner';
-
-import { getDefaultNormalizer } from '@testing-library/react';
 import { useNavigate } from 'react-router-dom';
-import { API_URL, API_KEY } from '../../components/Config';
-import SearchPage from '../searchPage/SearchPage';
-import axios from '../../axios/Axios';
-async function search(searchKeyword) {
-  try {
-  
-  
-  
-    const result = await axios(
-      `${process.env.REACT_APP_API_HOST}/search?keyword=${searchKeyword}`
-    ).then((res)=>res.data)
-
-    return result
-  } catch (error) {
-  return "error"
-  }
-};
 
 function Marketplace() {
-  const navigate = useNavigate();
-  const handleClick = () => navigate('/NFTDetailItemsHistory');
   const [input, setInput] = useState('');
-  function onChangeAction (e) {
-  setInput(e.target.value);
+  const navigate = useNavigate();
+  async function search(searchKeyword) {
+    navigate('/SearchPage', {
+      state: {
+        keyword: searchKeyword,
+      },
+    });
+  }
+  const handleClick = (event) => {
+    if (event.key === 'Enter') {
+      search(input);
+    }
+  };
+  function onChangeAction(e) {
+    setInput(e.target.value);
   }
 
   return (
-    <div className="row_mp_out">
+    <div className="row_mp_out_1">
       <div className="marketplace">
         <Banner />
 
-        <div style={{ height: '30px' }}></div>
-        <table className={"table"}>
-                    <tr>
-                        <td>
-                        <input value={input} onChange={onChangeAction}  type="text" className={'input-sm'} placeholder={"Search!!"} search />
-                            
-                            <button id='searchBtn' onClick={async ()=> search(input)}>
-                                <NavLink to="/SearchPage">search</NavLink>
-                            </button>
-                           <Nav_Btn_1>
-                            <NavBtn_1Link to="My NFT">My NFT</NavBtn_1Link>
-                           </Nav_Btn_1>
-                       </td>
-                    </tr>
-        </table>
-
+        <div style={{ height: '30px' }}>
+          <table className={'table'}>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  onChange={onChangeAction}
+                  onKeyPress={handleClick}
+                  className={'input-sm'}
+                  placeholder={'Search'}
+                  search
+                />
+                <button onClick={async () => search(input)}>search</button>
+              </td>
+            </tr>
+          </table>
+        </div>
         <Nav>
           <Bars />
+
           <NavMenu>
-            <NavLink to="/nowtrend">실시간 거래 NFT</NavLink>
-            <NavLink to="/collection">XL Series NFT</NavLink>
-            <NavLink to="/xloriginalnft">XL Original 엔딩 NFT</NavLink>
+            <NavLink to="/marketplace">All</NavLink>
+            <NavLink to="/nowtrend">Now Trend NFT</NavLink>
+            <NavLink to="/xloriginalnft">DAO: Recently Created</NavLink>
+            <NavLink to="/collection">Collection</NavLink>
           </NavMenu>
+          <Nav_Btn_1>
+            <NavBtn_1Link to="/mypage/wallet">My DAOs</NavBtn_1Link>
+          </Nav_Btn_1>
         </Nav>
 
-        <button onClick={handleClick}>NFT detail page</button>
-        <div className="row_mp">
-          <div className="row_mp_in">
-            <Row
-              title="Recent Selling"
-              fetchUrl={requests.fetchNetflixOriginals}
-              isLargeRow={true}
-            />
-          </div>
-        </div>
-        <div className="row_mp">
-          <div className="row_mp_in">
-            <Row title="Novel Collection" fetchUrl={requests.fetchTrending} isLargeRow={true} />
-          </div>
-        </div>
-        <div className="row_mp">
-          <div className="row_mp_in">
-            <Row title="New Nft" fetchUrl={requests.fetchTopRated} isLargeRow={true} />
+        <div className="row_mp_out_2">
+          <div className="row_mp">
+            <div className="row_mp_in">
+              <Row title="DAOs:Recent Selling" fetchUrl={requests.fetchAll} isLargeRow={true} />
+            </div>
+
+            <div className="row_mp_in">
+              <Row title="Novel Collection" fetchUrl={requests.fetchAll} isLargeRow={true} />
+            </div>
+
+            <div className="row_mp_in">
+              <Row title="New DAO" fetchUrl={requests.fetchAll} isLargeRow={true} />
+            </div>
           </div>
         </div>
       </div>
