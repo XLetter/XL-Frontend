@@ -23,6 +23,7 @@ class WalletConnect extends Component {
       await this.setNetworkInfo();
     } else {
       alert('Install Kaikas!');
+      window.open("https://chrome.google.com/webstore/detail/kaikas/jblndlipeogpafnldhgmapagcccfchpi");
     }
   };
 
