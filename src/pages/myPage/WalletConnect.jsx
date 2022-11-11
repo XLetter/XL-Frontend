@@ -17,9 +17,13 @@ class WalletConnect extends Component {
     };
   }
 
-  handleConnectBtnClick = () => {
-    this.loadAccountInfo();
-    this.setNetworkInfo();
+  handleConnectBtnClick = async() => {
+    if (window.klaytn) {
+      await this.loadAccountInfo();
+      await this.setNetworkInfo();
+    } else {
+      alert('Install Kaikas!');
+    }
   };
 
   loadAccountInfo = async () => {
@@ -28,8 +32,8 @@ class WalletConnect extends Component {
     if (klaytn) {
       try {
         await klaytn.enable();
-        this.setAccountInfo(klaytn);
-        klaytn.on('accountsChanged', () => this.setAccountInfo(klaytn));
+        await this.setAccountInfo(klaytn);
+        klaytn.on('accountsChanged', async() => await this.setAccountInfo(klaytn));
       } catch (error) {
         console.log('User denied account access');
       }
@@ -43,7 +47,7 @@ class WalletConnect extends Component {
     if (klaytn === undefined) return;
 
     const account = await klaytn.selectedAddress;
-    const balance = await getXLTBalance();
+    const balance = await getXLTBalance(account);
     this.setState({
       account,
       balance: balance,
