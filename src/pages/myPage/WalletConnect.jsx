@@ -42,7 +42,7 @@ class WalletConnect extends Component {
     const { klaytn } = window;
     if (klaytn === undefined) return;
 
-    const account = klaytn.selectedAddress;
+    const account = await klaytn.selectedAddress;
     const balance = await getXLTBalance();
     this.setState({
       account,
