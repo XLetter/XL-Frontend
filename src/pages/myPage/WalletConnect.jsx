@@ -5,8 +5,6 @@ import profile from '../../assets/image/user_profile.jpeg';
 
 import WalletInfo from './kaikas/WalletInfo';
 
-import { getXLTBalance } from '../../klaytn/buyXLT';
-
 class WalletConnect extends Component {
   constructor(props) {
     super(props);
@@ -43,10 +41,10 @@ class WalletConnect extends Component {
     if (klaytn === undefined) return;
 
     const account = klaytn.selectedAddress;
-    const balance = await getXLTBalance();
+    const balance = await caver.klay.getBalance(account);
     this.setState({
       account,
-      balance: balance
+      balance: caver.utils.fromPeb(balance, 'KLAY'),
     });
   };
 
@@ -109,7 +107,7 @@ class WalletConnect extends Component {
               </div>
 
               <div className='unit'>
-                XLT
+                XLT {/* 실제로는 klay임 */}
               </div> 
 
               <button id="justBtn">

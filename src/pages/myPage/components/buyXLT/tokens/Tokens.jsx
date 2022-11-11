@@ -32,11 +32,11 @@ const Tokens = () => {
             </div>
 
             <div className='xlt'>
-                My XLT: <span id='xlt_amount'>{XltAmount != 0 ? XltAmount : 0}</span>
+                My XLT: <span id='xlt_amount'>{XltAmount}</span>
             </div>
             
             <div className='klay'>
-                My KLAY: <span id='klay_amount'>{klayAmount != 0 ? klayAmount : 0}</span>
+                My KLAY: <span id='klay_amount'>{klayAmount}</span>
             </div>
         </div>
     );
