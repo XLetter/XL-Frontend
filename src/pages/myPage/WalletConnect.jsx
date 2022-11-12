@@ -5,6 +5,8 @@ import profile from '../../assets/image/user_profile.jpeg';
 
 import WalletInfo from './kaikas/WalletInfo';
 
+import { getXLTBalance } from '../../klaytn/buyXLT';
+
 class WalletConnect extends Component {
   constructor(props) {
     super(props);
@@ -15,9 +17,13 @@ class WalletConnect extends Component {
     };
   }
 
-  handleConnectBtnClick = () => {
-    this.loadAccountInfo();
-    this.setNetworkInfo();
+  handleConnectBtnClick = async() => {
+    if (window.klaytn) {
+      await this.loadAccountInfo();
+      await this.setNetworkInfo();
+    } else {
+      alert('Install Kaikas!');
+    }
   };
 
   loadAccountInfo = async () => {
@@ -26,8 +32,8 @@ class WalletConnect extends Component {
     if (klaytn) {
       try {
         await klaytn.enable();
-        this.setAccountInfo(klaytn);
-        klaytn.on('accountsChanged', () => this.setAccountInfo(klaytn));
+        await this.setAccountInfo(klaytn);
+        klaytn.on('accountsChanged', async() => await this.setAccountInfo(klaytn));
       } catch (error) {
         console.log('User denied account access');
       }
@@ -40,11 +46,11 @@ class WalletConnect extends Component {
     const { klaytn } = window;
     if (klaytn === undefined) return;
 
-    const account = klaytn.selectedAddress;
-    const balance = await caver.klay.getBalance(account);
+    const account = await klaytn.selectedAddress;
+    const balance = await getXLTBalance(account);
     this.setState({
       account,
-      balance: caver.utils.fromPeb(balance, 'KLAY'),
+      balance: balance,
     });
   };
 
